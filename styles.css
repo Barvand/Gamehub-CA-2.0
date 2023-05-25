@@ -7,10 +7,6 @@ body {
     margin: auto;
 }
 
-main {
-    width: 100%;
-    margin: auto;
-}
 a {
     text-decoration: none;
     color: black;
@@ -48,32 +44,20 @@ top: 0px;
 /* Header */
 
 #header { 
+    display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #1E2651;
-    margin: 0%;
 }
 
-.fa-user {
-    background-color:#FEA621;
-    position: absolute;
-    right: 260px;
-    top: 100px; 
-    font-size: 32px;
+.account-icons {
     padding: 30px;
     border-radius: 50%;
-}
-
-.fa-cart-shopping {
     background-color:#FEA621;
-    position: absolute;
-    right: 140px;
-    top: 100px; 
     font-size: 32px;
     padding: 30px;
-    border-radius: 50%;
-
 }
+
 
 .logoheader {
     width: 300px;
@@ -81,23 +65,21 @@ top: 0px;
 
 
 }
+.searchbar { 
+    flex: 1 0 800px;
+}
 
 .search {
-    position: absolute;
     padding: 10px;
-    width: 1000px;
-    top: 140px; 
-    left: 800px;
+    width: 80%;
     
 
 }
 .fa-magnifying-glass {
-    position: absolute;
     background-color: white;
     border-radius: 5%;
-    padding: 11px 10px;
-    top: 140px; 
-    left: 760px;
+    padding: 11px 15px;
+    margin-left: 100px;
 }
 
 /* Navigation*/
@@ -121,86 +103,62 @@ top: 0px;
 
 /* main page */
 
-.container {
-    position: relative;
-    width: 60%; 
-    margin: auto;
-}
-
-.Image { 
-    width: 100%; 
-    border-radius: 25px;
-    Background-color: rgba(164, 0, 197, 0.5);
-} 
-
-
-
-.center-texth1 h1 { 
-    position: absolute;
-    padding: auto;
-    color: #FEA621;
-    font-size: 128px; 
-    font-family: "Dosis";
-    text-transform: uppercase;
-    -webkit-text-stroke-color: #e9eaee;
-    -webkit-text-stroke-width: 3px;
-    top: 0%;
-    left: 20%;
-} 
-
-.center-texth1 p {
-    padding: auto;
-    position: absolute;
-    font-size: 56px;
-    color:#00FF19;
-    top: 40%;
-    left: 18%;
-}
-
-#header-button {
-    position: absolute;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: #FF0000;
-    background-color: white;
-    padding: 10px 200px 10px 200px;
-    font-size: 32px;
-    font-family: "Dosis";
-    border-radius: 20px;
-    top: 80%;
-    left: 32%;
-}
-
-/* Main page 2nd element */
-
 .flex-container {
     width: 60%;
     margin: auto;
-    padding: 50px 50px 0px 50px; 
+
+
+}
+
+.image-wrapper-homepage {
     display: flex;
+    max-height: 700px;
+    height: 650px;
+    flex-direction: column;
+    margin: auto;
+    border: solid 2px black; 
+    background-image: url(Images/Gamehub.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+
+}
+.Gamehub-text-homepage {
+    font-size: 128px;
+    color: white;
     
 }
-.item {
-    position: relative;
-    padding: 0px 30px 0px 30px; 
+
+.Crazydeals-front {
+    color: white;
+    font-size: 2.5em;
+}
+.P-front {
+    color: white;
+    font-size: 2.5em;
+}
+.button {
+    font-size: 1.5em;
+    width: 200px;
+
+
+}
+
+/* Main page 2nd element */
+.item-img {
     margin: auto;
 }
 
 .text {
-    background-color: rgba(143, 13, 136, 0.5);
-    position: absolute;
-    text-align: center;
     font-size: 36px;
     color: white;
     left: 5%; 
 }
 
 .text1 { 
-    position: absolute; 
-    text-align: center;
-    color: white;
+ 
+ color: white;
     font-size: 32px;
     bottom: 50%; 
     left: 10%; 
@@ -217,7 +175,7 @@ top: 0px;
 .flex-container2 {
 padding: 100px;
 padding-left: 20px;
-width: 60%;
+width: 90%;
 margin: auto;
 }
     
@@ -243,10 +201,32 @@ margin: auto;
 }
 
 
+.grid-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%; 
+    height: 1355px;
+    margin: auto;
+    gap: 5px 5px; 
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-image: url(Images/Gamehub.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat
+
+  }
+
+  .grid-item2 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    
 
 
-
-
+  }
 
 
 
