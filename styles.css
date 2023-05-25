@@ -1,0 +1,314 @@
+
+/* general styling */
+
+body {
+    width: 100%;
+    font-family: "Raleway";
+    margin: auto;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+a:hover {
+    background-color: #e9eaee;
+    border: solid 0px rgb(104, 100, 100);
+}
+
+/* Mini-header */
+
+.wrapper {
+    width: 100%; 
+    height: 20px; 
+    background-color: rgb(7, 7, 7);
+    margin-top: 0%;
+    }
+    
+
+.mini-header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#rightcorner-gamehub {
+position: absolute;
+right: 10px;
+top: 0px; 
+
+}
+
+/* Header */
+
+#header { 
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E2651;
+    margin: 0%;
+}
+
+.fa-user {
+    background-color:#FEA621;
+    position: absolute;
+    right: 260px;
+    top: 100px; 
+    font-size: 32px;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.fa-cart-shopping {
+    background-color:#FEA621;
+    position: absolute;
+    right: 140px;
+    top: 100px; 
+    font-size: 32px;
+    padding: 30px;
+    border-radius: 50%;
+
+}
+
+.logoheader {
+    width: 300px;
+    height: 200px;
+
+
+}
+
+.search {
+    position: absolute;
+    padding: 10px;
+    width: 1000px;
+    top: 140px; 
+    left: 800px;
+    
+
+}
+.fa-magnifying-glass {
+    position: absolute;
+    background-color: white;
+    border-radius: 5%;
+    padding: 11px 10px;
+    top: 140px; 
+    left: 760px;
+}
+
+/* Navigation*/
+
+#navbar {
+    display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+    margin: 0px 0px 20px 0px;
+    background-color: #FEA621;
+    border: solid 2px #FEA621;
+}
+
+#navbar a {
+    padding: 10px 50px 10px 50px;
+    
+}
+
+
+/* main page */
+
+.container {
+    position: relative;
+    width: 60%; 
+    margin: auto;
+}
+
+.Image { 
+    width: 100%; 
+    border-radius: 25px;
+    Background-color: rgba(164, 0, 197, 0.5);
+} 
+
+
+
+.center-texth1 h1 { 
+    position: absolute;
+    padding: auto;
+    color: #FEA621;
+    font-size: 128px; 
+    font-family: "Dosis";
+    text-transform: uppercase;
+    -webkit-text-stroke-color: #e9eaee;
+    -webkit-text-stroke-width: 3px;
+    top: 0%;
+    left: 20%;
+} 
+
+.center-texth1 p {
+    padding: auto;
+    position: absolute;
+    font-size: 56px;
+    color:#00FF19;
+    top: 40%;
+    left: 18%;
+}
+
+#header-button {
+    position: absolute;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #FF0000;
+    background-color: white;
+    padding: 10px 200px 10px 200px;
+    font-size: 32px;
+    font-family: "Dosis";
+    border-radius: 20px;
+    top: 80%;
+    left: 32%;
+}
+
+/* Main page 2nd element */
+
+.flex-container {
+    width: 60%;
+    margin: auto;
+    padding: 50px 50px 0px 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.item {
+    position: relative;
+    padding: 0px 30px 0px 30px; 
+    margin: auto;
+}
+
+.text {
+    background-color: rgba(143, 13, 136, 0.5);
+    position: absolute;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    left: 5%; 
+}
+
+.text1 { 
+    position: absolute; 
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    bottom: 50%; 
+    left: 10%; 
+}
+
+.Gamehubpictures {
+    height: 360px; 
+    border-radius: 25px;
+
+}
+
+/* Divider homepage */
+
+.flex-container2 {
+padding: 100px;
+padding-left: 20px;
+width: 60%;
+margin: auto;
+}
+    
+
+.flex-items {
+    display:flex; 
+    width: 100%; 
+    margin: auto;
+    padding-left: 40px; 
+    font-size: 18px; 
+    
+}
+
+.flex-item {
+    align-items: center;
+
+    flex: 1;
+    padding-right: 50px;
+    padding: 50px 20px 50px;
+    border-top: solid black 2px; 
+    border-bottom: solid black 2px;
+
+}
+
+
+
+
+
+
+
+
+
+/* Contact page */
+
+.contact-us-text {
+    padding-top: 50px;
+    width: 40%;
+    margin: auto;
+
+
+}
+
+.contact-us-text h1  {
+    border-top: #FEA621 6px solid;
+    padding-top: 40px;
+}
+
+
+.form { 
+    width: 40%;
+    margin: auto;
+    font-family: "Raleway";
+    
+}
+
+#label {
+    display: block;
+    width: 80%;
+    margin: 10px 0px 0px 0px; 
+    font-family: "Raleway";
+}
+
+#label1 {
+width: 50%;
+background-color: #F8F5F5;
+font-family: "Raleway";
+
+}
+#textarea { 
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #F8F5F5;
+    font-family: "Raleway";
+}
+
+.submitbutton {
+    float: right;
+    margin-top: 20px;
+    padding: 10px 30px 10px 30px;
+
+}
+
+.submitbutton:hover {
+    padding: 10px 30px 10px 30px;
+    background-color: #1E2651;
+    color: #FEA621;
+
+}
+
+
+
+@media
