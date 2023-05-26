@@ -106,7 +106,7 @@ top: 0px;
 
 .header {
     width: 60%;
-    margin: 0 auto;
+    margin: auto;
     background-color: #aaaaaa;
     text-align: center;
     border-radius: 25px;
@@ -126,11 +126,12 @@ top: 0px;
     font-size: 3em;
     background-color: rgb(231, 159, 231);
     background-blend-mode: multiply;
-    border-radius: 25px;
+    border-radius: 10px;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    box-shadow: 2px 2px 2px 2px rgb(83, 83, 83);
 
 }
 
@@ -154,7 +155,56 @@ top: 0px;
 
 /* Main page 2nd element */
 
+.flex-container-1 {
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    width: 60%;
+    margin: 0 auto;
+    gap: 2em;
+}
 
+.gamehub-marketplace {
+    background-image: url(Images/Gamehubpicture.jpg);
+    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(231, 159, 231);
+    background-blend-mode: multiply;
+    gap: 2em; 
+    height: 360px;
+    color: white;
+    font-size: 32px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(83, 83, 83);
+    text-align: center;
+}
+
+.Gamehub-club {
+    background-image: url(Images/gamehubclubfoto.png);
+    background-size: 100%;
+    background-color: rgb(235, 42, 235);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 2px 2px rgb(83, 83, 83);
+    gap: 2em; 
+    height: 360px; 
+    color: white;
+    font-size: 32px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Gamehub-club h2, .gamehub-marketplace h2 {
+    background-color: #1E2651;
+    padding: 20px;
+}
+.Gamehub-color {
+    color: #FEA621;
+    font-weight: bold;
+
+}
 /* Divider homepage */
 
 .flex-container2 {
