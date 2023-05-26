@@ -5,6 +5,7 @@ body {
     width: 100%;
     font-family: "Raleway";
     margin: auto;
+    min-height: 100vh;
 }
 
 a {
@@ -103,131 +104,98 @@ top: 0px;
 
 /* main page */
 
-.flex-container {
+.header {
     width: 60%;
-    margin: auto;
-
-
-}
-
-.image-wrapper-homepage {
-    display: flex;
-    max-height: 700px;
-    height: 650px;
-    flex-direction: column;
-    margin: auto;
-    border: solid 2px black; 
-    background-image: url(Images/Gamehub.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-.Gamehub-text-homepage {
-    font-size: 128px;
-    color: white;
+    margin: 0 auto;
+    background-color: #aaaaaa;
+    text-align: center;
+    border-radius: 25px;
     
+
 }
 
-.Crazydeals-front {
+.textheader {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-image: url(Images/Gamehub.jpg); 
+    background-size:cover;
+    height: 600px;
+    max-height: 800px;
     color: white;
-    font-size: 2.5em;
-}
-.P-front {
-    color: white;
-    font-size: 2.5em;
-}
-.button {
-    font-size: 1.5em;
-    width: 200px;
+    font-size: 3em;
+    background-color: rgb(231, 159, 231);
+    background-blend-mode: multiply;
+    border-radius: 25px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 
+}
 
+#gamehub-textheader {
+    flex: 0; 
+    font-family: "Dosis";
+}
+
+#sales-textheader {
+    flex: 1; 
+    font-family: "Laila";
+    color: #FEA621;
+}
+
+.buttonheader {
+    flex: 0;
+    align-items: center;
+    font-size: 28px;;
+    cursor:pointer;
 }
 
 /* Main page 2nd element */
-.item-img {
-    margin: auto;
-}
 
-.text {
-    font-size: 36px;
-    color: white;
-    left: 5%; 
-}
-
-.text1 { 
- 
- color: white;
-    font-size: 32px;
-    bottom: 50%; 
-    left: 10%; 
-}
-
-.Gamehubpictures {
-    height: 360px; 
-    border-radius: 25px;
-
-}
 
 /* Divider homepage */
 
 .flex-container2 {
-padding: 100px;
-padding-left: 20px;
-width: 90%;
-margin: auto;
+padding-top: 50px;
+width: 60%;
+margin: 0 auto;
 }
     
 
 .flex-items {
     display:flex; 
-    width: 100%; 
-    margin: auto;
-    padding-left: 40px; 
     font-size: 18px; 
     
 }
 
 .flex-item {
+    justify-content: center;
     align-items: center;
-
-    flex: 1;
-    padding-right: 50px;
-    padding: 50px 20px 50px;
     border-top: solid black 2px; 
-    border-bottom: solid black 2px;
+
 
 }
 
-
-.grid-container {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: auto;
-    width: 100%; 
-    height: 1355px;
-    margin: auto;
-    gap: 5px 5px; 
+.flex-icons {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 2px; 
+    align-items: center;
 }
 
-.grid-item1 {
-    grid-column-start: 1;
-    grid-column-end: 8;
-    background-image: url(Images/Gamehub.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat
-
-  }
-
-  .grid-item2 {
-    grid-column-start: 1;
-    grid-column-end: 8;
+.flex.icon {
+    flex: 1;
     
+}
 
-
-  }
-
+.buttonheader {
+    width: 200px;
+    color: white;
+    background-color: red;
+    text-align: 	center;
+}
 
 
 /* Contact page */
@@ -236,8 +204,6 @@ margin: auto;
     padding-top: 50px;
     width: 40%;
     margin: auto;
-
-
 }
 
 .contact-us-text h1  {
@@ -289,6 +255,69 @@ font-family: "Raleway";
 
 }
 
+
+/* Product pages */
+
+
+.flex-container-games {
+    width: 60%;
+    margin: 0 auto;
+    vertical-align: top
+}
+
+.nav-games-page {
+
+    margin: 0 auto;
+
+}
+
+.header-games {
+    flex: 0;
+    border-bottom: #FEA621 3px solid;
+    margin-bottom: 45px;
+}
+
+.games-found {
+    flex: 1;
+    border-bottom: #FEA621 3px solid;
+}
+
+.flex-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-games-page {
+    text-decoration: none;
+    list-style: none;
+    display:flex;
+    flex-basis: content;
+
+}
+
+.category-text {
+    flex: 1;
+    padding: 15px;
+    border-right: solid 2px black;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+
+.category-text1 {
+    flex: 2;
+    padding: 15px;
+    border: solid 2px black;
+}
+
+.category-text:hover, .category-text1:hover  {
+background-color: #aaaaaa;
+
+}
+
+.category-text:active, .category-text1:active  {
+    background-color:#FEA621
+    
+    }
 
 
 @media
