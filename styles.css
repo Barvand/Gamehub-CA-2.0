@@ -51,23 +51,29 @@ top: 0px;
     background-color: #1E2651;
 }
 
+#hubcoloration {
+    color: #FEA621;
+}
+
+#GamecolorationGame {
+    color: #1E2651;
+}
+
 .account-icons {
-    padding: 30px;
-    border-radius: 50%;
-    background-color:#FEA621;
     font-size: 32px;
     padding: 30px;
 }
 
 
 .logoheader {
-    width: 300px;
-    height: 200px;
+    flex: 0;
+    width: 200px;
+    height: 100px;
 
 
 }
 .searchbar { 
-    flex: 1 0 800px;
+    flex: 1 0 600px;
 }
 
 .search {
@@ -159,7 +165,7 @@ top: 0px;
     display: grid;
     padding: 50px;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
+    grid-template-rows: 1fr;
     width: 60%;
     margin: 0 auto;
     gap: 2em;
@@ -168,10 +174,8 @@ top: 0px;
 .gamehub-marketplace {
     background-image: url(Images/Gamehubpicture.jpg);
     background-size: 100%;
-    background-size: contain;
     background-repeat: no-repeat;
-    background-color: rgb(231, 159, 231);
-    background-blend-mode: multiply;
+    background-position: 60%;
     gap: 2em; 
     height: 360px;
     color: white;
@@ -208,14 +212,11 @@ top: 0px;
 /* Divider homepage */
 
 .flex-container2 {
-padding-top: 50px;
-width: 60%;
-margin: 0 auto;
+    display: flex;
+    margin: auto;
 }
-    
 
 .flex-items {
-    display:flex; 
     font-size: 18px; 
     
 }
