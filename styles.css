@@ -83,10 +83,13 @@ top: 0px;
 
 }
 .fa-magnifying-glass {
+    align-items: center;
+    line-height: 14px;
     background-color: white;
-    border-radius: 5%;
-    padding: 11px 15px;
+    border-radius: 3px;
+    padding: 10px 12px 13px 12px;
     margin-left: 100px;
+    border: solid 1px rgb(126, 125, 125);
 }
 
 /* Navigation*/
