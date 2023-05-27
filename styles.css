@@ -373,5 +373,37 @@ background-color: #aaaaaa;
     
     }
 
+.container-productpage {
+width: 60%;
+margin: auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 50px;
+
+}
+
+.item-product-page {
+    flex-direction: column;
+    font-family: "Raleway";
+    margin-top: 50px;;
+    border: solid 2px rgb(153, 153, 153);
+    padding-top: 20px; 
+    text-align: left;
+}
+
+    .Game-cover-img {
+        display:block;
+         margin:auto;
+    
+        height: 250px; 
+        width: 212px;
+    }
+
+.flex-container-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
 
 @media
