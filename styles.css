@@ -22,29 +22,33 @@ a:hover {
 /* Mini-header */
 
 .wrapper {
-    width: 100%; 
-    height: 20px; 
+    width: 100%;
     background-color: rgb(7, 7, 7);
     margin-top: 0%;
     }
     
 
 .mini-header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
     background-color: black;
     color: white;
     text-align: center;
+    align-items: flex-start;
 }
 
 #rightcorner-gamehub {
-position: absolute;
-right: 10px;
-top: 0px; 
+    flex-basis: 10%;
+    justify-content: end;
 
 }
 
 /* Header */
 
 #header { 
+    width: 100%;
+    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,6 +99,7 @@ top: 0px;
 /* Navigation*/
 
 #navbar {
+    min-width: 100%;
     display: flex; 
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -424,4 +429,80 @@ gap: 50px;
     
 }
 
-@media
+
+
+
+
+
+
+
+
+/* testing grid */
+.grid-container5 { 
+    width: 1400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
+
+.grid-item {
+    background: #aaaaaa;
+    
+}
+
+.griditem-1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(17, 17, 17);
+    grid-column-start: 1;
+    grid-column-end: 5; 
+    background-image: url(Images/Gamehub.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.griditem-1 img {
+    width: 100%;
+    height: 100%;
+    float: right;
+
+}
+
+.gamehub-header {
+    color: white;
+    font-family: "Dosis";
+    font-weight: 600;
+    font-size: 60px;
+    
+}
+
+.salesheader {
+    font-family: "Laila";
+    font-weight: 600;
+    color: #FEA621;
+}
+
+.header-btn {
+    padding: 10px 200px;
+    margin-bottom: 40px;
+    font-family: "Raleway";
+    border-radius: 5px;
+    background-color: #1E2651;
+    border:#FEA621 1px solid; 
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.griditem-1 p{
+color: white;
+font-size: 42px;
+
+}
