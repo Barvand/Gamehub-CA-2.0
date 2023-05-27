@@ -316,13 +316,6 @@ font-family: "Raleway";
 .flex-container-games {
     width: 60%;
     margin: 0 auto;
-    vertical-align: top
-}
-
-.nav-games-page {
-
-    margin: 0 auto;
-
 }
 
 .header-games {
@@ -391,10 +384,16 @@ gap: 50px;
     text-align: left;
 }
 
+.text-alignment-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
     .Game-cover-img {
         display:block;
          margin:auto;
-    
         height: 250px; 
         width: 212px;
     }
@@ -402,8 +401,27 @@ gap: 50px;
 .flex-container-price {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 5px;
+}
+
+
+
+.add-to-cart-btn {
+    display: flex;
+    min-width: 200px;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 18px;
+    font-family: "Dosis";
+    font-weight: bold;
+    border: #000 1px solid;
+    padding: 10px;
+    background-color: #1E2651;
+    color: #FEA621;
+    margin:20px auto; 
+    box-shadow: 1px 1px grey;
+    
 }
 
 @media
