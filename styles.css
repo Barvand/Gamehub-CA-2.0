@@ -47,13 +47,12 @@ a:hover {
 /* Header */
 
 #header { 
-    width: 100%;
-    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #1E2651;
 }
+
 
 #hubcoloration {
     color: #FEA621;
@@ -118,105 +117,10 @@ a:hover {
 
 /* main page */
 
-.header {
-    width: 60%;
-    margin: auto;
-    background-color: #aaaaaa;
-    text-align: center;
-    border-radius: 25px;
-    
-
-}
-
-.textheader {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    background-image: url(Images/Gamehub.jpg); 
-    background-size:cover;
-    height: 600px;
-    max-height: 800px;
-    color: white;
-    font-size: 3em;
-    background-color: rgb(231, 159, 231);
-    background-blend-mode: multiply;
-    border-radius: 10px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 2px 2px rgb(83, 83, 83);
-
-}
-
-#gamehub-textheader {
-    flex: 0; 
-    font-family: "Dosis";
-}
-
-#sales-textheader {
-    flex: 1; 
-    font-family: "Laila";
-    color: #FEA621;
-}
-
-.buttonheader {
-    flex: 0;
-    align-items: center;
-    font-size: 28px;;
-    cursor:pointer;
-}
 
 /* Main page 2nd element */
 
-.flex-container-1 {
-    display: grid;
-    padding: 50px;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr;
-    width: 60%;
-    margin: 0 auto;
-    gap: 2em;
-}
 
-.gamehub-marketplace {
-    background-image: url(Images/Gamehubpicture.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 60%;
-    gap: 2em; 
-    height: 360px;
-    color: white;
-    font-size: 32px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgb(83, 83, 83);
-    text-align: center;
-}
-
-.Gamehub-club {
-    background-image: url(Images/gamehubclubfoto.png);
-    background-size: 100%;
-    background-color: rgb(235, 42, 235);
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    box-shadow: 2px 2px 2px 2px rgb(83, 83, 83);
-    gap: 2em; 
-    height: 360px; 
-    color: white;
-    font-size: 32px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.Gamehub-club h2, .gamehub-marketplace h2 {
-    background-color: #1E2651;
-    padding: 20px;
-}
-.Gamehub-color {
-    color: #FEA621;
-    font-weight: bold;
-
-}
 /* Divider homepage */
 
 .flex-container2 {
