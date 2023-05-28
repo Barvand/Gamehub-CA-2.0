@@ -443,12 +443,13 @@ gap: 50px;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
     
 }
 
 .grid-item {
     background: #aaaaaa;
+    
     
 }
 
@@ -468,12 +469,6 @@ gap: 50px;
 
 }
 
-.griditem-1 img {
-    width: 100%;
-    height: 100%;
-    float: right;
-
-}
 
 .gamehub-header {
     color: white;
@@ -505,4 +500,68 @@ gap: 50px;
 color: white;
 font-size: 42px;
 
+}
+
+.griditem-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+
+.griditem-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    background-color: #1E2651;
+    background-image: url(Images/Gamehubpicture\ resize.png);
+    
+}
+
+.h3header-marketplace {
+    font-size: 32px;
+    color: white;
+}
+
+.p-header-marketplace {
+    font-size: 32px;
+    color: white;
+}
+
+
+.griditem-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1E2651;
+    grid-column-start: 3 ;
+    grid-column-end: 5; 
+}
+
+.item-4 {
+    padding-top: 75px;
+    display: block;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    grid-column-start: 1 ;
+    grid-column-end: 5; 
+}
+
+.flex-item {
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding: 8px;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
 }
