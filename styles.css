@@ -337,11 +337,15 @@ gap: 50px;
 }
 
 .griditem-1 {
-    display: flex;
-    background-color: rgb(17, 17, 17);
+    position: relative;
     grid-column-start: 1;
     grid-column-end: 5; 
-    background-image: url(Images/Group\ 170.png); 
+    background-image: 
+    linear-gradient(
+      rgba(15, 15, 15, 0.5),
+      rgba(63, 61, 61, 0.5)
+    ),
+    url(Images/Gamehub.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -352,81 +356,131 @@ gap: 50px;
 
 }
 
-.griditem-1 p{
+.summerdeals{
+    position: absolute;
     color: white;
     font-size: 42px;
+    bottom: 168px;
+    left: 318px;
+    text-align: center;
     
     }
 
-#green-fifty {
-    display: inline;
+.green-fifty {
+    font-size: 32px;
+    position: absolute;
     color: #00FF19;
+    bottom: 128px;
+    left: 446px;
 
 }
 .gamehub-header {
+    position: absolute;
     color: white;
     font-family: "Dosis";
-    font-weight: 600;
-    font-size: 60px;
-    
+    font-weight: 700;
+    font-size: 128px;
+    bottom: 250px;
+    left: 433px;
+    -webkit-text-stroke: #1E2651 6px;
+    text-transform: uppercase;
 }
 
 .salesheader {
+    position: absolute;
+    top: 100px;
+    font-size: 128px;
     font-family: "Laila";
-    font-weight: 600;
+    font-weight: 700;
     color: #FEA621;
+    left: 521px;
+    top: -10px;
+    text-transform: uppercase;
 }
 
 .header-btn {
-    padding: 10px 200px;
+    position: absolute;
+    padding: 10px 150px;
     font-family: "Raleway";
     border-radius: 5px;
-    background-color: #1E2651;
+    background-color: #f8f8f8;
     border:#FEA621 1px solid; 
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
+    color: #FF0000;
+    font-size: 24px;
+    font-weight: bold;
+    bottom: 80px;
+    left: 501px ;
 }
 
 
 
 .griditem-2 {
+    position: relative;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-color: #645c5c;
-    background-blend-mode: multiply;
     grid-column-start: 1;
     grid-column-end: 3; 
-    background-image: url(Images/Gamehubpicture\ resize.png);
-    display: flex;
-    justify-content: flex-start;
+    background-image: linear-gradient(
+        rgba(10, 4, 4, 0.5),
+        rgba(5, 5, 5, 0.5)
+      ),
+      url(Images/Gamehubpicture\ resize.png);
+    background-size: 100% 100%;
     color: white;
     font-size: 32px;
 }
 
 
 .h3header-marketplace {
-    font-size: 32px;
+    font-size: 40px;
+    font-weight: 700;
     color: white;
+    padding-left: 40px;
 }
 
 .p-header-marketplace {
     font-size: 32px;
     color: white;
+    padding-left: 40px;
 }
 
+.header-btn-content2 {
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    background-color: #00D1FF;
+    color: black;
+    font-family: "Raleway";
+    font-size: 24px;
+    right: 168px;
+    font-weight: 600;
+
+}
+
+.header-btn-content2 :hover {
+    width: 180px;
+    height: 50px;
+    background-color: #265E79;
+    color: #F56CE7;
+    font-family: "Raleway";
+    font-size: 24px;
+
+}
 
 .griditem-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #1E2651;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(10, 4, 4, 0.5),
+        rgba(5, 5, 5, 0.5)
+      ),
+      url(Images/gamehubclub.jpg);
+    background-size: 100%;
     grid-column-start: 3 ;
     grid-column-end: 5; 
+}
+#Gamehub-yellow {
+    color:#FEA621;
+    font-weight: bold;
 }
 
 .item-4 {
