@@ -29,6 +29,7 @@ a:hover {
     
 
 .mini-header {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -47,6 +48,8 @@ a:hover {
 /* Header */
 
 #header { 
+    box-sizing: content-box;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,8 +66,8 @@ a:hover {
 }
 
 .account-icons {
-    font-size: 32px;
-    padding: 30px;
+    font-size: 20px;
+    padding-right: 10px;
 }
 
 
@@ -81,11 +84,12 @@ a:hover {
 
 .search {
     padding: 10px;
-    width: 80%;
+    width: 800px;
     
 
 }
 .fa-magnifying-glass {
+    box-sizing: content-box;
     align-items: center;
     line-height: 14px;
     background-color: white;
@@ -144,18 +148,20 @@ a:hover {
 
 .contact-us-text {
     padding-top: 50px;
-    width: 40%;
+    width: 1100px;
     margin: auto;
+    font-family: "Raleway";
 }
 
 .contact-us-text h1  {
-    border-top: #FEA621 6px solid;
-    padding-top: 40px;
+    border-bottom: #FEA621 6px solid;
+    margin-bottom: 50px;
+    font-family: "Raleway";
 }
 
 
 .form { 
-    width: 40%;
+    width: 1100px;
     margin: auto;
     font-family: "Raleway";
     
@@ -202,24 +208,26 @@ font-family: "Raleway";
 
 
 .flex-container-games {
-    width: 60%;
+    width: 1400px;
     margin: 0 auto;
+    
 }
 
 .header-games {
     flex: 0;
-    border-bottom: #FEA621 3px solid;
-    margin-bottom: 45px;
+    margin-bottom: 0px;
 }
 
 .games-found {
     flex: 1;
-    border-bottom: #FEA621 3px solid;
+    margin-bottom: 0px;
+
 }
 
 .flex-items {
     display: flex;
     align-items: center;
+    border-bottom: #FEA621 solid 6px;
 }
 
 .nav-games-page {
@@ -255,7 +263,7 @@ background-color: #aaaaaa;
     }
 
 .container-productpage {
-width: 60%;
+width: 1400px;
 margin: auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -266,22 +274,18 @@ gap: 50px;
 .item-product-page {
     flex-direction: column;
     font-family: "Raleway";
-    margin-top: 50px;;
+    margin-top: 50px;
     border: solid 1px rgb(153, 153, 153);
     padding-top: 20px; 
-    min-width: 300px;
 }
 
 .text-alignment-product {
-    display: flex;
-    flex-direction: column;
-    align-self: start;
     padding-left: 65px;
     
 }
     .Game-cover-img {
         display:block;
-         margin:auto;
+        margin:auto;
         height: 250px; 
         width: 212px;
     }
@@ -294,7 +298,12 @@ gap: 50px;
 }
 
 
-
+.review-stars {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
 .add-to-cart-btn {
     display: flex;
     min-width: 200px;
