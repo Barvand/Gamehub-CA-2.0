@@ -116,48 +116,27 @@ a:hover {
 
 
 /* main page */
-
+.buttonheader {
+    width: 200px;
+    color: white;
+    background-color: red;
+    text-align: 	center;
+}
 
 /* Main page 2nd element */
 
 
 /* Divider homepage */
 
-.flex-container2 {
-    display: flex;
-    margin: auto;
-}
-
-.flex-items {
-    font-size: 18px; 
-    
-}
-
 .flex-item {
-    justify-content: center;
-    align-items: center;
-    border-top: solid black 2px; 
-
-
-}
-
-.flex-icons {
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding: 8px;
     display: flex;
-    justify-content: space-between;
-    border-bottom: solid black 2px; 
-    align-items: center;
-}
-
-.flex.icon {
-    flex: 1;
-    
-}
-
-.buttonheader {
-    width: 200px;
-    color: white;
-    background-color: red;
-    text-align: 	center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-size: 1rem;
 }
 
 
@@ -353,27 +332,37 @@ gap: 50px;
 
 .grid-item {
     background: #aaaaaa;
-    
+    height: 350px;
     
 }
 
 .griditem-1 {
     display: flex;
-    flex-wrap: wrap;
     background-color: rgb(17, 17, 17);
     grid-column-start: 1;
     grid-column-end: 5; 
-    background-image: url(Images/Gamehub.jpg);
+    background-image: url(Images/Group\ 170.png); 
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-size: 100%;
     flex-direction: column;
     align-items: center;
+    height: 500px;
 
 }
 
+.griditem-1 p{
+    color: white;
+    font-size: 42px;
+    
+    }
 
+#green-fifty {
+    display: inline;
+    color: #00FF19;
+
+}
 .gamehub-header {
     color: white;
     font-family: "Dosis";
@@ -390,7 +379,6 @@ gap: 50px;
 
 .header-btn {
     padding: 10px 200px;
-    margin-bottom: 40px;
     font-family: "Raleway";
     border-radius: 5px;
     background-color: #1E2651;
@@ -400,33 +388,25 @@ gap: 50px;
     font-weight: 500;
 }
 
-.griditem-1 p{
-color: white;
-font-size: 42px;
 
-}
 
 .griditem-2 {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #645c5c;
+    background-blend-mode: multiply;
     grid-column-start: 1;
     grid-column-end: 3; 
-}
-
-.griditem-2{
+    background-image: url(Images/Gamehubpicture\ resize.png);
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     color: white;
     font-size: 32px;
-    background-color: #1E2651;
-    background-image: url(Images/Gamehubpicture\ resize.png);
-    
 }
+
 
 .h3header-marketplace {
     font-size: 32px;
@@ -450,7 +430,10 @@ font-size: 42px;
 }
 
 .item-4 {
-    padding-top: 75px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 75px;
+    margin-bottom: 75px;
     display: block;
     background-color: white;
     display: flex;
@@ -459,13 +442,24 @@ font-size: 42px;
     align-items: flex-start;
     grid-column-start: 1 ;
     grid-column-end: 5; 
+    height: 70px;
 }
 
-.flex-item {
-    flex-wrap: wrap;
-    font-size: 14px;
-    padding: 8px;
-    border: black 1px solid;
-    display: flex;
-    flex-direction: column;
+.item-5 {
+    
+    background-image:  url(Images/Group\ 39.png);
+    background-size: 100%;
+    height: 350px;
+    grid-column-start:1;
+    grid-column-end: 3; 
+    
 }
+
+.item-6 {
+    background-image: url(Images/Group\ 169.png);
+    height: 350px;
+    grid-column-start:3;
+    grid-column-end: 5; 
+}
+
+
