@@ -49,7 +49,7 @@ a:hover {
 
 #header { 
     box-sizing: content-box;
-    width: 100%;
+    flex-basis: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,34 +84,23 @@ a:hover {
 
 .search {
     padding: 10px;
-    width: 800px;
+    max-width: 800px;
+    min-width: 200px;
     
-
-}
-.fa-magnifying-glass {
-    box-sizing: content-box;
-    align-items: center;
-    line-height: 14px;
-    background-color: white;
-    border-radius: 3px;
-    padding: 10px 12px 13px 12px;
-    margin-left: 100px;
-    border: solid 1px rgb(126, 125, 125);
 }
 
 /* Navigation*/
 
 #navbar {
-    min-width: 100%;
     display: flex; 
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: baseline;
     margin: 0px 0px 20px 0px;
     background-color: #FEA621;
     border: solid 2px #FEA621;
 }
+
 
 #navbar a {
     padding: 10px 50px 10px 50px;
@@ -526,3 +515,4 @@ gap: 50px;
 }
 
 
+@media only screen and (max-width: 920px)
