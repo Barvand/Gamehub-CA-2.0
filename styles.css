@@ -21,49 +21,18 @@ a:hover {
 
 /* Mini-header */
 
-.wrapper {
-    width: 100%;
-    background-color: rgb(7, 7, 7);
-    margin-top: 0%;
-    }
-    
 
-.mini-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    text-align: center;
-    align-items: flex-start;
-}
-
-#rightcorner-gamehub {
-    flex-basis: 10%;
-    justify-content: end;
-
-}
 
 /* Header */
 
 #header { 
     box-sizing: content-box;
-    flex-basis: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #1E2651;
 }
 
-
-#hubcoloration {
-    color: #FEA621;
-}
-
-#GamecolorationGame {
-    color: #1E2651;
-}
 
 .account-icons {
     font-size: 20px;
@@ -76,36 +45,49 @@ a:hover {
     width: 200px;
     height: 100px;
 
-
-}
-.searchbar { 
-    flex-basis: 40%;
 }
 
 .search {
-    padding: 10px;
-    max-width: 800px;
-    min-width: 200px;
+   padding: 10px;
+   width: 800px;
     
 }
 
 /* Navigation*/
 
-#navbar {
-    display: flex; 
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-    margin: 0px 0px 20px 0px;
-    background-color: #FEA621;
-    border: solid 2px #FEA621;
+header {
+    position: relative;
 }
 
+#navbar {
+    position: relative;
+}
+
+nav {
+    display: absolute;
+    display: none;
+
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
 
 #navbar a {
+    display: block;
     padding: 10px 50px 10px 50px;
+    color:#FEA621;
+
+}
+
+nav, 
+#menu-checkbox {
+    display: none;
+    background-color: #1E2651;
+    padding: 20px;
     
 }
+
 
 
 /* main page */
@@ -515,4 +497,31 @@ gap: 50px;
 }
 
 
-@media only screen and (max-width: 920px)
+
+@media (min-width: 600px) {
+    nav {
+            display: block;
+            position: static;
+    
+    
+        }
+        .hamburger-icon {
+            display: none; 
+        }
+        nav {
+            display: flex; 
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            background-color: #FEA621;
+            border: solid 2px #FEA621;
+            color: black;
+    
+    }
+    #navbar a {
+        color: black;
+    }
+
+    }
+     
