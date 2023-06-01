@@ -522,7 +522,9 @@ gap: 2rem;
     .grid-container5 { 
         display: grid;
     }
-
+    header { 
+        width: 100%;
+    }
     .griditem-1 {
         grid-column: 1 / 3; 
         grid-row: 1;
