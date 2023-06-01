@@ -1,10 +1,16 @@
 
 /* general styling */
 
+* {
+    box-sizing: border-box;
+  }
+
 body {
     width: 100%;
     font-family: "Raleway";
     margin: 0% auto; 
+    overflow-x: hidden;
+
 }
 
 a {
@@ -183,8 +189,9 @@ font-family: "Raleway";
 
 
 .flex-container-games {
-    width: 1400px;
+    width: 55%;
     margin: 0 auto;
+    
     
 }
 
@@ -202,6 +209,7 @@ font-family: "Raleway";
 .flex-items {
     display: flex;
     align-items: center;
+    flex: wrap;
     border-bottom: #FEA621 solid 6px;
 }
 
@@ -214,7 +222,7 @@ font-family: "Raleway";
 }
 
 .category-text {
-    flex: 1;
+   
     padding: 15px;
     border-right: solid 2px black;
     border-top: solid 2px black;
@@ -222,7 +230,7 @@ font-family: "Raleway";
 }
 
 .category-text1 {
-    flex: 2;
+
     padding: 15px;
     border: solid 2px black;
 }
@@ -238,11 +246,10 @@ background-color: #aaaaaa;
     }
 
 .container-productpage {
-width: 1400px;
+width: 55%;
 margin: auto;
 display: grid;
-grid-template-columns:
-    repeat(auto-fit, minmax(16rem, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 gap: 2rem;
 
 }
@@ -307,10 +314,10 @@ gap: 2rem;
 
 /* testing grid */
 .grid-container5 { 
-    width: 1380px; 
+    width: 55%; 
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     
 }
@@ -388,7 +395,7 @@ gap: 2rem;
     border:#FEA621 1px solid; 
     color: #FF0000;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     align-self: center;
 }
 
@@ -497,6 +504,7 @@ gap: 2rem;
 @media (max-width: 1400px) {
     .grid-container5 { 
         display: grid;
+        width: 100%;
     }
     
     .griditem-1 {
@@ -504,6 +512,15 @@ gap: 2rem;
         grid-row: 1;
         height: 350px;
     
+    }
+    .green-fifty {
+        display:none; 
+
+    }
+    .header-btn { 
+        margin-top: 20px;
+        width: 130px;
+
     }
     .griditem-2 {
     grid-column: 1 / 4;
@@ -591,16 +608,9 @@ gap: 2rem;
 
 
 }
-.Icons {
-    display: flex;
-   align-items:center;
-   justify-content: flex-end;
-   justify-self: end;
-   background-color: #FEA621;
-}
 
 .account-icons {
- margin: 85px 0px 0px 0px;
+ margin: 70px 0px 0px 0px;
 padding-right: 15px;
 
 }
@@ -613,9 +623,11 @@ padding-right: 15px;
 }
 
 .hamburger-icon {
+    position: absolute;
     font-size: 32px;
     padding-left: 30px;
-    
+    top: 150px;
+   
 }
 #navbar {
     background-color: #FEA621;
@@ -628,7 +640,47 @@ padding-right: 15px;
     color: white;
     background-color:#1E2651
 }
+.griditem-2 {
+    display: none;
 }
+
+.griditem-3 p,.header-btn-content2 {
+    display:none;
+
+}
+.griditem-3 {
+    height: 100px;
+    background-position: center;
+    border-radius: 1rem;
+    
+
+}
+.griditem-3 h3{
+font-size: 56px;
+align-self: center;
+margin: 20px 0px 0px 30px;
+    
+
+}
+.item-6 {
+    display:none;
+        
+    
+    }
+    .item-5 {
+        display:none;
+             }
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 700px) {
     nav {
