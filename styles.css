@@ -115,13 +115,11 @@ nav,
 
 .flex-item {
     flex-wrap: wrap;
-    font-size: 14px;
     padding: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center; 
-    font-size: 1rem;
+    font-size: 16px; 
 }
 
 
@@ -207,7 +205,8 @@ font-family: "Raleway";
 }
 
 .flex-items {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     align-items: center;
     flex: wrap;
     border-bottom: #FEA621 solid 6px;
@@ -314,17 +313,18 @@ gap: 2rem;
 
 /* testing grid */
 .grid-container5 { 
-    width: 55%; 
+    width: 1000px; 
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
     gap: 20px;
     
 }
 
 .grid-item {
     background: #aaaaaa;
-    height: 350px;
+    height: 250px;
 }
 
 .griditem-1 {
@@ -339,7 +339,7 @@ gap: 2rem;
     background-attachment:scroll;
     background-repeat: no-repeat;
     background-size: 100% contain;
-    height: 500px;
+    height: 400px;
     flex-direction: column;
     padding: 0%;
     text-align: center;
@@ -402,19 +402,16 @@ gap: 2rem;
 
 
 .griditem-2 {
-    position: relative;
     flex-direction: column;
     background-repeat: no-repeat;
     grid-column: 1 / 3;
-    background-image: linear-gradient(
-        rgba(10, 4, 4, 0.5),
-        rgba(5, 5, 5, 0.5)
-      ),
-      url(Images/Gamehubpicture.png);
+    height: 250px;
+    background-color: #1E2651;
     background-size: 100% contain;
-    background-position: left;
+    background-position: 100%;
     color: white;
     font-size: 32px;
+    
 }
 
 
@@ -422,25 +419,27 @@ gap: 2rem;
     font-size: 40px;
     font-weight: 700;
     color: white;
-    padding-left: 40px;
+    margin: 20px 0px 10px 25px;
+    
 }
 
 .p-header-marketplace {
-    font-size: 32px;
+    font-size: 22px;
     color: white;
     padding-left: 40px;
+    margin: 0px 0px 0px 20px;
 }
 
 .header-btn-content2 {
-    position: absolute;
     width: 180px;
     height: 50px;
     background-color: #00D1FF;
     color: black;
     font-family: "Raleway";
-    font-size: 24px;
+    font-size: 18px;
     right: 168px;
     font-weight: 600;
+    margin:20px 0px 0px 200px;
 
 }
 
@@ -454,8 +453,16 @@ gap: 2rem;
 
 }
 
+.header-btn-content3 :hover {
+    width: 180px;
+    height: 50px;
+    background-color: #265E79;
+    color: #F56CE7;
+    font-family: "Raleway";
+    font-size: 24px;
+}
+
 .griditem-3 {
-    position: relative;
     background-image: linear-gradient(
         rgba(10, 4, 4, 0.5),
         rgba(5, 5, 5, 0.5)
@@ -463,6 +470,36 @@ gap: 2rem;
     background-size: 100%;
     grid-column: 3 / 5;
 }
+
+
+.h3header-club {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  margin:20px 0px 0px 25px;
+}
+
+.p-header-marketplace-content2 {
+    margin: 0;
+    color: white;
+    padding-left: 40px;
+    margin: 10px 0px 0px 0px;
+    font-size: 22px;
+}
+
+.header-btn-content3 {
+    width: 180px;
+    height: 50px;
+    background-color: #00D1FF;
+    color: black;
+    font-family: "Raleway";
+    font-size: 18px;
+    right: 168px;
+    font-weight: 600;
+    margin:20px 0px 0px 200px;
+
+}
+
 
 #Gamehub-yellow {
     color:#FEA621;
@@ -474,22 +511,21 @@ gap: 2rem;
     border-bottom: 1px solid black;
     margin-top: 75px;
     margin-bottom: 75px;
-    display: block;
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    grid-column-start: 1 ;
-    grid-column-end: 5; 
-    height: 70px;
+    grid-column: 1 / 5;
+    height: 80px;
 }
+
 
 .item-5 {
     
     background-image:  url(Images/Group\ 39.png);
-    background-size: 100%;
-    height: 350px;
+    background-size: 100% ;
+    height: 250px;
     grid-column-start:1;
     grid-column-end: 3; 
     
@@ -497,100 +533,74 @@ gap: 2rem;
 
 .item-6 {
     background-image: url(Images/Group\ 169.png);
-    height: 350px;
-    grid-column-start:3;
-    grid-column-end: 5; 
-}
-@media (max-width: 1400px) {
-    .grid-container5 { 
-        display: grid;
-        width: 100%;
-    }
-    
-    .griditem-1 {
-        grid-column: 1 / 4; 
-        grid-row: 1;
-        height: 350px;
-    
-    }
-    .green-fifty {
-        display:none; 
-
-    }
-    .header-btn { 
-        margin-top: 20px;
-        width: 130px;
-
-    }
-    .griditem-2 {
-    grid-column: 1 / 4;
-    grid-row: 2; 
-} 
-
-.griditem-3 {
-    grid-column: 1 / 4;
-    grid-row: 3;
-
-}
-}
-
-
-@media (max-width: 1000px) {
-    .grid-container5 { 
-        display: grid;
-    }
-    body, main { 
-        width: 100%;
-        margin: auto;
-        padding: 0;
-    }
-    .griditem-1 {
-        grid-column: 1 / 3; 
-        grid-row: 1;
-    }
-    .griditem-2 {
-    grid-column: 1 / 3;
-    grid-row: 2; 
-} 
-
-.griditem-3 {
-    grid-column: 1 / 3;
-    grid-row: 3;
-
-}
-.item-4{
-    display:none; 
-}
-.item-5 {
-    grid-column: 1 / 3;
-    grid-row: 4;
-    background-size: 100% contain;
+    background-size: 100% ;
+    height: 250px;
+    grid-column: 3 / 5;
     
 }
 
-.item-6 {
-    grid-column: 1 / 3;
-    grid-row: 5;
-    
+.item-7 {
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 36px;
+    grid-column: 1 / 5;
+    background-color: white;
+    font-size: 32px;
+
 }
-.item-7  {
-    display:none; 
+.grid-item8-container {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+   
 }
+
 .item-8 {
-    display: none;
+    width: 100%;
+    border-radius: 40px 40px 40px 40px;
+    gap: 1rem;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 310px;
+    text-align: center;
+    background-color: rgb(255, 254, 254);
+
 }
-.item-9 {
-    display: none;
+.item-8 img {
+    width: 240px;
+
+    
 }
-.item-10 {
-    display: none;
+
+.item-8 h4 {
+margin: 20px;
+font-size: 24px;
+
 }
+.item-8 p {
+margin-bottom: 0px;
+padding-bottom: 5px;
+margin-top: 05px;
+font-size: 20px;
+}
+
+.price-grid {
+    padding: 10px;
+    box-shadow: 5px 5px #FEA621;
+
 }
 
 @media (max-width: 700px) {
     
     
     
+
+
+
 .grid-item{
     width: 580px;
     padding: 0%;
