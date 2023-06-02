@@ -32,58 +32,92 @@ a:hover {
 
 header {
     position: relative;
-}
-
-#header { 
-    
-    display: flex;
     background-color: #1E2651;
-    height: 200px;
-    justify-content: space-between;
 }
 
-
-.account-icons {
-    padding-top: 80px;
-    font-size: 30px;
-    padding-right: 40px;
+header img{
+    height: 100px;
+    align-self: center;
+ 
 }
 
+.account-text {
+    display: flex;
+    font-size: 12px;
+    justify-content: flex-end;
+    align-self: center; 
+}
 
-.logoheader {
-    width: 300px;
-    height: 200px;
-
+.icon-sign::before {
+padding-left: 14px;
 }
 
 .search {
-   display: none;
-   padding-top: 80px;
-   width: 200px;
-    
+   width: 500px;
+   justify-content: center;
+   height: 30px;
+   align-self: center;
 }
 
 /* Navigation*/
 
 header {
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;
     
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+
 }
 
 nav {
     position: absolute;
     display: none;
+    
 
 }
 
 #menu-checkbox:checked ~ nav {
     display: block;
+
 }
 
 #navbar a {
     display: block;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 30px 10px 30px;
     color:#1E2651;
+    font-size: 16px;
+
+}
+
+#navbar {
+    background: linear-gradient(
+        to right,
+        #1E2651 0%,
+        #1E2651 90%,
+        #FEA621 50%,
+        #FEA621 100%
+      );
+
+}
+
+nav {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    border: solid 2px #FEA621;
+    color: black;
+    background-color: #FEA621;
+
 
 }
 
@@ -127,7 +161,7 @@ nav,
 
 .contact-us-text {
     padding-top: 50px;
-    width: 1100px;
+    width: 1000px;
     margin: auto;
     font-family: "Raleway";
 }
@@ -140,7 +174,7 @@ nav,
 
 
 .form { 
-    width: 1100px;
+    width: 1000px;
     margin: auto;
     font-family: "Raleway";
     
@@ -182,57 +216,71 @@ font-family: "Raleway";
 
 }
 
+/* about us page */
+
+.aboutus-gamehub-office-img { 
+    width: 100%;
+}
 
 /* Product pages */
 
 
 .flex-container-games {
-    width: 55%;
+    width: 50vw;
     margin: 0 auto;
     
     
 }
 
 .header-games {
-    flex: 0;
     margin-bottom: 0px;
 }
 
 .games-found {
-    flex: 1;
     margin-bottom: 0px;
 
+}
+.header-productpage-image {
+    width: 50vw;
 }
 
 .flex-items {
     display: grid;
+    width: 50vw;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     align-items: center;
-    flex: wrap;
+    flex-wrap: wrap;
     border-bottom: #FEA621 solid 6px;
 }
 
 .nav-games-page {
     text-decoration: none;
     list-style: none;
-    display:flex;
-    flex-basis: content;
-
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.text-flex-width-adjustment-text1 {
+    flex:2;
+}
+.text-flex-width-adjustment-text123 {
+    flex: 2; 
+}
+.text-flex-width-adjustment-text45 {
+    flex: 1;  
+}
+.text-flex-width-adjustment-text67 {
+    flex: 0;
+}
+
 
 .category-text {
-   
-    padding: 15px;
-    border-right: solid 2px black;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+    width: 50vw;
+    padding: 10px;
+    border: solid 1px black;
 }
 
-.category-text1 {
 
-    padding: 15px;
-    border: solid 2px black;
-}
 
 .category-text:hover, .category-text1:hover  {
 background-color: #aaaaaa;
@@ -243,12 +291,12 @@ background-color: #aaaaaa;
     background-color:#FEA621
     
     }
-
+    
 .container-productpage {
-width: 55%;
+width: 50vw;
 margin: auto;
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 gap: 2rem;
 
 }
@@ -258,28 +306,39 @@ gap: 2rem;
     font-family: "Raleway";
     margin-top: 50px;
     border: solid 1px rgb(153, 153, 153);
-    padding-top: 20px; 
+    padding-top: 10px; 
 }
 
 .text-alignment-product {
-    padding-left: 65px;
+    padding-left: 10px;
     
 }
     .Game-cover-img {
         display:block;
         margin:auto;
         height: 250px; 
-        width: 212px;
+        min-width: 200px;
+        
     }
 
 .flex-container-price {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: "Dosis";
+    justify-content: space-between;
+    padding: 0 10px 0px 10px;
 }
 
+.price-new {
+    color: green;
+    text-transform: capitalize;
+}
 
+.price-used {
+    color: grey;
+    text-transform: capitalize;
+}
 .review-stars {
     display: flex;
     justify-content: flex-start;
@@ -317,7 +376,7 @@ gap: 2rem;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 0.5fr 100px 0.5fr;
     gap: 20px;
     
 }
@@ -327,6 +386,8 @@ gap: 2rem;
     height: 250px;
 }
 
+
+/* content 1 */ 
 .griditem-1 {
     display: flex;
     grid-column: 1/5;
@@ -400,17 +461,20 @@ gap: 2rem;
 }
 
 
-
+/* content 2 */ 
 .griditem-2 {
     flex-direction: column;
     background-repeat: no-repeat;
     grid-column: 1 / 3;
     height: 250px;
-    background-color: #1E2651;
-    background-size: 100% contain;
-    background-position: 100%;
-    color: white;
     font-size: 32px;
+    background: linear-gradient(
+        to right,
+        pink 0%,
+        #FEA621 100%,
+        paleturquoise 50%,
+        paleturquoise 100%
+      );
     
 }
 
@@ -418,14 +482,14 @@ gap: 2rem;
 .h3header-marketplace {
     font-size: 40px;
     font-weight: 700;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 20px 0px 10px 25px;
     
 }
 
 .p-header-marketplace {
     font-size: 22px;
-    color: white;
+    color: rgb(10, 10, 10);
     padding-left: 40px;
     margin: 0px 0px 0px 20px;
 }
@@ -452,6 +516,8 @@ gap: 2rem;
     font-size: 24px;
 
 }
+
+/* content 3 */ 
 
 .header-btn-content3 :hover {
     width: 180px;
@@ -506,11 +572,13 @@ gap: 2rem;
     font-weight: bold;
 }
 
+/* content 4 */ 
+
 .item-4 {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -520,9 +588,9 @@ gap: 2rem;
     height: 80px;
 }
 
-
+/* content 5 */ 
 .item-5 {
-    
+    margin-top: 25px; 
     background-image:  url(Images/Group\ 39.png);
     background-size: 100% ;
     height: 250px;
@@ -531,7 +599,9 @@ gap: 2rem;
     
 }
 
+/* content 6 */ 
 .item-6 {
+    margin-top: 25px; 
     background-image: url(Images/Group\ 169.png);
     background-size: 100% ;
     height: 250px;
@@ -539,8 +609,8 @@ gap: 2rem;
     
 }
 
+/* content 7 */ 
 .item-7 {
-    display: block;
     padding: 0;
     margin: 0;
     height: 36px;
@@ -548,21 +618,27 @@ gap: 2rem;
     background-color: white;
     font-size: 32px;
 
+    /*  <---------------content 8 and NEW GIRD ------------->  */ 
 }
 .grid-item8-container {
     width: 1000px;
     margin: auto;
     display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     flex-direction: row;
     gap: 1rem;
+    padding-bottom: 300px;
    
 }
 
 .item-8 {
+    flex: 1; 
     width: 100%;
+    width: 180px;
     border-radius: 40px 40px 40px 40px;
     gap: 1rem;
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     height: 310px;
@@ -571,35 +647,34 @@ gap: 2rem;
 
 }
 .item-8 img {
-    width: 240px;
-
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 5px 1px 1px #c9c8c8;
     
 }
 
 .item-8 h4 {
-margin: 20px;
-font-size: 24px;
+margin: px;
+font-size: 20px;
 
 }
 .item-8 p {
 margin-bottom: 0px;
 padding-bottom: 5px;
 margin-top: 05px;
-font-size: 20px;
+font-size: 16px;
 }
 
-.price-grid {
+.price-grid-item8 {
     padding: 10px;
-    box-shadow: 5px 5px #FEA621;
+    box-shadow: 0px 5px 1px 1px #c9c8c8;
+    background-color: rgb(247, 247, 247);
+    
 
 }
 
 @media (max-width: 700px) {
     
     
-    
-
-
 
 .grid-item{
     width: 580px;
@@ -687,11 +762,6 @@ margin: 20px 0px 0px 30px;
 
 
 
-
-
-
-
-
 @media (min-width: 700px) {
     nav {
             display: block;
@@ -719,15 +789,9 @@ margin: 20px 0px 0px 30px;
         color: black;
         background-color: #FEA621;
     }
-    #header { 
-        flex-wrap: wrap;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
 
     }
-    
+
     .account-icons {
         padding-top: 80px;
         font-size: 30px;
@@ -735,16 +799,4 @@ margin: 20px 0px 0px 30px;
     }
     
     
-    .logoheader {
-        width: 300px;
-        height: 200px;
-    
-    }
-    .search {
-        display: block;
-        margin-top: 80px;
-        padding: 10px;
-        max-width: 800px;
-     }
-    }
      
