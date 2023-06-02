@@ -369,10 +369,10 @@ gap: 2rem;
 
 /*  Product page  */
 .product-page-container {
-    width: 1200px;
+    width: 40vw;
     margin: auto;
     display: grid;
-    grid-template-columns: 0.36fr 0.0fr 0.1fr 0.12fr; 
+    grid-template-columns: 0.3fr 0.2fr 0.2fr 0.2fr; 
     padding-top: 30px;
 }
 
@@ -383,38 +383,43 @@ gap: 2rem;
     display: flex;
 }
 
-.game-category {
+.game-category1, .game-category2, .game-category3 {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-self: flex-end;
     background-color: #F6C30E;
     border: 1px solid black;
     width: 170px; 
 }
+
 .game-category1 {
-    justify-content: start;
+    justify-content: center;
     align-self: flex-end;
+
     background-color: #F6C30E;
     border: 1px solid black;
     width: 50px; 
 }
 .container-product-page {
     display: grid; 
-    width: 1200px;
+    width: 40vw;
     margin: auto;
-    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.8fr; 
-    grid-template-rows: 0.3fr 0.2fr 2.8fr; 
-    gap: 5px;
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.7fr 0.8fr 0.9fr 2.4fr; 
+    grid-template-rows: 0.2fr 0.4fr 1.4fr 1fr 1fr; 
+    gap: 10px 10px; 
     grid-template-areas: 
-      "Space-war Trailer Trailer Add-to-cart"
-      "Space-war Picture-1 Picture-2 Add-to-cart"
-      "Features Features Features reviews"; 
-    align-items: stretch;
+      "Space-war Trailer Trailer ."
+      "Space-war Picture-1 Picture-2 ."
+      "Features Features Add-to-cart ."
+      "reviews reviews . ."
+      "reviews reviews . ."; 
+    align-items: stretch; 
   }
   .Space-war { grid-area: Space-war; }
+  .Picture-2 { grid-area: Picture-2; }
   .Trailer { grid-area: Trailer; }
   .Picture-1 { grid-area: Picture-1; }
-  .Picture-2 { grid-area: Picture-2; }
   .Add-to-cart { grid-area: Add-to-cart; }
   .Features { grid-area: Features; }
   .reviews { grid-area: reviews; }
@@ -424,12 +429,8 @@ gap: 2rem;
     border: 1px solid black;
 }
 
-.Features {
-    background-color: #D9D9D9;
-}
-
 .reviews {
-    border: 1px solid black;
+    border-top: 1px solid black;
 }
 
 .reviews h3, p {
@@ -441,6 +442,7 @@ gap: 2rem;
     color: white;
     margin-bottom: 30px;
 }
+
 /* testing grid */
 .grid-container5 { 
     width: 1000px; 
