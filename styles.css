@@ -226,45 +226,49 @@ font-family: "Raleway";
 
 
 .flex-container-games {
-    width: 50vw;
+    width: 40vw;
     margin: 0 auto;
-    
+   
     
 }
 
 .header-games {
     margin-bottom: 0px;
+    font-family: "Dosis";
+    font-weight: 500;
 }
 
 .games-found {
-    margin-bottom: 0px;
+    text-align: end;
+    font-family:"Raleway";
 
 }
 .header-productpage-image {
-    width: 50vw;
+    width: 40vw;
+    
 }
 
 .flex-items {
-    display: grid;
-    width: 50vw;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    align-items: center;
+    display: flex;
+    width: 40vw;
+    align-items: end;
     flex-wrap: wrap;
     border-bottom: #FEA621 solid 6px;
 }
 
 .nav-games-page {
-    text-decoration: none;
-    list-style: none;
+    padding-top: 20px;
+    width: 40vw;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .text-flex-width-adjustment-text1 {
-    flex:2;
+    flex:1;
 }
 .text-flex-width-adjustment-text123 {
-    flex: 2; 
+    flex: 1; 
 }
 .text-flex-width-adjustment-text45 {
     flex: 1;  
@@ -275,7 +279,7 @@ font-family: "Raleway";
 
 
 .category-text {
-    width: 50vw;
+    width: 40vw;
     padding: 10px;
     border: solid 1px black;
 }
@@ -293,7 +297,7 @@ background-color: #aaaaaa;
     }
     
 .container-productpage {
-width: 50vw;
+    width: 40vw;
 margin: auto;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
