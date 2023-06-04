@@ -405,8 +405,8 @@ gap: 2rem;
     width: 40vw;
     margin: auto;
     grid-auto-rows: 1fr; 
-    grid-template-columns: 0.7fr 0.8fr 0.9fr 2.4fr; 
-    grid-template-rows: 0.2fr 0.4fr 1.4fr 1fr 1fr; 
+    grid-template-columns: 0.6fr 0.6fr 1fr 2.4fr; 
+    grid-template-rows: 0.62fr 0.1fr 0.3fr 0.3fr; 
     gap: 10px 10px; 
     grid-template-areas: 
       "Space-war Trailer Trailer ."
@@ -426,9 +426,57 @@ gap: 2rem;
 
 
 .Add-to-cart {
-    border: 1px solid black;
+    display: grid;
+    padding-top: 10px;
+    grid-template-rows: 0.1fr 0.3fr 0.3fr 0.1fr ;
+    font-size: 22px;
+    border: 1px solid rgb(209, 208, 208);
+    text-align: start;
+    box-shadow: 1px 1px 1px 1px rgb(173, 173, 173);
+    font-family: "Raleway";
+    height: 100%;
+    margin-left: 10px;
+    background-color: #f7efef;
+    
+}
+.Add-to-cart label {
+    width: 100px;
+
 }
 
+#Platform { 
+    margin-left: 5px;
+    width: 100px;
+    align-self: center;
+    text-align: center;
+}
+
+.Platformlabel {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.addtocart-product {
+    width:  400px;
+    background-color: #0F9E2E;
+    color: white;
+    font-family: "Dosis";
+    font-size: 28px;
+    margin-left: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.usedprice {
+    color: lightgrey;
+    font-weight: bold;
+}
+
+.newprice {
+    color: green;
+    font-weight: bold;
+}
 .reviews {
     border-top: 1px solid black;
 }
@@ -442,6 +490,7 @@ gap: 2rem;
     color: white;
     margin-bottom: 30px;
 }
+
 
 /* testing grid */
 .grid-container5 { 
