@@ -747,13 +747,11 @@ gap: 2rem;
     /*  <---------------content 8 and NEW GIRD ------------->  */ 
 }
 .grid-item8-container {
-    width: 1000px;
+    width: 990px;
     margin: auto;
-    display: flex;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
     flex-direction: row;
-    gap: 1rem;
     padding-bottom: 100px;
    
 }
@@ -761,12 +759,11 @@ gap: 2rem;
 .item-8 {
     flex: 1; 
     width: 100%;
-    border-radius: 40px 40px 40px 40px;
-    gap: 1rem;
+    border-radius: 0px 0px 20px 20px;
     margin-top: 40px;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
-    height: 310px;
     text-align: center;
     background-color: rgb(255, 254, 254);
 
@@ -821,9 +818,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 0.02fr 0.1fr 0.1fr;
     width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .search {
     width: 100%;
+    display: none;
 }   
 
 .grid-item{
@@ -876,7 +876,7 @@ body {
 }
 #header { 
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
 
 }
 
@@ -885,12 +885,21 @@ padding-right: 15px;
 
 }
 
+.account-text {
+    justify-content: flex-start;
+    
+    }
+
 .hamburger-icon {
     position: absolute;
     font-size: 32px;
     padding-left: 30px;
-    top: 170px;
+    top: 80px;
    
+}
+
+#logoheader {
+    width: 100%;
 }
 #navbar {
     background-color: #FEA621;
@@ -926,13 +935,18 @@ padding-right: 15px;
              }
 
 .grid-item8-container {
+    margin-top: 0;
     width: 100%;
     display: grid;
     grid-template-columns: 0.28fr 0.28fr;
-    gap: 2rem;
+    
 }
 
 .item-8 img {
+}
+
+.item-8 {
+    padding-bottom: 40px;
 }
 
 }
