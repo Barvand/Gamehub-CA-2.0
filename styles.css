@@ -1202,6 +1202,7 @@ footer {
         height: 100%;
         margin: auto;
         grid-template-columns: 175px 175px;
+        gap: 20px;
         
     }
     
