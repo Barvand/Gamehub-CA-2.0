@@ -24,6 +24,7 @@ a:hover {
     border: solid 0px rgb(104, 100, 100);
 }
 
+
 /* Mini-header */
 
 
@@ -62,6 +63,7 @@ padding-left: 14px;
 /* Navigation*/
 
 header {
+    width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: 1fr; 
@@ -161,7 +163,7 @@ nav,
 
 .contact-us-text {
     padding-top: 50px;
-    width: 1000px;
+    width: 60%;
     margin: auto;
     font-family: "Raleway";
 }
@@ -174,7 +176,7 @@ nav,
 
 
 .form { 
-    width: 1000px;
+    width: 60%;
     margin: auto;
     font-family: "Raleway";
     
@@ -449,6 +451,8 @@ gap: 2rem;
     width: 100px;
     align-self: center;
     text-align: center;
+    
+    
 }
 
 .Platformlabel {
@@ -750,14 +754,13 @@ gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     flex-direction: row;
     gap: 1rem;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
    
 }
 
 .item-8 {
     flex: 1; 
     width: 100%;
-    width: 180px;
     border-radius: 40px 40px 40px 40px;
     gap: 1rem;
     margin-top: 40px;
@@ -790,42 +793,91 @@ font-size: 16px;
     padding: 10px;
     box-shadow: 0px 5px 1px 1px #c9c8c8;
     background-color: rgb(247, 247, 247);
-    
+}
 
+footer {
+    background-color: #D9D9D9;
+    margin: 0;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
 }
 
 @media (max-width: 700px) {
     
-    
+.flex-wrapper-deluxe {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.02fr 0.1fr 0.1fr;
+    width: 100%;
+}
+.search {
+    width: 100%;
+}   
 
 .grid-item{
-    width: 580px;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
 
 }
+.grid-item1{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+    }
+.gamehub-header, .salesheader{
+    margin: 0;
+    font-size: 40px;
+}
+
+.green-fifty, .summerdeals {
+    margin: 0;
+    font-size: 20px;
+}
+
+    .griditem-3 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 5;
+    background-position: center;
+    text-align: center;
+            
+}
+.griditem-3 h3 {
+    padding-bottom: 20px;
+}
+       
+.popularnowdivider { 
+    margin: 0;
+}
+
 .header-btn {
     padding: 5px 10px; 
     width: 200px;
+    margin-bottom: 10px;
 
-} 
+}
+
+.gamehub-header h1 {
+    margin: 0;
+}
 #header { 
     display: flex;
-    justify-content: flex-end;
-
+    justify-content: space-between;
 
 }
 
 .account-icons {
- margin: 70px 0px 0px 0px;
 padding-right: 15px;
-
-}
-
-.logoheader {
-    width: 300px;
-    height: 200px;
-    padding-right: 75px;
 
 }
 
@@ -833,7 +885,7 @@ padding-right: 15px;
     position: absolute;
     font-size: 32px;
     padding-left: 30px;
-    top: 150px;
+    top: 170px;
    
 }
 #navbar {
@@ -851,24 +903,15 @@ padding-right: 15px;
     display: none;
 }
 
-.griditem-3 p,.header-btn-content2 {
+.griditem-3 p,.header-btn-content2 ,.header-btn-content3{
     display:none;
 
 }
-.griditem-3 {
-    height: 100px;
-    background-position: center;
-    border-radius: 1rem;
-    
 
+.item-4 {
+    display:none;
 }
-.griditem-3 h3{
-font-size: 56px;
-align-self: center;
-margin: 20px 0px 0px 30px;
-    
 
-}
 .item-6 {
     display:none;
         
@@ -877,12 +920,18 @@ margin: 20px 0px 0px 30px;
     .item-5 {
         display:none;
              }
+
+.grid-item8-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.28fr 0.28fr;
+    gap: 2rem;
 }
 
+.item-8 img {
+}
 
-
-
-
+}
 
 @media (min-width: 700px) {
     nav {
