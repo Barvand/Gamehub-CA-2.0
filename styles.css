@@ -808,6 +808,10 @@ footer {
 
 @media (max-width: 700px) {
     
+body {
+    font-size: 14px;
+}
+
 .flex-wrapper-deluxe {
     display: flex;
     flex-direction: column;
