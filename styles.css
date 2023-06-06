@@ -810,6 +810,15 @@ body {
     font-size: 14px;
 }
 
+.flex-container-games, .container-productpage, .flex-items, .nav-games-page, .contact-us-text, .form {
+    width: 100%;
+}
+.Image-games-productpage img {
+    width: 100%;
+}
+
+
+
 .flex-wrapper-deluxe {
     display: flex;
     flex-direction: column;
