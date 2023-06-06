@@ -919,6 +919,7 @@ color: #201D3E;
     width: 100%;
     background-color: #000;
     color: white;
+    text-align: center;
     background: linear-gradient(
         to right,
         rgb(27, 26, 121) 0%,
@@ -933,6 +934,7 @@ color: #201D3E;
     color: white;
     width: 100%;
     background-size: 100%;
+    text-align: center;
     background-image: linear-gradient(
         rgba(10, 4, 4, 0.5),
         rgba(5, 5, 5, 0.5)
