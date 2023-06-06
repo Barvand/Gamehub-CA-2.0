@@ -508,7 +508,7 @@ gap: 2rem;
 /* testing grid */
 .grid-container5 { 
     width: 1000px; 
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 100px 0.5fr;
@@ -540,6 +540,7 @@ gap: 2rem;
     padding: 0%;
     text-align: center;
     flex-wrap: wrap;
+    
 
 
 }
@@ -585,14 +586,18 @@ gap: 2rem;
 
 .header-btn {
     padding: 10px 150px;
+    margin-top: 20px;
     font-family: "Raleway";
     border-radius: 5px;
     background-color: #f8f8f8;
     border:#FEA621 1px solid; 
     color: #FF0000;
     font-size: 24px;
-    font-weight: 700;
     align-self: center;
+    text-transform: uppercase;
+    font-family: "Dosis";
+    font-weight: 600;
+    box-shadow: 1px 1px 1px 1px rgb(71, 70, 70);
 }
 
 
@@ -605,9 +610,9 @@ gap: 2rem;
     font-size: 32px;
     background: linear-gradient(
         to right,
-        pink 0%,
+        rgb(96, 5, 138) 0%,
         #FEA621 100%,
-        paleturquoise 50%,
+        rgb(133, 10, 182) 50%,
         paleturquoise 100%
       );
     
@@ -617,16 +622,17 @@ gap: 2rem;
 .h3header-marketplace {
     font-size: 40px;
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
     margin: 20px 0px 10px 25px;
     
 }
 
 .p-header-marketplace {
     font-size: 22px;
-    color: rgb(10, 10, 10);
+    color: rgb(252, 250, 250);
     padding-left: 40px;
     margin: 0px 0px 0px 20px;
+    font-weight: 600;
 }
 
 .header-btn-content2 {
@@ -634,15 +640,17 @@ gap: 2rem;
     height: 50px;
     background-color: #00D1FF;
     color: black;
-    font-family: "Raleway";
     font-size: 18px;
     right: 168px;
-    font-weight: 600;
     margin:20px 0px 0px 200px;
+    text-transform: uppercase;
+    font-family: "Dosis";
+    font-weight: 600;
+    box-shadow: 1px 1px 1px 1px white;
 
 }
 
-.header-btn-content2 :hover {
+.index-btn :hover {
     width: 180px;
     height: 50px;
     background-color: #265E79;
@@ -654,7 +662,7 @@ gap: 2rem;
 
 /* content 3 */ 
 
-.header-btn-content3 :hover {
+.index-btn :hover {
     width: 180px;
     height: 50px;
     background-color: #265E79;
@@ -698,6 +706,10 @@ gap: 2rem;
     right: 168px;
     font-weight: 600;
     margin:20px 0px 0px 200px;
+    text-transform: uppercase;
+    font-family: "Dosis";
+    font-weight: 600;
+    box-shadow: 1px 1px 1px 1px white;
 
 }
 
@@ -725,23 +737,106 @@ gap: 2rem;
 
 /* content 5 */ 
 .item-5 {
+    position: relative;
+    flex-direction: column;
     margin-top: 25px; 
-    background-image:  url(Images/Group\ 39.png);
     background-size: 100% ;
     height: 250px;
     grid-column-start:1;
     grid-column-end: 3; 
+    background-color: black;
     
+    
+}
+.item-5 p {
+    color: white;
+    padding-left: 20px;
+}
+.item-5 h1 {
+    color: white;
+    font-size: 56px;
+    margin: 0px 0px 20px 20px;
+    font-size: 600;
+    
+}
+.item-5 p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 10px; 
+    margin-bottom: 20px;
+}
+.releasedate-color {
+    color: red;
+}
+.racing-image-item5 {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    height: 200px;
+}
+
+.Racing-preorder-btn {
+    background-color: #00D1FF;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+    margin-left: 150px;
+    border: solid white 1px;
+    box-shadow: 1px 1px 1px 1px white;
+    text-transform: uppercase;
+    font-family: "Dosis";
+    font-weight: 600;
 }
 
 /* content 6 */ 
 .item-6 {
     margin-top: 25px; 
-    background-image: url(Images/Group\ 169.png);
-    background-size: 100% ;
     height: 250px;
     grid-column: 3 / 5;
+    background-image: linear-gradient(
+        rgba(34, 33, 33, 0.8),
+        rgba(2, 2, 2, 0.8)
+      ), url(Images/Computerpicture-gamehub.png);
+      background-size: 120%;
+      background-position: center;
     
+
+}
+
+.item-6 h1{
+    color: white;
+    font-weight: 600;
+    
+}
+
+.item-6 h1 {
+    font-size: 56px;
+    margin: 0;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.item-6 p{
+    font-size: 24px;
+    margin: 0;
+    padding-left: 20px;
+    color: white;
+}
+
+.color-p-item6 {
+    color: #F56CE7;
+    font-size: 24px;
+}
+
+.PC-btn {
+    background-color: #00D1FF;
+    margin: 30px 0px 0px 250px;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+    border: solid white 1px;
+    box-shadow: 1px 1px 1px 1px white;
+    text-transform: uppercase;
+    font-family: "Dosis";
+    font-weight: 600;
 }
 
 /* content 7 */ 
@@ -751,15 +846,19 @@ gap: 2rem;
     height: 36px;
     grid-column: 1 / 5;
     background-color: white;
-    font-size: 32px;
-
-    /*  <---------------content 8 and NEW GRID ------------->  */ 
+    font-size: 26px;
+    grid-column: 1/6;
 }
+.popularnowdivider {
+    margin-top: 0;
+}
+    /*  <---------------content 8 and NEW GRID ------------->  */ 
+
 .grid-item8-container {
     width: 990px;
     margin: auto;
     display: grid;
-    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
     flex-direction: row;
     padding-bottom: 100px;
    
@@ -769,7 +868,6 @@ gap: 2rem;
     flex: 1; 
     width: 100%;
     border-radius: 0px 0px 20px 20px;
-    margin-top: 40px;
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -784,8 +882,9 @@ gap: 2rem;
 }
 
 .item-8 h4 {
-margin: px;
+margin: 10px;
 font-size: 20px;
+
 
 }
 .item-8 p {
@@ -793,6 +892,9 @@ margin-bottom: 0px;
 padding-bottom: 5px;
 margin-top: 05px;
 font-size: 16px;
+font-weight: bold;
+font-size: 	18px;
+color: #201D3E;
 }
 
 .price-grid-item8 {
@@ -805,6 +907,40 @@ font-size: 16px;
     display: none;
 }
 
+.grid-container-6 {
+    display:grid;
+    width: 1000px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    height: 250px;
+    gap: 20px;
+}
+
+.review-coins-item9 { 
+    width: 100%;
+    background-color: #000;
+    color: white;
+    background: linear-gradient(
+        to right,
+        rgb(27, 26, 121) 0%,
+        #FEA621 100%,
+        rgb(133, 10, 182) 100%,
+        rgb(21, 167, 167) 50%
+      ); 
+      
+}
+
+.forum-item10 {
+    color: white;
+    width: 100%;
+    background-size: 100%;
+    background-image: linear-gradient(
+        rgba(10, 4, 4, 0.5),
+        rgba(5, 5, 5, 0.5)
+      ),url(Images/unplash-forumimg.png);
+}
+
+/* ---------------- footer ------------------- */
 footer {
     background-color: #D9D9D9;
     margin: 0;
@@ -816,6 +952,17 @@ footer {
     padding-bottom: 30px;
     margin-top: 100px;
 }
+footer p { 
+    color: black;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 1100px) {
 
@@ -834,7 +981,7 @@ footer {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     
 body {
     width: 100%;
@@ -856,7 +1003,7 @@ body {
 
 .grid-container5 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.05fr 0.1fr 0.1fr;
+    grid-template-rows: 1fr 0.05fr 0.1fr 0.1fr;
     width: 100%;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -994,17 +1141,40 @@ padding-right: 15px;
 .grid-item8-container {
     margin-top: 0;
     width: 100%;
-    display: grid;
     grid-template-columns: 0.28fr 0.28fr 0.28fr;
+    padding: 20px;
 
 }
 
 .item-8 {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .hidden-item8 {
     display:grid;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgb(255, 254, 254);
+}
+.grid-container-6 {
+    width: 100%;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    height: 250px;
+}
+
+.review-coins-item9 {
+    width: 100%;
+    grid-column: 1 / 3;
+}
+
+.forum-item10 {
+    width: 100%;
+ grid-row: 2; 
+ grid-column: 1 / 3;
 }
 
 /*---------------- Contact us ------------ Media queries */
@@ -1014,18 +1184,24 @@ padding-right: 15px;
 }
 
 @media (max-width: 599px) {
+/*---------------- Homepage ------------ 699px Media queries*/
 
     .grid-item8-container {
         margin-top: 0;
         width: 100%;
+        height: 100%;
         display: grid;
         grid-template-columns: 0.28fr 0.28fr;
         
     }
     
     .item-8 {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
+.Item8-image { 
+    height: 100%;
+    
+}
 
 }
 @media (min-width: 700px) {
