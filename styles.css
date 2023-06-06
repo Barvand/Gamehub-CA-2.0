@@ -225,8 +225,12 @@ font-family: "Raleway";
 }
 
 .contact-us-text p {
-    line-height: 32px;   /* within paragraph */
-    margin-bottom: 30px; /* between paragraphs */
+    line-height: 20px;   /* within paragraph */
+    margin-bottom: 20px; /* between paragraphs */
+    }
+
+    .contact-us-text h1{
+        margin-bottom: 10px;
     }
 
 /* Product pages */
