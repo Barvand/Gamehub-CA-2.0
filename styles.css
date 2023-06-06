@@ -224,6 +224,11 @@ font-family: "Raleway";
     width: 100%;
 }
 
+.contact-us-text p {
+    line-height: 32px;   /* within paragraph */
+    margin-bottom: 30px; /* between paragraphs */
+    }
+
 /* Product pages */
 
 
@@ -803,6 +808,23 @@ footer {
     padding-bottom: 30px;
 }
 
+@media (max-width: 1100px) {
+
+    body {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .flex-container-games, .container-productpage, .flex-items, .nav-games-page, .contact-us-text, .form {
+        width: 100%;
+    }
+    .Image-games-productpage img {
+        width: 100%;
+    }
+    
+}
+
+
 @media (max-width: 700px) {
     
 body {
@@ -812,6 +834,8 @@ body {
 
 .flex-container-games, .container-productpage, .flex-items, .nav-games-page, .contact-us-text, .form {
     width: 100%;
+    margin: 0%;
+    padding: 0%;
 }
 .Image-games-productpage img {
     width: 100%;
@@ -835,6 +859,49 @@ body {
     width: 100%;
     display: none;
 }   
+
+
+#header { 
+    display: flex;
+    justify-content:flex-end;
+
+}
+
+.account-icons {
+padding-right: 15px;
+
+}
+
+.account-text {
+    justify-content: flex-start;
+    
+    }
+
+.hamburger-icon {
+    position: absolute;
+    font-size: 32px;
+    padding-left: 30px;
+    top: 80px;
+   
+}
+
+#logoheader {
+    width: 100%;
+}
+#navbar {
+    background-color: #FEA621;
+}
+#header {
+    background-color: #FEA621;
+}
+
+#navbar a {
+    color: white;
+    background-color:#1E2651
+}
+
+
+    /*---------------- Homepage ------------ Media queries */
 
 .grid-item{
     padding: 0;
@@ -884,44 +951,6 @@ body {
 .gamehub-header h1 {
     margin: 0;
 }
-#header { 
-    display: flex;
-    justify-content:flex-end;
-
-}
-
-.account-icons {
-padding-right: 15px;
-
-}
-
-.account-text {
-    justify-content: flex-start;
-    
-    }
-
-.hamburger-icon {
-    position: absolute;
-    font-size: 32px;
-    padding-left: 30px;
-    top: 80px;
-   
-}
-
-#logoheader {
-    width: 100%;
-}
-#navbar {
-    background-color: #FEA621;
-}
-#header {
-    background-color: #FEA621;
-}
-
-#navbar a {
-    color: white;
-    background-color:#1E2651
-}
 .griditem-2 {
     display: none;
 }
@@ -952,13 +981,14 @@ padding-right: 15px;
     
 }
 
-.item-8 img {
-}
-
 .item-8 {
     padding-bottom: 40px;
 }
 
+/*---------------- Contact us ------------ Media queries */
+.contact-us {
+    margin-bottom: 20px;
+}
 }
 
 @media (min-width: 700px) {
