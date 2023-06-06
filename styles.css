@@ -838,6 +838,10 @@ gap: 2rem;
     font-weight: 600;
 }
 
+#PC-btn :h {
+
+
+}
 /* content 7 */ 
 .item-7 {
     padding: 0;
@@ -1014,41 +1018,49 @@ body {
 }
 
 .account-text {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 #header { 
-    display: flex;
-    justify-content:flex-end;
+    display: grid;
+    grid-template-columns: 250px 0.6fr;
+    
 
 }
 
 .account-icons {
 padding-right: 15px;
+font-size: 20px;
+text-align: center;
 
 }
 
 .account-text {
-    justify-content: flex-start;
-    
-    }
-
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.account-iconstext-cart {
+    font-size: 20px;
+}
 .hamburger-icon {
     position: absolute;
     font-size: 32px;
     padding-left: 30px;
     top: 50px;
+    color: white;
    
 }
 
-#logoheader {
+.logoheader {
     width: 100%;
+    padding-left: 100px;
 }
+
 #navbar {
     background-color: #FEA621;
 }
 #header {
-    background-color: #FEA621;
+    background-color: #1E2651;
 }
 
 #navbar a {
@@ -1189,8 +1201,14 @@ height: 100%;
  text-align: center;
 }
 
-.PC-btn {
+.coin-btn {
+    margin-right: 100px;
     margin-bottom: 50px;
+}
+
+.forum-btn {
+margin-right: 100px;
+margin-bottom: 50px;
 }
 
 footer {
@@ -1211,7 +1229,7 @@ footer {
         height: 100%;
         margin-left: 10px;
         grid-template-columns: 175px 175px;
-        gap: 5px;
+        gap: px;
         
     }
     
@@ -1259,6 +1277,7 @@ footer {
         padding-top: 80px;
         font-size: 30px;
         padding-right: 40px;
+        
     }
     
     
