@@ -842,10 +842,6 @@ gap: 2rem;
     font-weight: 600;
 }
 
-#PC-btn :h {
-
-
-}
 /* content 7 */ 
 .item-7 {
     padding: 0;
@@ -929,15 +925,18 @@ color: #201D3E;
     color: white;
     text-align: center;
     background: linear-gradient(
-        to right,
-        rgb(27, 26, 121) 0%,
+        to left,
+        rgb(96, 5, 138) 0%,
         #FEA621 100%,
-        rgb(133, 10, 182) 100%,
-        rgb(21, 167, 167) 50%
-      ); 
+        rgb(133, 10, 182) 50%,
+        paleturquoise 100%
+      );
       
 }
 
+.review-coins-item9 p, .forum-item10 p {
+font-weight: 600;
+}
 .forum-item10 {
     color: white;
     width: 100%;
@@ -1127,6 +1126,20 @@ padding-right: 12px;
     
 }
 
+.griditem-2 p{
+    padding: 0;
+    margin: 0;
+    color:white;
+    
+}
+
+.griditem-2 h3{
+    font-size: 36px;
+    padding: 0 0 20px 0;
+    margin: 0;
+    
+}
+
     .griditem-3 {
     width: 100%;
     height: 100%;
@@ -1139,6 +1152,7 @@ padding-right: 12px;
 }
 .griditem-3 h3 {
     padding-bottom: 20px;
+    margin-left: 0;
     font-size: 26px;
 }
        
@@ -1158,8 +1172,16 @@ padding-right: 12px;
     margin: 0;
 }
 
+.header-btn-content2 {
+    margin: 0;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 14px;
+    height: 30px;
+    
+}
 
-.griditem-3 p,.header-btn-content2 ,.header-btn-content3{
+.griditem-3 p,.header-btn-content3{
     display:none;
 
 }
@@ -1246,9 +1268,19 @@ footer {
 @media (max-width: 599px) {
 /*---------------- Homepage ------------ 699px Media queries*/
 
+
+
+.header-btn-content2 {
+    margin: 0;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 14px;
+    height: 30px;
+    
+}
     .grid-item8-container {
         margin-top: 0;
-        width: 90%;
+        width: 95%;
         grid-template-columns: 150px 150px;
         grid-template-rows: 300px 300px 300px;
         margin: auto;
