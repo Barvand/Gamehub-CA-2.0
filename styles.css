@@ -1249,8 +1249,8 @@ footer {
     .grid-item8-container {
         margin-top: 0;
         width: 90%;
-        height: 100%;
-        grid-template-columns: 160px 160px;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 300px 300px 300px;
         margin: auto;
 
         
