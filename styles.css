@@ -1251,6 +1251,7 @@ footer {
         width: 90%;
         height: 100%;
         grid-template-columns: 160px 160px;
+        margin: auto;
 
         
     }
