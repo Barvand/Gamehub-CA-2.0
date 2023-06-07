@@ -15,18 +15,13 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     
 }
 
-a:hover {
-    background-color: #e9eaee;
-    border: solid 0px rgb(104, 100, 100);
+#navbar a:hover {
+    background-color: #804d02;
 }
-
-
-/* Mini-header */
-
 
 
 /* Header */
