@@ -43,14 +43,19 @@ header img{
 }
 
 .account-text {
-    display: flex;
-    font-size: 12px;
-    justify-content: flex-end;
+    font-size: 16px;
     align-self: center; 
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
+.account-text-header {
+display: flex;
+}
 .icon-sign::before {
-padding-left: 14px;
+padding-left: 20px;
 }
 
 .search {
@@ -65,14 +70,13 @@ padding-left: 14px;
 header {
     width: 100%;
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto;
+
     
 }
 
 #header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
     justify-content: space-around;
     align-content: center;
     
@@ -967,8 +971,6 @@ footer p {
 
 
 
-
-
 @media (max-width: 1100px) {
 
     body {
@@ -976,13 +978,23 @@ footer p {
         font-size: 14px;
     }
     
-    .flex-container-games, .container-productpage, .flex-items, .nav-games-page, .contact-us-text, .form {
+    .flex-container-games, .container-productpage, .contact-us-text, .form {
+        width: 80%;
+        margin: auto;
+        
+    }
+   
+    .flex-items {
+        width: 80%;
+        margin: auto;
+    }
+    .nav-games-page {
         width: 100%;
     }
-    .Image-games-productpage img {
-        width: 100%;
-    }
+    .Image-games-productpage img{ 
+        display:none;
     
+    }
 }
 
 
@@ -994,13 +1006,11 @@ body {
 }
 
 .flex-container-games, .container-productpage, .flex-items, .nav-games-page, .contact-us-text, .form {
-    width: 100%;
-    margin: 0%;
+    width: 80%;
     padding: 0%;
+    margin: auto;
 }
-.Image-games-productpage img {
-    width: 100%;
-}
+
 
 .grid-container5 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1013,47 +1023,47 @@ body {
     display: none;
 }   
 
-.icon-sign {
-    color: black;
-}
-
-.account-text {
-    color: rgb(255, 255, 255);
-}
 
 #header { 
-    display: grid;
-    grid-template-columns: 250px 0.6fr;
-    
+    grid-template-columns: 100px 150px 0.2fr;
+    align-items: center;
 
 }
 
 .account-icons {
-padding-right: 15px;
-font-size: 20px;
-text-align: center;
+font-size: 24px;
+padding-right: 12px;
 
+}
+
+.fa-cart-shopping {
+    padding-left: 7px;
 }
 
 .account-text {
-    font-size: 12px;
+    font-size: 10px;
     text-transform: capitalize;
+    text-align: center;
+    padding-left: 5px; 
+    
 }
-.account-iconstext-cart {
-    font-size: 20px;
+
+.account-text-header {
+    grid-column: 3 / 4;
 }
 .hamburger-icon {
     position: absolute;
     font-size: 32px;
     padding-left: 30px;
-    top: 50px;
+    top: 30px;
     color: white;
    
 }
 
 .logoheader {
     width: 100%;
-    padding-left: 100px;
+    height: 100px;
+    grid-column: 2 / 3;
 }
 
 #navbar {
@@ -1105,6 +1115,7 @@ text-align: center;
     background-position: center;
     text-align: center;
     height: 200px;
+    
 }
 
     .griditem-3 {
@@ -1113,6 +1124,8 @@ text-align: center;
     grid-column: 1 / 6;
     background-position: center;
     text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    border: solid 5px #F6C30E; 
             
 }
 .griditem-3 h3 {
@@ -1202,12 +1215,12 @@ height: 100%;
 }
 
 .coin-btn {
-    margin-right: 100px;
+    margin: 0px;
     margin-bottom: 50px;
 }
 
 .forum-btn {
-margin-right: 100px;
+    margin: 0px;
 margin-bottom: 50px;
 }
 
