@@ -383,129 +383,30 @@ gap: 2rem;
 
 
 /*  Product page  */
-.product-page-container {
-    width: 40vw;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 0.3fr 0.2fr 0.2fr 0.2fr; 
-    padding-top: 30px;
-}
-
-.product-page-container h1 {
-    margin: 0;
-}
-.review-stars-ylw {
-    display: flex;
-}
-
-.game-category1, .game-category2, .game-category3 {
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    background-color: #F6C30E;
-    border: 1px solid black;
-    width: 170px; 
-}
-
-.game-category1 {
-    justify-content: center;
-    align-self: flex-end;
-
-    background-color: #F6C30E;
-    border: 1px solid black;
-    width: 50px; 
-}
 .container-product-page {
-    display: grid; 
-    width: 40vw;
+    width: 850px;
     margin: auto;
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 0.6fr 0.6fr 1fr 2.4fr; 
-    grid-template-rows: 0.62fr 0.1fr 0.3fr 0.3fr; 
-    gap: 10px 10px; 
-    grid-template-areas: 
-      "Space-war Trailer Trailer ."
-      "Space-war Picture-1 Picture-2 ."
-      "Features Features Add-to-cart ."
-      "reviews reviews . ."
-      "reviews reviews . ."; 
-    align-items: stretch; 
-  }
-  .Space-war { grid-area: Space-war; }
-  .Picture-2 { grid-area: Picture-2; }
-  .Trailer { grid-area: Trailer; }
-  .Picture-1 { grid-area: Picture-1; }
-  .Add-to-cart { grid-area: Add-to-cart; }
-  .Features { grid-area: Features; }
-  .reviews { grid-area: reviews; }
+}
 
+.h1 {
+   
+}
+
+.flex-container-product-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+   
+}
+.Product-page-img {
+   
+    width: 350px ;
+}
 
 .Add-to-cart {
-    display: grid;
-    padding-top: 10px;
-    grid-template-rows: 0.1fr 0.3fr 0.3fr 0.1fr ;
-    font-size: 22px;
-    border: 1px solid rgb(209, 208, 208);
-    text-align: start;
-    box-shadow: 1px 1px 1px 1px rgb(173, 173, 173);
-    font-family: "Raleway";
-    height: 100%;
-    margin-left: 10px;
-    background-color: #f7efef;
-    
-}
-.Add-to-cart label {
-    width: 100px;
-
-}
-
-#Platform { 
-    margin-left: 5px;
-    width: 100px;
-    align-self: center;
-    text-align: center;
+    background-color: grey;
     
     
-}
-
-.Platformlabel {
-    margin-left: 5px;
-    font-size: 18px;
-}
-
-.addtocart-product {
-    width:  400px;
-    background-color: #0F9E2E;
-    color: white;
-    font-family: "Dosis";
-    font-size: 28px;
-    margin-left: 65px;
-    text-transform: uppercase;
-    font-weight: bold;
-    
-}
-
-.usedprice {
-    color: lightgrey;
-    font-weight: bold;
-}
-
-.newprice {
-    color: green;
-    font-weight: bold;
-}
-.reviews {
-    border-top: 1px solid black;
-}
-
-.reviews h3, p {
-    margin: 5px;
-}
-
-.reviewtext {
-    background-color: #201D3E;
-    color: white;
-    margin-bottom: 30px;
 }
 
 
