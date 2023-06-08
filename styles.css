@@ -259,12 +259,15 @@ font-family: "Raleway";
 }
 
 .flex-items {
-    display: flex;
     width: 40vw;
     align-items: end;
-    flex-wrap: wrap;
     border-bottom: #FEA621 solid 6px;
 }
+
+.games-found {
+    font-size: 18px;
+}
+
 
 .nav-games-page {
     padding-top: 20px;
@@ -297,7 +300,7 @@ font-family: "Raleway";
 
 
 .category-text:hover, .category-text1:hover  {
-background-color: #aaaaaa;
+background-color: #FEA621;
 
 }
 
@@ -307,7 +310,7 @@ width: 40vw;
 margin: auto;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-gap: 2rem;
+gap: 3rem;
 
 }
 
@@ -315,13 +318,22 @@ gap: 2rem;
     flex-direction: column;
     font-family: "Raleway";
     margin-top: 50px;
-    border: solid 1px rgb(153, 153, 153);
+    box-shadow: 10px 10px 10px 10px rgb(233, 231, 231);
+    background-color: #fff6f6;
     padding-top: 10px; 
 }
 
 .text-alignment-product {
-    padding-left: 10px;
+    padding-left: 30px;
     
+}
+
+.text-alignment-product h3 {
+    margin-top: 20px;
+}
+
+.text-alignment-product p {
+    margin: 5px;
 }
     .Game-cover-img {
         display:block;
@@ -334,26 +346,43 @@ gap: 2rem;
 .flex-container-price {
     display: flex;
     flex-direction: row;
-    font-size: 16px;
+    font-size: 24px;
     font-family: "Dosis";
-    justify-content: space-between;
-    padding: 0 10px 0px 10px;
+    justify-content: space-evenly;
+    padding: 0 20px 0px 20px;
+    margin: 0;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.Price {
+    margin: 0;
 }
 
 .price-new {
     color: green;
     text-transform: capitalize;
+    font-family: "Dosis";
+    
 }
 
 .price-used {
     color: grey;
     text-transform: capitalize;
-}
+    font-size: 20px;
+} 
+
 .review-stars {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
+    padding-left: 5px;
+    color: #F6C30E;
+}
+
+.review-number {
+    color: black;
 }
 .add-to-cart-btn {
     display: flex;
@@ -367,7 +396,7 @@ gap: 2rem;
     padding: 10px;
     background-color: #1E2651;
     color: #FEA621;
-    margin:20px auto; 
+    margin:10px auto; 
     box-shadow: 1px 1px grey;
     
 }
