@@ -55,13 +55,16 @@
    
 
     <div class="flex-container-product-page">
-            <img src="Images/GameHub_covers6 1.png" alt="Space-Wars-Cover" class="Product-page-img">
+        <div class="Product-page-img">
+            <img src="Images/GameHub_covers6-resize.jpg" alt="Space-Wars-Cover" class="Product-page-img"> 
+            
+    </div>
 
         
             <div class="Add-to-cart">
                 <p><input type="checkbox"> $59,99 <span class="newprice"> NEW </span> </p>
                 <P><input type="checkbox">$39,99 <span class="usedprice"> Used </span> </P>
-                <p> Release date: 14/02/2023 </p>
+                <p id="releasedate-product-page"> Release date: 14/02/2023 </p>
                 <label class="Platformlabel" for="Platform"> Platform:</label>  
                 <select name="Platform" id="Platform">
                 <option value="Playbox"> Playbox </option>
@@ -70,25 +73,28 @@
             </label>
             </select>
             <p>
-            <label for="Version"> </label>  
-            <select name="Version" id="Version">
+            <label class="Platformlabel" id="Edition" for="Platform"> Edition: </label>  
+            <select name="Platform" id="Platform">
             <option value="Collector"> Collectors edition </option>
             <option value="Deluxe"> Deluxe edition</option>
             <option value="Standard"> Standard edition </option>
             </p>
         </label>
         </select>
-        <p> <button class="addtocart-product"> Add to cart </button> </p>
-            </div>
+        <p id="orderedb4"> Ordered before 22:00, next day delivery </p>
+        <a href="cart.html"> <button class="addtocart-product" > Add to cart </button> </a>
+         </div>
         
     </div>   
-
+    <div class="Game-category">
     <p class="game-category3"> First person shooter</p>
     <p class="game-category2"> Massive multiplayer</p>
     <p class="game-category1"> RPG</p>
+    </div>
 
+    <h3> Media </h5>
+        
     <div class="product-images">
-        <h3> Media </h5>
         <img src="Images/Space-wars-header2.png">
         <img src="Images/Space-wars-header3.png">
         <img src="Images/Space-wars-header2.png">
@@ -123,15 +129,16 @@
         
         <div class="reviews">
             <h3> Reviews </h3>
-            <h4> Total reviews Space wars </h4>
+            <h4> Total reviews <span class=review-number>(320)</span></h4>
+            <p> Average review score for this product </p>
             <div class="review-stars-ylw">
                 <i class="fa-solid fa-star" style="color: #f7e155;"></i>
                 <i class="fa-solid fa-star" style="color: #f7e155;"></i>
                 <i class="fa-solid fa-star" style="color: #f7e155;"></i>
                 <i class="fa-solid fa-star" style="color: #f7e155;"></i>
                 <i class="fa-regular fa-star" style="color: #f7e155;"></i>
-                <p> (320)</p>
-            
+                <p> (4 stars) </p>
+            </div>
             
             <p> Ronnie   <i class="fa-solid fa-star" style="color: #f7e155;"></i>
                 <i class="fa-solid fa-star" style="color: #f7e155;"></i>
@@ -159,12 +166,9 @@
         </div>
      
 
-    </div>
+  
 </div>
-
-
-
-
+</div>
 
 
 

@@ -301,13 +301,9 @@ background-color: #aaaaaa;
 
 }
 
-.category-text:active, .category-text1:active  {
-    background-color:#FEA621
-    
-    }
     
 .container-productpage {
-    width: 40vw;
+width: 40vw;
 margin: auto;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -377,33 +373,129 @@ gap: 2rem;
 }
 
 
+
 /*  Product page  */
 .container-product-page {
-    width: 850px;
+    padding-top: 50px;
+    width: 990px;
     margin: auto;
+    
 }
 
-.h1 {
-   
+.h1-space-wars {
+   font-family: "Dosis";
+   border-bottom: 6px solid #FEA621;
 }
 
 .flex-container-product-page {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1.4fr 1.4fr;
+    
+    
    
 }
 .Product-page-img {
-   
-    width: 350px ;
-}
+    width: 100%;
+    box-shadow: #807f7f 5px 0px 5px 5px;
+} 
 
 .Add-to-cart {
-    background-color: grey;
-    
-    
+    grid-column: 2 / 3;
+    padding-top: 50px;
+    font-size: 20px;
+    margin: 0;
+    font-family: "Dosis";
+    box-shadow: #201D3E 5px 0px 5px 5px;
+    text-align: center;
+   
+}
+.Add-to-cart input{
+height: 20px;
+width: 20px;
 }
 
+.Platformlabel {
+font-size: 16px;
+}
+
+#Platform {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#Edition {
+    padding-right: 11px;
+}
+.Add-to-cart p {
+    font-size: 20px;
+}
+
+.newprice {
+    color: #09BB1B;
+}
+.usedprice {
+    color: #9F9F9F;
+    text-transform:uppercase;
+}
+
+#releasedate-product-page {
+    font-size: 16px;
+    color: #807f7f;
+}
+
+
+
+#orderedb4 {
+    font-family: "Raleway";
+   font-size: 16px;
+}
+
+.addtocart-product {
+    width: 80%;
+    background-color: #0F9E2E;
+    color: white;
+    height: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Dosis";
+}
+
+.addtocart-product a :hover { 
+    background-color: #063d12;
+   
+}
+
+.Game-category {
+    display: flex;
+    gap: 10px;
+}
+
+.game-category1 , .game-category2 , .game-category3   {
+    border: 1px solid black;
+    padding: 6px;
+    background-color: #F6C30E;
+}
+
+
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / 5;
+    gap: 30px;
+}
+
+
+.grid-container-product-page {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr;
+}
+
+.Features, .specifications, .reviews {
+    grid-column: 1 /5;
+}
 
 /* testing grid */
 .grid-container5 { 
@@ -909,7 +1001,7 @@ body {
     font-size: 14px;
 }
 
-.flex-container-games, .container-productpage, .flex-items, .nav-games-page, .contact-us-text, .form {
+.flex-container-games, .container-productpage, .flex-items, .nav-games-page, .contact-us-text, .form, .container-product-page {
     width: 80%;
     padding: 0%;
     margin: auto;
@@ -1159,6 +1251,20 @@ footer {
 .contact-us {
     margin-bottom: 20px;
 }
+
+.flex-container-product-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+}
+
+}
+.Add-to-cart {
+    padding-top: 0;
+    padding-left: 20px;
+    text-align: left;
+    grid-column: 1;
+}
 }
 
 @media (max-width: 599px) {
@@ -1191,6 +1297,10 @@ footer {
 .Item8-image { 
     height: 100%;
     
+}
+
+.container-product-page {
+    width: 95%;
 }
 
 }
