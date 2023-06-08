@@ -399,8 +399,8 @@ gap: 2rem;
 }
 
 .Product-page-img img {
-    width: 50%;
-    height: 80%;
+    width: 60%;
+    height: 90%;
 }
 
 .Product-page-img {
@@ -463,6 +463,7 @@ font-size: 16px;
 #orderedb4 {
     font-family: "Raleway";
    font-size: 16px;
+   font-weight: bold;
 }
 
 .addtocart-product {
@@ -515,6 +516,52 @@ font-size: 16px;
     grid-column: 1 /5;
 }
 
+.grid-item {
+    background: #aaaaaa;
+    height: 250px;
+}
+
+.reviews {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.reviews h3 {
+margin-bottom: 0;
+border-bottom: 3px solid black;
+grid-column: 1 / 3;
+
+}
+.breakline-review {
+    padding-top: 20px;
+    display: block;
+    font-weight: normal;
+}
+.Willem-review {
+    grid-column: 1;
+    grid-row: 2;
+    border: 3px solid black;
+    font-weight: bold;
+    padding: 5px;
+    border-top: 0;
+    border-left: 0;
+    }
+
+.Ronnie-review {
+grid-column: 2;
+grid-row: 2;
+border: 3px solid black;
+border-top: 0;
+font-weight: bold;
+border-left: 0;
+}
+.contact-us-form {
+   grid-row: 4;
+   grid-column: 1 / 3 ;
+   
+}
 /* testing grid */
 .grid-container5 { 
     width: 1000px; 
@@ -525,10 +572,6 @@ font-size: 16px;
     
 }
 
-.grid-item {
-    background: #aaaaaa;
-    height: 250px;
-}
 
 
 /* content 1 */ 
@@ -1279,21 +1322,14 @@ footer {
 }
 
 .Product-page-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: none;
-    background-color: #ebe9e9;
-    grid-row: 1; 
-    
+    margin-top: 10px;
 }
 .Product-page-img img {
-    justify-content: center;
     width: 60%;
     height: 90%;
 }
+
 .Add-to-cart {
-    padding-top: 0;
     padding-left: 20px;
     grid-row: 3; 
     grid-column: 1 /3;
@@ -1304,16 +1340,12 @@ footer {
 .h1-space-wars {
     margin: 0;
 }
-.Add-to-cart {
-    box-shadow: none;
-    text-align: left;
-    
-}
 
 .Game-category {
     display: none;
 }
 }
+
 @media (max-width: 599px) {
 /*---------------- Homepage ------------ 699px Media queries*/
 
