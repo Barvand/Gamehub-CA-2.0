@@ -1121,9 +1121,33 @@ font-weight: 600;
     width: 80%;
     background-color: #FE2121;
     color: white;
-
-   
 }
+
+.delivery-payment { 
+    grid-row: 3;
+    grid-column: 1/6;
+}
+
+.delivery-payment h2 {
+    margin-top: 5px;
+}
+#Checkbox-delivery {
+    margin-left: 0%;
+}
+
+#Checkbox-delivery input {
+    margin-left: 0%;
+}
+#label-deliveryname {
+    display: block;
+    width: 400px;
+}
+.Delivery-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
 /* ---------------- footer ------------------- */
 footer {
     background-color: #D9D9D9;
