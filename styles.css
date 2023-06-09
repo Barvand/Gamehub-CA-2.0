@@ -1492,7 +1492,7 @@ footer {
     border-radius: 0px;
     width: 100%;
     text-align: center;
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
     justify-content: center;
 }
 
@@ -1506,15 +1506,16 @@ footer {
 
 .cart-item-text {
     grid-row: 3;
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
     border: 1px solid; 
     border-radius: 0px;
     text-align: center;
 
+
 }
 .Cart-item-price-container {
     grid-row: 4 ; 
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
     
     border-radius: 0px;
     
@@ -1570,14 +1571,12 @@ footer {
 }
 
 .cart-item-text {
-    grid-row: 3;
     border: 1px solid; 
     border-radius: 0px;
     text-align: left;
 }
 .Cart-item-price-container {
-    grid-row: 4 ; 
-    grid-column: 1 / 5;
+   
     border-radius: 0px;
     width: 100%;
     
