@@ -1200,10 +1200,12 @@ font-weight: 600;
     width: 300px;
 }
 
-#label-delivery-payment {
-    width: 200px;
+#label-delivery-payment-margin-logo {
+    display: block;
+    margin-bottom: 20px;
 }
 
+.
 
 /* ---------------- footer ------------------- */
 footer {
