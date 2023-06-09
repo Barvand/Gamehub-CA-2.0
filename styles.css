@@ -1189,7 +1189,7 @@ body {
     font-size: 14px;
 }
 
-.flex-container-games, .container-productpage, .flex-items, .nav-games-page, .contact-us-text, .form, .container-product-page, .Cart-page-container {
+.flex-container-games, .container-productpage, .flex-items, .contact-us-text, .form, .container-product-page, .Cart-page-container {
     width: 80%;
     padding: 0%;
     margin: auto;
@@ -1525,7 +1525,9 @@ footer {
 @media (max-width: 599px) {
 /*---------------- Homepage ------------ 699px Media queries*/
 
-
+.nav-games-page {
+    width: 100%;
+}
 
 .header-btn-content2 {
     margin: 0;
@@ -1536,11 +1538,9 @@ footer {
     
 }
     .grid-item8-container {
-        margin-top: 0;
-        width: 95%;
-        grid-template-columns: 150px 150px;
-        grid-template-rows: 300px 300px 300px;
-        margin: auto;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
 
         
     }
@@ -1550,6 +1550,7 @@ footer {
     
     }
 .Item8-image { 
+    width: 100%;
     height: 100%;
     
 }
