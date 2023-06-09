@@ -1186,7 +1186,7 @@ footer p {
         width: 90%;
         margin: auto;
     }
-    .flex-container-games, .container-productpage, .contact-us-text, .form {
+    .flex-container-games, .container-productpage, .contact-us-text, .form, .flex-items {
         width: 80%;
         margin: auto;
         
@@ -1607,6 +1607,11 @@ footer {
     
 }
 
+.flex-container-games, .container-productpage, .contact-us-text, .form, .flex-items {
+    width: 90%;
+    margin: auto;
+    
+}
 
 }
 @media (min-width: 900px) {
