@@ -1154,11 +1154,12 @@ font-weight: 600;
 /* ---------------- Delivery ------------------- */
 
 .container-delivery {
+    position: relative;
     width: 1000px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 0.3fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.3fr 1fr 0.1fr;
 
 }
 
@@ -1205,9 +1206,24 @@ font-weight: 600;
     margin-bottom: 20px;
 }
 
-.
+#return-btn {
+    padding: 0;
+    position: absolute;
+    margin-bottom: 30px;
+    padding-left: 0px;
+    bottom: 10px;
+}
+
+#return-btn input{
+    margin-bottom: 30px;
+    width: 100px;
+    padding-left: 0px;
+}
+
 
 /* ---------------- footer ------------------- */
+
+
 footer {
     background-color: #D9D9D9;
     margin: 0;
@@ -1217,12 +1233,11 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 30px;
-    margin-top: 100px;
+     
 }
 footer p { 
     color: black;
 }
-
 
 
 
@@ -1272,7 +1287,7 @@ body {
     font-size: 14px;
 }
 
-.flex-container-games, .container-productpage, .flex-items, .contact-us-text, .form, .container-product-page, .Cart-page-container {
+.flex-container-games, .container-productpage, .flex-items, .contact-us-text, .form, .container-product-page, .Cart-page-container,  .container-delivery{
     width: 80%;
     padding: 0%;
     margin: auto;
@@ -1345,8 +1360,46 @@ padding-right: 12px;
     background-color:#1E2651
 }
 
+/*---------------- Delivery & Payment ------------ Media queries 900px */
 
-    /*---------------- Homepage ------------ Media queries */
+.container-delivery {
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.6fr;
+} 
+
+
+.Shipping-method {
+    grid-row: 4; 
+    grid-column: 1 / 3;
+}
+
+.billing-details {
+    grid-column: 2;
+    grid-row: 2;
+    width: 80%;
+    } 
+
+.payment-method { 
+    width: 100%;
+    grid-row: 5;
+    grid-column: 1;
+}
+
+#label-deliveryname {
+    width: 60%;
+}
+
+#label-delivery {
+    width: 60%;
+}
+
+#return-btn {
+    bottom: -150px;
+  
+}
+
+    /*---------------- Homepage ------------ Media queries 900px */
 
 .grid-item{
     padding: 0;
@@ -1679,6 +1732,18 @@ footer {
     display: none;
 }
 
+.container-delivery {
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.6fr 0.6fr;
+} 
+.billing-details {
+    grid-row: 3;
+    grid-column: 1;
+}
+#orderedb4 {
+    font-size: 14px;
+}
 }
 @media (min-width: 900px) {
     nav {
