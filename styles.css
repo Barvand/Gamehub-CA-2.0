@@ -1345,17 +1345,14 @@ body {
     margin: auto;
 }
 
-
-
-
 .search {
     display: none;
-    grid-column: 1;
+    
 }   
 
 
 #header { 
-    grid-template-columns: 0.6fr 0.7fr;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
     align-items: center;
     
 
@@ -1364,6 +1361,7 @@ body {
 .logoheader{
     height: 100px;
    padding-left: 30px;
+   margin: auto;
     
 }
 
