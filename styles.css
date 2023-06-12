@@ -516,19 +516,22 @@ font-size: 16px;
 
 .Game-category {
     display: grid;
-    gap: 10px;
-    grid-template-columns: 0.6fr 0.6fr 0.2fr;
-    grid-column: 1;
-    grid-row: 2;
+    gap: 5px;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
 }
 
 .game-category1 , .game-category2 , .game-category3   {
     border: 1px solid black;
-    background-color: #F6C30E;
-    height: 20px;
+    background-color: #FEA621;
     text-align: center;
+    color: rgb(2, 2, 2);
+    margin-top: 5px;
 }
 
+.categories-text-productpage {
+    color: grey;
+    margin-bottom: 0;
+}
 
 .product-images {
     display: flex;
@@ -594,7 +597,7 @@ border-left: 0;
    grid-column: 1 / 3 ;
    
 }
-/* testing grid */
+/* Homepage */
 .grid-container5 { 
     width: 1000px; 
     margin: 20px auto;
@@ -1145,7 +1148,7 @@ font-weight: 600;
 .Delivery-form {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 100%; 
 }
 
 
@@ -1154,15 +1157,16 @@ font-weight: 600;
 /* ---------------- Delivery ------------------- */
 
 .container-delivery {
-    width: 1000px;
+    width: 50%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr; 
     grid-template-rows: 0.1fr 1fr 0,8fr 1fr 1fr;
 
 }
 
 .container-delivery h1 {
+    
     margin-top: 30px;
     grid-column: 1 / 6;
     border-bottom: 4px #FEA621 solid;
@@ -1170,40 +1174,56 @@ font-weight: 600;
 
 .delivery-payment {
     grid-row: 2; 
-   
+    grid-column: 1 /2;
+    margin: auto;
+    width: 100%;
 }
 
 .Delivery-form {
-    grid-row: 2;
+    margin: auto;
+    
 }
 
 .billing-details {
     grid-row: 3;
     grid-column: 1; 
+    width: 100%;
+    
 
 }
 .Shipping-method {
     grid-column: 1;
     grid-row: 4;
+
+   
 }
-
-
 
 
 .payment-method {
     grid-row: 5; 
-    grid-column: 1 / 3;
+    grid-column: 1 /2;
     flex-direction: row;
-}
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+
 
 #label-delivery-payment {
     display: block;
+    width: 100%;
+    
+    
+    
 }
 
 
 #label-delivery-payment-margin-logo {
     display: block;
     margin-bottom: 20px;
+    width: 100%;
+   
+    
 }
 
 #return-btn {
@@ -1288,7 +1308,7 @@ body {
     font-size: 14px;
 }
 
-.flex-container-games, .container-productpage, .flex-items, .contact-us-text, .form, .container-product-page, .Cart-page-container,  .container-delivery{
+.flex-container-games, .container-productpage, .flex-items, .contact-us-text, .form, .container-product-page, .Cart-page-container,  .container-delivery { 
     width: 80%;
     padding: 0%;
     margin: auto;
@@ -1365,35 +1385,36 @@ padding-right: 12px;
 
 .container-delivery {
     width: 95%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 350px;
     grid-template-rows: 0.1fr 0.6fr;
 } 
 
 
 .Shipping-method {
     grid-row: 4; 
-    grid-column: 1 / 3;
+    grid-column: 1;
 }
 
 .billing-details {
     grid-column: 1;
     grid-row: 3;
-    width: 80%;
+    margin: auto;
     } 
 
 .payment-method { 
-    width: 100%;
     grid-row: 5;
     grid-column: 1;
 }
 
-#label-deliveryname, .label-delivery-payment, #label-delivery {
+.delivery-payment {
+  grid-column: 1 / 2;
+}
+
+#label-deliveryname, #label-delivery, #label-delivery2, #label-delivery-payment-cardholder, #label-delivery-payment, #label-delivery-payment-margin-logo {
     width: 100%;
 }
 
-#label-delivery-payment-cardholder {
-    width: 100%;
-}
+
 
 #return-btn {
     grid-row: 7;
@@ -1402,9 +1423,7 @@ padding-right: 12px;
   
 }
 
-.billing-details {
-width: 100%;
-}
+
     /*---------------- Homepage ------------ Media queries 900px */
 
 .grid-item{
@@ -1753,7 +1772,6 @@ footer {
 .billing-details {
     grid-row: 3;
     grid-column: 1 ;
-    width: 100%;
     
 }
 
