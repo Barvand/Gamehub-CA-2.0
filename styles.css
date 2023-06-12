@@ -15,7 +15,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    
     
 }
 
@@ -92,6 +92,7 @@ nav {
 
 #menu-checkbox:checked ~ nav {
     display: block;
+    
 
 }
 
@@ -103,16 +104,7 @@ nav {
 
 }
 
-#navbar {
-    background: linear-gradient(
-        to right,
-        #1E2651 0%,
-        #1E2651 90%,
-        #FEA621 50%,
-        #FEA621 100%
-      );
 
-}
 
 nav {
     display: flex; 
@@ -133,34 +125,9 @@ nav,
     background-color: #1E2651;
     padding: 20px;
     
+    
 }
 
-
-
-/* main page */
-
-
-
-.buttonheader {
-    width: 200px;
-    color: white;
-    background-color: red;
-    text-align: 	center;
-}
-
-/* Main page 2nd element */
-
-
-/* Divider homepage */
-
-.flex-item {
-    flex-wrap: wrap;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    font-size: 16px; 
-}
 
 
 /* Contact page */
@@ -306,6 +273,7 @@ font-family: "Raleway";
 
 .category-text:hover, .category-text1:hover  {
 background-color: #FEA621;
+cursor:pointer;
 
 }
 
@@ -350,31 +318,32 @@ gap: 3rem;
 
 .flex-container-price {
     display: flex;
-    flex-direction: row;
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Dosis";
     justify-content: space-evenly;
     padding: 0 20px 0px 20px;
-    margin: 0;
+    line-height: 1;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .Price {
     margin: 0;
+   
 }
 
 .price-new {
     color: green;
     text-transform: capitalize;
     font-family: "Dosis";
+    font-size: 16px;
     
 }
 
 .price-used {
     color: grey;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 16px;
 } 
 
 .review-stars {
@@ -389,6 +358,7 @@ gap: 3rem;
 .review-number {
     color: black;
 }
+
 .add-to-cart-btn {
     display: flex;
     min-width: 200px;
@@ -406,6 +376,10 @@ gap: 3rem;
     
 }
 
+.add-to-cart-btn:hover {
+    background-color: #6b73a5;
+    cursor:pointer;
+}
 
 
 /*  Product page  */
@@ -607,6 +581,26 @@ border-left: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     
+}
+
+.buttonheader {
+    width: 200px;
+    color: white;
+    background-color: red;
+    text-align: 	center;
+}
+
+
+
+/* Divider homepage */
+
+.flex-item {
+    flex-wrap: wrap;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-size: 16px; 
 }
 
 
@@ -1638,12 +1632,12 @@ margin-bottom: 50px;
 footer {
     margin-top: 150px;
 }
-/*---------------- Contact us ------------ Media queries */
+/*---------------- Contact us ------------ Media queries 900px*/
 .contact-us {
     margin-bottom: 20px;
 }
 
-/*---------------- Product page ------------ Media queries */
+/*---------------- Product page ------------ Media queries 900px */
 
 .flex-container-product-page {
     grid-template-columns: 1fr;
@@ -1721,7 +1715,7 @@ footer {
 }
 
 @media (max-width: 599px) {
-/*---------------- Homepage ------------ 699px Media queries*/
+/*---------------- Homepage ------------ 599px Media queries*/
 
 .nav-games-page {
     width: 100%;
@@ -1820,16 +1814,23 @@ footer {
 #orderedb4 {
     font-size: 14px;
 }
+
+.flex-wrapper-deluxe {
+    padding-bottom: 50px;
+}
 }
 @media (min-width: 900px) {
     nav {
             display: block;
             position: static;
+            
     
     
         }
         .hamburger-icon {
             display: none; 
+            
+            
         }
 
         nav {
