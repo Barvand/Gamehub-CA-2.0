@@ -1327,15 +1327,12 @@ footer p {
         font-size: 16px;
     }
     
-    .flex-wrapper-deluxe {
-        width: 90%;
-        margin: auto;
+    .flex-wrapper-deluxe, .grid-item, .grid-item8-container  {
+        width: 100%;
+    
     }
 
-    .grid-item8-container {
-        width: 100%;
-        
-    }
+    
     .flex-container-games, .container-productpage, .contact-us-text, .form, .flex-items {
         width: 80%;
         margin: auto;
@@ -1609,11 +1606,12 @@ padding-right: 12px;
     margin-top: 0;
     width: 100%;
     margin: auto;
-    grid-template-columns: 0.28fr 0.28fr 0.28fr;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
     padding-bottom: 20px;
 }
 
 .item-8 {
+    margin: auto;
     padding-bottom: 20px;
     width: 100%;
     
@@ -1863,7 +1861,7 @@ footer {
 }
 
 footer {
-    font-size: 12px;
+    font-size: 10px;
 }
 }
 
