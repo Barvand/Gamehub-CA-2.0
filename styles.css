@@ -1444,9 +1444,10 @@ padding-right: 12px;
 /*---------------- Delivery & Payment ------------ Media queries 900px */
 
 .container-delivery {
-    width: 95%;
+    width: 80%;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.6fr;
+    margin: auto;
 } 
 
 
@@ -1458,12 +1459,13 @@ padding-right: 12px;
 .billing-details {
     grid-column: 1;
     grid-row: 3;
-    margin: auto;
+    
     } 
 
 .payment-method { 
     grid-row: 5;
     grid-column: 1;
+    
 }
 
 .delivery-payment {
@@ -1471,7 +1473,8 @@ padding-right: 12px;
 }
 
 #label-deliveryname, #label-delivery, #label-delivery2, #label-delivery-payment-cardholder, #label-delivery-payment, #label-delivery-payment-margin-logo {
-    width: 100%;
+    width: 400px;
+    
 }
 
 
@@ -1850,6 +1853,20 @@ footer {
     width: 100%;
 }
 }
+
+
+@media (max-width: 440px) {
+
+#label-deliveryname, #label-delivery, #label-delivery2, #label-delivery-payment-cardholder, #label-delivery-payment, #label-delivery-payment-margin-logo {
+    width: 250px;
+    margin: auto;
+}
+
+.Payment-logo { 
+    padding-top: 20px;
+}
+}
+
 @media (min-width: 900px) {
     nav {
             display: block;
