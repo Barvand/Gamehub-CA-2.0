@@ -1327,10 +1327,6 @@ footer p {
         font-size: 16px;
     }
     
-    .flex-wrapper-deluxe, {
-        width: 100%;
-    
-    }
 
     
     .flex-container-games, .container-productpage, .contact-us-text, .form, .flex-items {
@@ -1350,6 +1346,34 @@ footer p {
         display:none;
     
     }
+    .flex-wrapper-deluxe {
+        width: 95%;
+        margin: auto;
+    }
+
+    .grid-container5 {
+        width: 100%;
+        max-width: 990px;
+    }
+
+    .grid-container-6 { 
+        width: 100%;
+    }
+
+    .grid-item8-container {
+        width: 100%;
+        grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+        gap: 0px
+    }
+.price-grid-item8 {
+    width :95%;
+    margin: auto;
+}
+
+.grid-item img {
+    width: 95%
+}
+    
 }
 
 
