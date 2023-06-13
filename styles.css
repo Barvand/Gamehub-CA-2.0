@@ -1858,13 +1858,11 @@ footer {
 @media (max-width: 440px) {
 
 #label-deliveryname, #label-delivery, #label-delivery2, #label-delivery-payment-cardholder, #label-delivery-payment, #label-delivery-payment-margin-logo {
-    width: 250px;
-    margin: auto;
+    width: 100%;
+    
 }
 
-.Payment-logo { 
-    padding-top: 20px;
-}
+
 }
 
 @media (min-width: 900px) {
