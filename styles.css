@@ -1353,7 +1353,12 @@ footer p {
 
     .grid-container5 {
         width: 100%;
-        max-width: 990px;
+    }
+
+    .racing-image-item5 {
+        width: 25%;
+        height: 50%;
+        top: 0;
     }
 
     .grid-container-6 { 
@@ -1366,12 +1371,12 @@ footer p {
         gap: 0px
     }
 .price-grid-item8 {
-    width :95%;
+    width :100%;
     margin: auto;
 }
 
-.grid-item img {
-    width: 95%
+.item-8 img {
+    width: 100%
 }
     
 }
