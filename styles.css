@@ -1327,7 +1327,7 @@ footer p {
         font-size: 16px;
     }
     
-    .flex-wrapper-deluxe, .grid-item, .grid-item8-container  {
+    .flex-wrapper-deluxe, {
         width: 100%;
     
     }
@@ -1861,7 +1861,7 @@ footer {
 }
 
 footer {
-    font-size: 10px;
+    font-size: 12px;
 }
 }
 
