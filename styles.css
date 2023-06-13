@@ -949,7 +949,7 @@ background-color: #265E79;
     width: 990px;
     margin: auto;
     display: grid;
-    grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
     flex-direction: row;
     padding-bottom: 100px;
    
@@ -1332,8 +1332,8 @@ footer p {
     }
 
     .grid-item8-container {
-        width: 90%;
-        margin: auto;
+        width: 100%;
+        
     }
     .flex-container-games, .container-productpage, .contact-us-text, .form, .flex-items {
         width: 80%;
@@ -1601,17 +1601,20 @@ padding-right: 12px;
 
 .grid-item8-container {
     margin-top: 0;
-    width: 90%;
+    width: 100%;
     margin: auto;
     grid-template-columns: 0.28fr 0.28fr 0.28fr;
     padding-bottom: 20px;
-
-    
-
 }
 
 .item-8 {
     padding-bottom: 20px;
+    width: 100%;
+    
+}
+
+.item-8 img {
+    width: 100%;
     
 }
 
