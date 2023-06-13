@@ -1270,12 +1270,12 @@ font-weight: 600;
     margin: auto;
     grid-template-columns: 1fr;
     text-align: center;
+    padding-bottom: 300px;
     
 }
 
 .Order-completed button {
 width: 60%;
-
 padding: 10px 15px;
 align-content: center;
 margin: 20px auto;
