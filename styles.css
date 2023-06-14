@@ -1242,7 +1242,7 @@ font-weight: 600;
     }
 
 
-.label-delivery-payment, #label-delivery-payment-cardholder {
+.label-delivery-payment, .label-delivery-payment-cardholder {
     display: block;
     width: 400px;
     
