@@ -157,19 +157,12 @@ nav,
     
 }
 
-#label {
-    display: block;
-    width: 80%;
-    margin: 10px 0px 0px 0px; 
-    font-family: "Raleway";
+.form input {
+    width: 100%; 
+    margin-bottom: 10px;
 }
 
-#label1 {
-width: 50%;
-background-color: #F8F5F5;
-font-family: "Raleway";
 
-}
 #textarea { 
     margin-top: 20px;
     display: block;
@@ -179,14 +172,15 @@ font-family: "Raleway";
     font-family: "Raleway";
 }
 
-.submitbutton {
+#submitbutton {
     float: right;
     margin-top: 20px;
     padding: 10px 30px 10px 30px;
+    background-color: lightgrey;
 
 }
 
-.submitbutton:hover {
+#submitbutton:hover {
     padding: 10px 30px 10px 30px;
     background-color: #1E2651;
     color: #FEA621;
