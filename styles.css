@@ -719,7 +719,7 @@ border-left: 0;
 }
 
 
-.h3header-marketplace {
+.h2header-marketplace {
     font-size: 40px;
     font-weight: 700;
     color: rgb(253, 253, 253);
@@ -768,7 +768,7 @@ border-left: 0;
 }
 
 
-.h3header-club {
+.h2header-club {
   color: white;
   font-size: 40px;
   margin: 0;
@@ -781,6 +781,7 @@ border-left: 0;
     padding-left: 40px;
     margin: 10px 0px 0px 0px;
     font-size: 22px;
+    padding-bottom: 30px;
 }
 
 .header-btn-content3 {
@@ -838,20 +839,30 @@ border-left: 0;
 .item-5 p {
     color: white;
     padding-left: 20px;
+    
 }
-.item-5 h1 {
+.item-5 h3 {
+    padding-top: 20px;
     color: white;
-    font-size: 56px;
+    font-size: 38px;
     margin: 0px 0px 20px 20px;
     font-size: 600;
     
 }
 .item-5 p {
     margin: 0;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 10px; 
     margin-bottom: 20px;
+    margin-left: 10px;
 }
+
+.item-5-coming-soon-p {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+}
+
 .releasedate-color {
     color: red;
 }
@@ -890,27 +901,21 @@ background-color: #265E79;
       ), url(Images/Computerpicture-gamehub.png);
       background-size: 120%;
       background-position: center;
-    
 
 }
 
-.item-6 h1{
+.item6-h3 {
     color: white;
-    font-weight: 600;
-    
+    font-size: 38px;
+    margin: 20px 0px 20px 20px;
+    font-size: 600;
 }
 
-.item-6 h1 {
-    font-size: 56px;
-    margin: 0;
-    padding-bottom: 20px;
-    margin-left: 20px;
-}
 
 .item-6 p{
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
-    padding-left: 20px;
+    padding-left: 40px;
     color: white;
 }
 
