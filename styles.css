@@ -1221,8 +1221,11 @@ font-weight: 600;
     grid-row: 3;
     grid-column: 1; 
     width: 100%;
+}
+.Delivery-form { 
+    width: 80%;
     
-
+    
 }
 .Shipping-method {
     grid-column: 1;
@@ -1233,34 +1236,23 @@ font-weight: 600;
 
 
 .payment-method {
-    grid-row: 5; 
-    grid-column: 1 /2;
-    flex-direction: row;
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    grid-row: 5;
     }
 
 
 .label-delivery-payment, .label-delivery-payment-cardholder {
     display: block;
-    width: 400px;
-    
+    width: 100%;
 }
-
+    
 
 .label-delivery-payment-margin-logo {
-    display: block;
-    margin-bottom: 20px;
-    width: 400px;
-   
-    
+    margin-bottom: 20px; 
 }
-
 
 #return-btn input{
     width: 100px;
-    
 }
 
 .payment-btn-back-complete { 
@@ -1268,6 +1260,7 @@ font-weight: 600;
     display: flex;
     justify-content: space-between;
     grid-row: 7;
+    
 }
 
 #payment-btn {
@@ -1284,6 +1277,9 @@ font-weight: 600;
 
 }
 
+#orderedb4-delivery {
+    font-weight: bold;
+}
 
 /* ---------------- Order-completed ------------------- */
 .Order-completed {
@@ -1480,49 +1476,6 @@ padding-right: 12px;
     color: white;
     background-color:#1E2651
 }
-
-
-
-
-/*---------------- Delivery & Payment ------------ Media queries 900px */
-
-.container-delivery {
-    width: 80%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.6fr;
-    margin: auto;
-} 
-
-
-.Shipping-method {
-    grid-row: 4; 
-    grid-column: 1;
-}
-
-.billing-details {
-    grid-column: 1;
-    grid-row: 3;
-    
-    } 
-
-.payment-method { 
-    grid-row: 5;
-    grid-column: 1;
-    
-}
-
-.delivery-payment {
-  grid-column: 1 / 2;
-}
-
-#label-deliveryname, #label-delivery, #label-delivery2, #label-delivery-payment-cardholder, #label-delivery-payment, #label-delivery-payment-margin-logo {
-    width: 400px;
-    
-}
-
-
-
-
 
     /*---------------- Homepage ------------ Media queries 900px */
 
@@ -1942,21 +1895,21 @@ footer {
     width: 100%;
 }
 
+
+
+
+
+.Delivery-form { 
+    margin: auto;
+}
+
 footer {
     font-size: 12px;
 }
 }
 
 
-@media (max-width: 440px) {
 
-#label-deliveryname, #label-delivery, #label-delivery2, #label-delivery-payment-cardholder, #label-delivery-payment, #label-delivery-payment-margin-logo {
-    width: 100%;
-    
-}
-
-
-}
 
 @media (min-width: 900px) {
     nav {
