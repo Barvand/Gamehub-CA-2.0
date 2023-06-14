@@ -1102,19 +1102,17 @@ font-weight: 600;
 }
 
 .Cart-item-price-container {
-    position: relative;
     display: flex;
     justify-content: center;
     background-color:#D9D9D9;
     grid-column: 4 / 6;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
     gap: 30px;
 
 }
 
 .cart-item-price-numbers {
     padding-top: 70px;
-    
     text-decoration: underline;
     
 }
@@ -1124,18 +1122,22 @@ font-weight: 600;
     text-decoration: underline;
 }
 
+.btn-summary-checkout {
+
+    width: 100%;
+    grid-column: 4/6;
+}
 #btn-summary-checkout {
-    position: absolute;
-    padding: 5px 20px; 
+    display: flex;
+    padding: 10px 75px; 
     font-size: 18px;
     font-family: "Dosis";
-    bottom: 20px;
-    right: 30px;
-    width: 80%;
     background-color: #FE2121;
-    text-align:  center; 
+    justify-content: center;
     text-transform: uppercase;
     color: white;
+    border-radius: 0px 0px 10px 10px;
+    border: black  2px solid;
 }
 
 #btn-summary-checkout:hover {
@@ -1693,6 +1695,15 @@ margin-bottom: 50px;
 .Cart-item-price-container {
     grid-row: 3 / 4 ; 
     grid-column: 1;
+    margin: 0;
+}
+
+.btn-summary-checkout {
+    width: 100%;
+    grid-column: 1/6;
+    grid-row: 5;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -1772,9 +1783,19 @@ footer {
 .Cart-item-price-container {
     grid-row: 4 ; 
     grid-column: 1 / 6;
-    
     border-radius: 0px;
+    margin-left: 0; 
+    padding-left: 0;
     
+}
+
+.btn-summary-checkout {
+   margin: auto;
+   
+}
+
+#btn-summary-checkout {
+   margin: auto;
 }
 }
 
