@@ -479,14 +479,15 @@ font-size: 16px;
 }
 
 .addtocart-product {
-    width: 80%;
     background-color: #0F9E2E;
     color: white;
-    height: 40px;
-    font-size: 24px;
+    font-size: 2rem;
     text-transform: uppercase;
     font-family: "Dosis";
-    margin-bottom: 20px;
+    padding: 0 50px;
+    
+    
+    
 }
 
 .addtocart-product:hover { 
