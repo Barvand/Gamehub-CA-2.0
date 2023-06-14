@@ -785,20 +785,15 @@ border-left: 0;
 }
 
 .header-btn-content3 {
-    width: 180px;
-    height: 50px;
     background-color: #00D1FF;
+    padding: 10px 30px;
     color: black;
-    font-family: "Raleway";
     font-size: 18px;
-    right: 168px;
-    font-weight: 600;
-    margin:20px 0px 0px 200px;
+    margin:0px 0px 50px 200px;
     text-transform: uppercase;
     font-family: "Dosis";
     font-weight: 600;
-    box-shadow: 1px 1px 1px 1px white;
-
+    box-shadow: 1px 1px 1px 1px rgb(161, 4, 148);
 }
 
 
@@ -1545,7 +1540,7 @@ padding-right: 12px;
 
 .gamehub-header, .salesheader{
     margin: 0;
-    font-size: 40px;
+    font-size: 56px;
 }
 
 .green-fifty, .summerdeals {
@@ -1564,16 +1559,16 @@ padding-right: 12px;
 }
 
 .griditem-2 p{
-    padding: 0;
+    padding: 10px;
     margin: 0;
     color:white;
     
 }
 
-.griditem-2 h3{
-    font-size: 36px;
-    padding: 0 0 20px 0;
-    margin: 0;
+.griditem-2 h2{
+    font-size: 32px;
+    padding: 20px 0 0px 0;
+    margin: 0px 0px 5px 0px;
     
 }
 
@@ -1587,10 +1582,12 @@ padding-right: 12px;
     border: solid 5px #F6C30E; 
             
 }
-.griditem-3 h3 {
+.griditem-3 h2 {
     padding-bottom: 20px;
     margin-left: 0;
-    font-size: 26px;
+    font-size: 32px;
+    
+   
 }
        
 .popularnowdivider { 
@@ -1792,14 +1789,30 @@ footer {
     width: 100%;
 }
 
-.header-btn-content2 {
-    margin: 0;
-    margin-top: 20px;
-    width: 100px;
-    font-size: 14px;
-    height: 30px;
+.gamehub-header, .salesheader {
+    font-size: 40px;
     
 }
+
+.summerdeals {
+    font-size: 16px;
+}
+
+.green-fifty {
+    padding-top: 10px;
+    font-size: 14px;
+    
+}
+
+.h2header-marketplace {
+    font-size: 28px;
+}
+
+.p-header-marketplace {
+    font-size: 16px;
+}
+
+
     .grid-item8-container {
         width: 100%;
         grid-template-columns: 1fr 1fr;
