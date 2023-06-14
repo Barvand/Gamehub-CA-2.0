@@ -1133,6 +1133,8 @@ font-weight: 600;
     right: 30px;
     width: 80%;
     background-color: #FE2121;
+    text-align:  center; 
+    text-transform: uppercase;
     color: white;
 }
 
