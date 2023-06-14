@@ -1242,14 +1242,14 @@ font-weight: 600;
     }
 
 
-#label-delivery-payment, #label-delivery-payment-cardholder {
+.label-delivery-payment, #label-delivery-payment-cardholder {
     display: block;
     width: 400px;
     
 }
 
 
-#label-delivery-payment-margin-logo {
+.label-delivery-payment-margin-logo {
     display: block;
     margin-bottom: 20px;
     width: 400px;
