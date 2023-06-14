@@ -733,20 +733,20 @@ border-left: 0;
     padding-left: 40px;
     margin: 0px 0px 0px 20px;
     font-weight: 600;
+    padding-bottom: 20px;
 }
 
 .header-btn-content2 {
-    width: 180px;
-    height: 50px;
     background-color: #00D1FF;
+    padding: 10px 30px;
     color: black;
     font-size: 18px;
-    right: 168px;
-    margin:20px 0px 0px 200px;
+    margin:0px 0px 50px 200px;
     text-transform: uppercase;
     font-family: "Dosis";
     font-weight: 600;
     box-shadow: 1px 1px 1px 1px rgb(161, 4, 148);
+    
 
 }
 
