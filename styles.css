@@ -1288,15 +1288,16 @@ width: 80px;
 #payment-btn {
     padding: 3px 10px;
     align-items: center;
-    background-color: rgb(2, 160, 55);
-    font-size: 18px;
-    color: rgb(255, 255, 255);
+    background-color: #201D3E;
+    font-size: 16px;
+    color: #FEA621;
     font-weight: 600;
     border: solid 1px black;
     cursor: pointer;
 }
 #payment-btn:hover {
-   background-color: #10551e;
+   background-color: #FEA621;
+   color: #201D3E;
 }
 
 .Checkbox-addres-delivery {
