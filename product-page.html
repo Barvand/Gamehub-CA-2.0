@@ -15,42 +15,46 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body> 
-    <header>
-        <div id="header"> 
-            <div id="logoheader"> 
-            <a href="index.html"> <img src="Images/GameHub_Logo.png" alt="Gamehub logo" class="logoheader"> </a>
-        </div>
-            <input type="search" placeholder="Search.." class="search">
-    <div class="account-text-header">
-        <div class="account-icontext-sign">
-            <i class="fa-solid fa-user account-icons icon-sign" style="color: #fafafa;"></i>
-            <p class="account-text"> sign in </p>
-        </div> 
-        <div class="account-iconstext-cart">
-            <a href="cart.html">
-            <i class="fa-solid fa-cart-shopping account-icons" style="color:white"></i>
-            <p class="account-text"> cart </p>
-            </a>
-        </div>
-            </div>
-        </div>
-        
-        <div id="navbar">
-            <input type="checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"> </i></label>
-            <nav>
-            <a href="index.html"> Home </a>
-            <a href="games.html"> Games </a>
-            <a href="games.html"> Deals </a>
-            <a href="contact.html"> Customer service </a>
-            <a href="contact.html"> Contact us </a>
-            <a href="about.html"> About us </a>
-            <a href="#"> Find a store </a>
-            <a href="#"> Help </a>
-            <a href="#"> Shipment </a>
-            </nav>
-       </div>
-    </header> 
+        <header>
+            <div id="header"> 
+                        <div id="logoheader"> 
+                        <a href="index.html"> <img src="Images/GameHub_Logo.png" alt="Gamehub logo" class="logoheader"> </a>
+                        </div>
+                        <form class="search"> 
+                        <label id=searchhidden-label for="search"> Search </label>
+                        <input type="search" placeholder="Search.." id="search">
+                        </form>
+            
+                <div class="account-text-header">
+                    <div class="account-icontext-sign">
+                        <i class="fa-solid fa-user account-icons icon-sign" style="color: #fafafa;"></i>
+                        <p class="account-text"> sign in </p>
+                    </div> 
+                    <div class="account-iconstext-cart">
+                        <a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping account-icons" style="color:white"></i>
+                        <p class="account-text"> cart </p>
+                        </a>
+                    </div>
+                </div>
+            </div>       
+                    <div id="navbar">
+                        <input type="checkbox" id="menu-checkbox">
+                        <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"> </i> <span id="hidden-menu"> Hamburger menu </span></label>
+                        <nav>
+                        <a href="index.html"> Home </a>
+                        <a href="games.html"> Games </a>
+                        <a href="games.html"> Deals </a>
+                        <a href="contact.html"> Customer service </a>
+                        <a href="contact.html"> Contact us </a>
+                        <a href="about.html"> About us </a>
+                        <a href="#"> Find a store </a>
+                        <a href="#"> Help </a>
+                        <a href="#"> Shipment </a>
+                        </nav>
+                   </div>
+                
+                </header>  
 
 
 
