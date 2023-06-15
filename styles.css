@@ -186,6 +186,8 @@ nav,
     margin-top: 20px;
     padding: 10px 30px 10px 30px;
     background-color: lightgrey;
+    color: black;
+    font-weight: bold;
 
 }
 
@@ -354,7 +356,7 @@ gap: 3rem;
 }
 
 .price-used {
-    color: #080808;
+    color: #070707;
     text-transform: capitalize;
     font-size: 16px;
     font-family: "Dosis";
