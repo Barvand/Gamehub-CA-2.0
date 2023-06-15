@@ -81,7 +81,7 @@ padding-left: 20px;
  }
 
  .search label {
-    display: hidden;
+    display: none;
     user-select: none;
  }
 
