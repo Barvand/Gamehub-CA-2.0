@@ -462,7 +462,6 @@ width: 20px;
 
 .platform1-form {
     padding-bottom: 10px;
-
 }
 #Edition {
     width: 150px;
@@ -470,9 +469,7 @@ width: 20px;
     border-radius: 5px;
     font-size: 14px;
     margin-left: 15px;
-    
 }
-
 #Platform1 { 
     width: 150px;
     height: 30px;
@@ -494,7 +491,7 @@ width: 20px;
 
 #releasedate-product-page {
     font-size: 16px;
-    color: #807f7f;
+    color: #000000;
 }
 
 
@@ -535,7 +532,7 @@ width: 20px;
 }
 
 .categories-text-productpage {
-    color: #807f7f;
+    color: #000000;
     margin-bottom: 0;
 }
 
