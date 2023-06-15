@@ -78,7 +78,11 @@ padding-left: 20px;
     background-image: url(Images/search-icon.png);
     background-repeat: no-repeat;
     background-position: right center;
- 
+ }
+
+ .search label {
+    color: #1E2651;
+    user-select: none;
  }
 
 /* Navigation*/
