@@ -1296,9 +1296,11 @@ width: 80px;
 }
 #payment-btn:hover {
    background-color: #10551e;
-
 }
 
+.Checkbox-addres-delivery {
+    padding-top: 10px;
+}
 #orderedb4-delivery {
     font-weight: bold;
 }
