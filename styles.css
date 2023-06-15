@@ -1160,8 +1160,9 @@ font-weight: 600;
 #btn-summary-checkout {
     display: flex;
     padding: 10px 75px; 
-    font-size: 18px;
-    font-family: "Dosis";
+    font-size: 22px;
+    font-family: "Laila";
+    font-weight: 600;
     background-color: rgb(255, 0, 0);
     justify-content: center;
     text-transform: uppercase;
