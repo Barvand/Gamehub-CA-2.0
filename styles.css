@@ -917,7 +917,7 @@ background-color: #265E79;
     background-image: linear-gradient(
         rgba(34, 33, 33, 0.8),
         rgba(2, 2, 2, 0.8)
-      ), url(Images/Computerpicture-gamehub.png);
+      ), url(Images/Computerpicture-gamehub.jpg);
       background-size: 120%;
       background-position: center;
 
@@ -1065,7 +1065,7 @@ font-weight: 600;
     background-image: linear-gradient(
         rgba(10, 4, 4, 0.5),
         rgba(5, 5, 5, 0.5)
-      ),url(Images/unplash-forumimg.png);
+      ),url(Images/unplash-forumimg.jpg);
 }
 
 .forum-btn {
