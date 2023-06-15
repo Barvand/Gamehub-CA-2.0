@@ -459,15 +459,18 @@ width: 20px;
     margin-bottom: 10px;
 }
 
-.Platformlabel {
-font-size: 16px;
-}
 
-#Platform {
+.platform1-form {
+    padding-bottom: 10px;
+
+}
+#Edition {
     width: 150px;
     height: 30px;
     border-radius: 5px;
     font-size: 14px;
+    margin-left: 15px;
+    
 }
 
 #Platform1 { 
@@ -475,17 +478,8 @@ font-size: 16px;
     height: 30px;
     border-radius: 5px;
     font-size: 14px;
-
 }
 
-.Platformlabel { 
-    display: block;
-}
-
-#Edition {
-    padding-right: 11px;
-    
-}
 .Add-to-cart p {
     font-size: 20px;
 }
