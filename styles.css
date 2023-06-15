@@ -354,7 +354,7 @@ gap: 3rem;
 }
 
 .price-used {
-    color: grey;
+    color: #068ae2;
     text-transform: capitalize;
     font-size: 16px;
 } 
@@ -483,7 +483,7 @@ font-size: 16px;
     color: #09BB1B;
 }
 .usedprice {
-    color: #9F9F9F;
+    color: #068ae2;
     text-transform:uppercase;
 }
 
