@@ -1711,6 +1711,12 @@ margin-bottom: 50px;
 
 footer {
     margin-top: 150px;
+
+}
+
+.Order-completed {
+    margin-top: 100px;
+    padding-bottom: 100px;
 }
 /*---------------- Contact us ------------ Media queries 900px*/
 .contact-us {
@@ -1746,10 +1752,6 @@ footer {
 .h1-space-wars {
     margin: 0;
 }
-
-
-
-
 
 .container-product-page {
     width: 95%;
@@ -1813,6 +1815,7 @@ footer {
     padding: 40px 0px; 
     margin: 0;
     }
+
 
 }
 
