@@ -1128,7 +1128,8 @@ font-weight: 600;
 }
 
 .text-color-new {
-    color: red;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
 }
 
 .Cart-item-price-container {
@@ -1161,7 +1162,7 @@ font-weight: 600;
     padding: 10px 75px; 
     font-size: 18px;
     font-family: "Dosis";
-    background-color: #FE2121;
+    background-color: rgb(255, 0, 0);
     justify-content: center;
     text-transform: uppercase;
     color: white;
