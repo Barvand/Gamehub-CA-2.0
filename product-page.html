@@ -75,8 +75,14 @@
         </div>
         
             <div class="Add-to-cart">
-                <p><input type="checkbox"> $59,99 <span class="newprice"> NEW </span> </p>
-                <P><input type="checkbox">$39,99 <span class="usedprice"> Used </span> </P>
+                <form class="checkbox-add-to-cart"> 
+                <input type="checkbox" id="checkbox"> 
+                <label for="checkbox"> $59,99 <span class="newprice"> NEW </span> </label>
+                </form>
+                <form>
+                <input type="checkbox" id="checkbox1"> 
+                <label for="checkbox1"> $39,99 <span class="usedprice"> Used </span> </label>
+                </form>
                 <p id="releasedate-product-page"> Release date: 14/02/2023 </p>
 
 
@@ -102,7 +108,7 @@
     </div>   
    
     <div class="Features">
-        <h3> Features </h3>
+        <h2> Features </h2>
         <p> Space War is an action-packed, sci-fi-themed game set in outer space. The game features intense battles between spacecrafts, with the objective of defeating your opponent and emerging victorious. </p>
 
             <p> Players take on the role of a skilled space pilot, commanding their spacecraft in a variety of missions 
@@ -164,7 +170,8 @@
                     <input id="input-review2" type="text" placeholder="Colins">
                     <label for="input-review3"> Title </label>
                     <input id="input-review3" type="text" placeholder="Title">
-                    <textarea id="textarea"> </textarea>
+                    <label for="textarea"> Write your review </label>
+                    <textarea id="textarea" placeholder="Start writing your review"></textarea>
                     <a href="contact.html" id="submitbutton"> Submit </a>
                 </form>
         </div>
