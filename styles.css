@@ -66,15 +66,20 @@ padding-left: 20px;
 }
 
 .search {
-   width: 60%;
-   height: 30px;
+   width: 70%;
    margin: auto 0;
    grid-column: 3;
-   background-image: url(Images/search-icon.png);
-   background-repeat: no-repeat;
-   background-position: right center;
 
 }
+
+#search {
+    width: 100%;
+    height: 30px;
+    background-image: url(Images/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+ 
+ }
 
 /* Navigation*/
 
@@ -1416,7 +1421,7 @@ body {
     margin: auto;
 }
 
-.search {
+#search {
     display: none;
     
 }   
