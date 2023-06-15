@@ -1128,7 +1128,7 @@ font-weight: 600;
 }
 
 .text-color-new {
-    color: rgb(255, 0, 0);
+    color: green;
     font-weight: bold;
 }
 
@@ -1160,9 +1160,8 @@ font-weight: 600;
 #btn-summary-checkout {
     display: flex;
     padding: 10px 75px; 
-    font-size: 22px;
-    font-family: "Laila";
-    font-weight: 600;
+    font-size: 26px;
+    font-family: "Dosis";
     background-color: rgb(255, 0, 0);
     justify-content: center;
     text-transform: uppercase;
