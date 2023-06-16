@@ -1349,16 +1349,7 @@ footer p {
         width: 100%;
         font-size: 16px;
     }
-    
-
-    
     .flex-container-games, .container-productpage, .contact-us-text, .form, .flex-items {
-        width: 80%;
-        margin: auto;
-        
-    }
-   
-    .flex-items {
         width: 80%;
         margin: auto;
     }
@@ -1367,41 +1358,12 @@ footer p {
     }
     .Image-games-productpage img{ 
         display:none;
-    
     }
     .flex-wrapper-deluxe {
         width: 95%;
         margin: auto;
     }
-
-    .grid-container5 {
-        width: 100%;
-    }
-
-    .racing-image-item5 {
-        width: 25%;
-        height: 50%;
-        top: 0;
-    }
-
-    .grid-container-6 { 
-        width: 100%;
-    }
-
-    .grid-item8-container {
-        width: 100%;
-        grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
-        gap: 0px
-    }
-.price-grid-item8 {
-    width :100%;
-    margin: auto;
-}
-
-.item-8 img {
-    width: 100%
-}
-    
+ 
 }
 
 
@@ -1440,7 +1402,6 @@ body {
 
 #logoheader {
     grid-column: 2/3;
-    justify-content: center;
     margin: auto;
 }
 
