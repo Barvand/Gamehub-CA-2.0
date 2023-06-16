@@ -658,11 +658,7 @@ border-left: 0;
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover; 
-    
-
-
 }
-
 .summerdeals{
     top: 150px;
     right: 400px;
@@ -672,33 +668,23 @@ border-left: 0;
     margin: 0;
     
     }
-
 .green-fifty {
     font-size: 28px;
     color: #00FF19;
-    bottom: 128px;
-    left: 446px;
-    
-    
-
 }
 .gamehub-header {
-    color: white;
-    font-family: "Dosis";
+    color: #fdfdfd;
+    font-family: "Laila";
     font-weight: 700;
     font-size: 64px;
-    -webkit-text-stroke: #1E2651 2px;
     text-transform: uppercase;
     margin: 20px;
+    
 }
 
 .salesheader {
-    top: 100px;
     font-size: 64px;
-    font-family: "Laila";
-    font-weight: 700;
     color: #FEA621;
-    left: 521px;
     text-transform: uppercase;
 }
 
@@ -728,7 +714,6 @@ border-left: 0;
 /* content 2 */ 
 .griditem-2 {
     flex-direction: column;
-    background-repeat: no-repeat;
     grid-column: 1 / 3;
     height: 250px;
     font-size: 32px;
@@ -799,7 +784,7 @@ border-left: 0;
   margin:20px 0px 0px 25px;
 }
 
-.p-header-marketplace-content2 {
+.p-header-marketplace-item3 {
     margin: 0;
     color: white;
     padding-left: 40px;
@@ -836,8 +821,6 @@ border-left: 0;
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
     grid-column: 1 / 6;
     height: 80px;
 }
@@ -918,7 +901,7 @@ background-color: #265E79;
         rgba(34, 33, 33, 0.8),
         rgba(2, 2, 2, 0.8)
       ), url(Images/Computerpicture-gamehub.jpg);
-      background-size: 120%;
+      background-size: 100%;
       background-position: center;
 
 }
@@ -981,10 +964,8 @@ background-color: #265E79;
 }
 
 .item-8 {
-    flex: 1; 
     width: 100%;
     border-radius: 0px 0px 20px 20px;
-    display: flex;
     gap: 1rem;
     flex-direction: column;
     text-align: center;
@@ -1029,7 +1010,7 @@ color: #201D3E;
     display: none;
 }
 
-.grid-container-6 {
+.grid-container-homepage-2 {
     display:grid;
     width: 990px;
     margin: auto;
@@ -1546,9 +1527,12 @@ padding-right: 10px;
     font-size: 56px;
 }
 
-.green-fifty, .summerdeals {
+.summerdeals {
+    font-size: 22px;
+}
+.green-fifty {
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 .griditem-2 {
     grid-column: 1 / 6;
@@ -1663,7 +1647,7 @@ padding-right: 10px;
     background-color: rgb(255, 254, 254);
 
 }
-.grid-container-6 {
+.grid-container-homepage-2 {
     width: 100%;
     grid-template-columns: 1fr 1fr;
    
