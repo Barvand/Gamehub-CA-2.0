@@ -1,140 +1,138 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head> 
-   
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <meta name="description" content="Gamehub cart, add discount code to your excisting order">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Laila&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/43c9e5e89e.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css">
-        <title> Buy your products / Cart!</title>
-    </head>
-<body>
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gamehub cart, add discount code to your excisting order"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Laila&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/43c9e5e89e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="module" src="js/main.js"></script>
+    <title>Buy your products / Cart!</title>
+  </head>
+  <body>
     <header>
-        <div id="header"> 
-                    <div id="logoheader"> 
-                    <a href="index.html"> <img src="Images/GameHub_Logo.png" alt="Gamehub logo" class="logoheader"> </a>
-                    </div>
-                    <form class="search"> 
-                    <label id=searchhidden-label for="search"> Search </label>
-                    <input type="search" placeholder="Search.." id="search">
-                    </form>
-        
-            <div class="account-text-header">
-                <div class="account-icontext-sign">
-                    <i class="fa-solid fa-user account-icons icon-sign" style="color: #fafafa;"></i>
-                    <p class="account-text"> sign in </p>
-                </div> 
-                <div class="account-iconstext-cart">
-                    <a href="cart.html">
-                    <i class="fa-solid fa-cart-shopping account-icons" style="color:white"></i>
-                    <p class="account-text"> cart </p>
-                    </a>
-                </div>
-            </div>
-        </div>       
-                <div id="navbar">
-                    <input type="checkbox" id="menu-checkbox">
-                    <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"> </i> <span id="hidden-menu"> Hamburger menu </span></label>
-                    <nav>
-                    <a href="index.html"> Home </a>
-                    <a href="games.html"> Games </a>
-                    <a href="games.html"> Deals </a>
-                    <a href="contact.html"> Customer service </a>
-                    <a href="contact.html"> Contact us </a>
-                    <a href="about.html"> About us </a>
-                    <a href="#"> Find a store </a>
-                    <a href="#"> Help </a>
-                    <a href="#"> Shipment </a>
-                    </nav>
-               </div>
-            
-            </header> 
-
-<main>
-
-
-<section class="Cart-page-container">
-    <h1 id="h1-cart"> <i class="fa-solid fa-cart-shopping"></i>  Cart </h1> 
-    <div class="Cart-item"> 
-<img src="Images/GameHub_covers6-resize.jpg" alt="Space-war-game">
-<h2> Space war <span class="digitalcopy-text"> Digital copy </span>  <span class="money"> $49,99 </span> </h2>
-
-</div>
-   <div class="cart-item-text">
-    <p> Standard edition </p>
-    <p class="text-color-new"> New <p> 
-    <p> Platform: Playbox </p>
-    <p>
-        <label class="Platformlabel" id="Edition" for="Platform"> Quantity: </label>  
-        <select name="Platform" id="Platform">
-        <option value="Collector"> 1 </option>
-        <option value="Deluxe"> 2</option>
-        <option value="Standard"> 3 </option>
-        </select> 
-        </p>
-    </div> 
-<div class="Cart-item-price-container">
-    <div class="cart-item-price-text"> 
-        <h3 class="h3-price-item"> Summary </h3>
-        <p> Price</p>
-        <p> VAT </p>
-        <p> Shipping </p>
-        <p class="bold"> Total  </p>
-    </div>
-        <div class="cart-item-price-numbers">
-        <p> $ 39.99 </p>
-        <p> $ 10.00 </p>
-        <p> $ 0.00 </p>
-        <p class="bold"> $ 49.99 </p>
+      <div id="header">
+        <div id="logoheader">
+          <a href="index.html">
+            <img
+              src="Images/GameHub_Logo.png"
+              alt="Gamehub logo"
+              class="logoheader"
+            />
+          </a>
         </div>
-    </div>
-    <div class="btn-summary-checkout">
-        <a href="delivery.html" id="btn-summary-checkout"> Check out </a> 
-    
-</div> 
-<form id="return-btn-cart">
-    <input type="button" value="Back" onclick="history.back()">
-   </form>
- 
-</section>
+        <form class="search">
+          <label id="searchhidden-label" for="search"> Search </label>
+          <input type="search" placeholder="Search.." id="search" />
+        </form>
 
+        <div class="account-text-header">
+          <div class="account-icontext-sign">
+            <i
+              class="fa-solid fa-user account-icons icon-sign"
+              style="color: #fafafa"
+            ></i>
+            <p class="account-text">sign in</p>
+          </div>
+          <div class="account-iconstext-cart">
+            <a href="cart.html">
+              <i
+                class="fa-solid fa-cart-shopping account-icons"
+                style="color: white"
+              ></i>
+              <p class="account-text">cart</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="navbar">
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"
+          ><i class="fas fa-bars"> </i>
+          <span id="hidden-menu"> Hamburger menu </span></label
+        >
+        <nav>
+          <a href="index.html"> Home </a>
+          <a href="games-page.html"> Games </a>
+          <a href="games-page.html"> Deals </a>
+          <a href="contact.html"> Customer service </a>
+          <a href="#"> Contact us </a>
+          <a href="#"> About us </a>
+          <a href="#"> Find a store </a>
+          <a href="#"> Help </a>
+          <a href="#"> Shipment </a>
+        </nav>
+      </div>
+    </header>
 
+    <main>
+      <section class="Cart-page-container">
+        <div class="back">
+          <p class="back-paragraph">Back</p>
+        </div>
+        <h1 id="h1-cart"><i class="fa-solid fa-cart-shopping"></i> Cart</h1>
+        <div class="container-item-price">
+          <div class="Cart-item">
+            <div class="loader"></div>
+          </div>
+        </div>
+        <div class="total-container">
+          <div class="pricing-cart">
+            <p>Price</p>
+            <p class="update-price"></p>
+          </div>
+          <div class="shipping-cart">
+            <p>Shipping</p>
+            <p class="shipping-price">$ 3</p>
+          </div>
+          <div class="total-cart">
+            <p>Total</p>
+            <p class="update-total-price">$ 250</p>
+          </div>
+          <div class="btn-checkout-container">
+            <a href="delivery.html" class="btn-checkout"> Check out </a>
+          </div>
+        </div>
+      </section>
 
-</main> 
+      <div class="push-footer"></div>
+    </main>
 
-<footer>
-    <div class="footer-flex">
+    <footer>
+      <div class="footer-flex">
         <div class="footer-help">
-        <h3> Help </h3>
-        <p> FAQ </p>
-        <p> Order status </p>
-        <p> Returns </p>
-        
+          <h3>Help</h3>
+          <p>FAQ</p>
+          <p>Order status</p>
+          <p>Returns</p>
         </div>
-    
+
         <div class="footer-legal">
-            <h3> Legal & Privacy </h3>
-            <p> Terms and agreements </p>
-            <p> Privacy agreement </p>
-            <p> Marketplace </p>
-           </div>
-           <div class="footer-About">
-            <h3> About us </h3>
-            <p> Careers </p>
-            <p> Marketplace </p>
-            <p> Contact</p>
-           </div>
-        
-     </div>
-     </footer>
-
-     </body>
-
-     </html>
+          <h3>Legal & Privacy</h3>
+          <p>Terms and agreements</p>
+          <p>Privacy agreement</p>
+          <p>Marketplace</p>
+        </div>
+        <div class="footer-About">
+          <h3>About us</h3>
+          <p>Careers</p>
+          <p>Marketplace</p>
+          <p>Contact</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

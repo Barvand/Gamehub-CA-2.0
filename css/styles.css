@@ -1,0 +1,955 @@
+@import "/css/product.css";
+@import "/css/index.css";
+@import "/css/games-page.css";
+@import "/css/cart.css";
+@import "/css/error.css";
+
+/* general styling */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Raleway";
+  margin: 0% auto;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar a:hover {
+  background-color: #1e2651;
+  color: white;
+}
+
+h3 {
+  margin: 0;
+  font-size: 12;
+}
+
+.bold {
+  font-weight: 600;
+}
+/* Header */
+
+header {
+  position: relative;
+  background-color: #1e2651;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 0.2fr 0.25fr 0.9fr 0.1fr;
+}
+
+.logoheader {
+  display: flex;
+  height: 150px;
+  padding-left: 50px;
+  margin: 10px;
+}
+
+.account-text {
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.account-text-header {
+  display: flex;
+  grid-column: 4;
+}
+.icon-sign::before {
+  padding-left: 20px;
+}
+
+.search {
+  width: 70%;
+  margin: auto 0;
+  grid-column: 3;
+}
+
+#search {
+  width: 100%;
+  height: 30px;
+  background-image: url(/images/search-icon.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+#searchhidden-label {
+  display: none;
+  user-select: none;
+}
+
+/* Navigation*/
+
+header {
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px 10px 30px;
+  color: #1e2651;
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+  border: solid 2px #fea621;
+  color: black;
+  background-color: #fea621;
+}
+
+nav,
+#menu-checkbox {
+  display: none;
+  background-color: #1e2651;
+  padding: 20px;
+}
+
+.category-text {
+  width: 40vw;
+  padding: 10px;
+  border: solid 1px black;
+}
+
+.category-text:hover,
+.category-text1:hover {
+  background-color: #fea621;
+  cursor: pointer;
+}
+
+.container-wrapper {
+  width: 40%;
+  margin: auto;
+}
+
+.container-productpage {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.item-product-page {
+  flex-direction: column;
+  font-family: "Raleway";
+  margin-top: 20px;
+  box-shadow: 10px 10px 10px 10px rgb(233, 231, 231);
+  background-color: #fff6f6;
+  padding-top: 10px;
+  height: 500px;
+  width: 100%;
+}
+
+.game-old-price {
+  text-decoration: line-through;
+}
+
+.item-product-page h3,
+p {
+  font-size: 14px;
+  padding: 0 10px 0 10px;
+}
+
+.Game-cover-img {
+  margin-top: 20px;
+  display: block;
+  height: 300px;
+  width: 100%;
+}
+
+.game-title {
+  padding: 10px 0 0 10px;
+}
+
+.new-price {
+  text-decoration: line-through;
+}
+
+.add-to-cart-btn {
+  display: flex;
+  width: 90%;
+  text-transform: uppercase;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Dosis";
+  font-weight: bold;
+  border: #000 1px solid;
+  padding: 10px;
+  background-color: #1e2651;
+  color: #fea621;
+  margin: 10px auto;
+  box-shadow: 1px 1px grey;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #6b73a5;
+  cursor: pointer;
+}
+
+/* Homepage */
+
+.buttonheader {
+  width: 200px;
+  color: white;
+  background-color: red;
+  text-align: center;
+}
+
+/* Divider homepage */
+
+.flex-item {
+  flex-wrap: wrap;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* content 1 */
+.griditem-1 {
+  grid-column: 1/6;
+  height: 400px;
+  text-align: center;
+  background-size: contain;
+  background-position: top center;
+  background-blend-mode: color;
+  background-color: #0c0c0cab; /* Fallback color */
+  background-blend-mode: multiply;
+}
+
+.gridItem1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+}
+
+.gamehub-header {
+  margin-bottom: 0;
+  color: #fdfdfd;
+  font-family: "Laila";
+  font-weight: 700;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+.salesheader {
+  font-size: 42px;
+  color: #fea621;
+  text-transform: uppercase;
+}
+
+.summerdeals {
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  border-radius: black 1px solid;
+}
+.green-fifty {
+  display: block;
+  font-size: 22px;
+  color: #fea621;
+  margin-bottom: 20px;
+}
+
+.header-btn {
+  padding: 10px 100px;
+  font-family: "Raleway";
+  border-radius: 5px;
+  background-color: #1e2651;
+  border: #6b73a5 1px solid;
+  color: #fea621;
+  font-size: 18px;
+  align-self: center;
+  text-transform: uppercase;
+  font-family: "Dosis";
+  font-weight: 600;
+  box-shadow: 1px 1px 1px 1px rgb(71, 70, 70);
+}
+
+.header-btn:hover {
+  background-color: #6b73a5;
+  color: #fea621;
+  border: #bf11eb 1px solid;
+}
+
+/* content 2 */
+
+.flex-container-item-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 300px;
+  margin: 25px 0 25px 0;
+  gap: 20px;
+}
+
+.griditem-2 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background: linear-gradient(
+    to right,
+    rgb(96, 5, 138) 0%,
+    #fea621 100%,
+    rgb(133, 10, 182) 50%,
+    paleturquoise 100%
+  );
+}
+
+.h2header-marketplace {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(253, 253, 253);
+  margin: 20px 0px 10px 25px;
+}
+
+.p-header-marketplace {
+  font-size: 22px;
+  color: rgb(252, 250, 250);
+  margin: 0px 0px 0px 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.header-btn-content3:hover {
+  background-color: #265e79;
+  color: #f56ce7;
+}
+
+/* content 3 */
+
+.griditem-3 {
+  width: 100%;
+  height: 300px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  width: 50%;
+  background-image: linear-gradient(rgba(10, 4, 4, 0.5), rgba(5, 5, 5, 0.5)),
+    url(/images/gamehubclub.jpg);
+  background-size: 100%;
+}
+
+.h2header-club {
+  color: white;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.p-header-marketplace-item3 {
+  margin: 0;
+  color: white;
+  margin-left: 10px;
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+
+.header-btn-content3 {
+  background-color: #000000;
+  padding: 10px 30px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Dosis";
+  font-weight: 600;
+  box-shadow: 1px 1px 1px 1px rgb(161, 4, 148);
+}
+
+#Gamehub-yellow {
+  color: #fea621;
+  font-weight: bold;
+}
+
+/* content 4 */
+
+.item-4 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  grid-column: 1 / 6;
+  height: 80px;
+}
+
+/* content 5 */
+
+.flex-container-item-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px 0 25px 0;
+  gap: 20px;
+}
+
+.item-5 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  background-size: 100%;
+  flex: 250px;
+  background-color: black;
+}
+
+.item-5 h3 {
+  
+  color: white;
+  font-size: 38px;
+  font-weight: 600;
+
+}
+.item-5 p {
+    margin: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+.item-5-coming-soon-p {
+  font-weight: 600;
+  font-style: italic;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.releasedate-color {
+  color: red;
+}
+
+.racing-btn { 
+    margin-top: 10px;
+}
+
+/* content 6 */
+.item-6 {
+  display: flex;
+  flex: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
+  height: 275px;
+  background-image: linear-gradient(rgba(34, 33, 33, 0.8), rgba(2, 2, 2, 0.8)),
+    url(/images/Computerpicture-gamehub.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.item6-h3 {
+  color: white;
+  font-size: 32px;
+}
+
+.item-6 p {
+  font-size: 18px;
+  margin: 0;
+  padding-left: 40px;
+  color: white;
+}
+
+.color-p-item6 {
+  color: #f56ce7;
+  font-size: 24px;
+}
+
+.PC-btn {
+  background-color: #00d1ff;
+  margin: 30px 0px 0px 250px;
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+  border: solid white 1px;
+  box-shadow: 1px 1px 1px 1px white;
+  text-transform: uppercase;
+  font-family: "Dosis";
+  font-weight: 600;
+}
+
+/* content 7 */
+.item-7 {
+  padding: 0;
+  margin: 0;
+  height: 36px;
+  grid-column: 1 / 5;
+  background-color: white;
+  font-size: 26px;
+  grid-column: 1/6;
+}
+.popularnowdivider {
+  margin-top: 0;
+}
+/*  <---------------content 8 and NEW GRID ------------->  */
+
+.review-coins-item9 {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  background: linear-gradient(
+    to left,
+    rgb(96, 5, 138) 0%,
+    #fea621 100%,
+    rgb(133, 10, 182) 50%,
+    paleturquoise 100%
+  );
+}
+
+.review-coins-item9 p,
+.forum-item10 p {
+  font-weight: 600;
+}
+
+.forum-item10 {
+  color: white;
+  width: 100%;
+  background-size: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(10, 4, 4, 0.5), rgba(5, 5, 5, 0.5)),
+    url(/images/unplash-forumimg.jpg);
+}
+
+.forum-btn {
+  margin-top: 28px;
+}
+
+/* ---------------- Order-completed ------------------- */
+.Order-completed {
+  display: grid;
+  padding-top: 100px;
+  width: 50%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 1fr 1fr 1fr 1fr 1fr 0.4fr;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Order-completed button {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 20px;
+  align-content: center;
+  margin: 20px auto;
+  background-color: green;
+  color: white;
+  border: black 1px solid;
+}
+
+.Order-completed button:hover {
+  background-color: rgb(2, 54, 2);
+}
+
+/* ---------------- footer ------------------- */
+
+footer {
+  background-color: #d9d9d9;
+  margin: 0;
+  margin-top: 100px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+footer p {
+  color: black;
+}
+
+@media (max-width: 1700px) {
+  .flex-wrapper-deluxe {
+    width: 90%;
+    
+  }
+}
+
+@media (max-width: 1100px) {
+  .flex-container-games,
+  .container-productpage,
+  .contact-us-text,
+  .form,
+  .flex-items {
+    width: 80%;
+    margin: auto;
+  }
+  .nav-games-page {
+    width: 100%;
+  }
+  .Image-games-productpage img {
+    display: none;
+  }
+  .flex-wrapper-deluxe {
+    width: 95%;
+    
+  }
+}
+
+
+@media (max-width: 1000px) {
+  body {
+    width: 100%;
+    font-size: 14px;
+  }
+
+.flex-container-item-5, .flex-container-item-2 {
+flex-direction: column;
+}
+
+  .flex-container-games,
+  .container-productpage,
+  .flex-items,
+  .contact-us-text,
+  .form,
+  .container-product-page,
+  .Cart-page-container,
+  .container-delivery,
+  .Order-completed {
+    width: 80%;
+    padding: 0%;
+    margin: auto;
+  }
+
+  #search {
+    display: none;
+  }
+
+  #header {
+    grid-template-columns: 0.1fr 0.9fr 0.1fr;
+    align-items: center;
+  }
+
+  .logoheader {
+    height: 100px;
+    padding-left: 30px;
+  }
+
+  #logoheader {
+    grid-column: 2/3;
+    margin: auto;
+  }
+
+  .account-icons {
+    font-size: 24px;
+    padding-right: 10px;
+  }
+
+  .fa-cart-shopping {
+    padding-left: 10px;
+  }
+
+  .account-text {
+    font-size: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-left: 5px;
+  }
+
+  .account-text-header {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .hamburger-icon {
+    position: absolute;
+    font-size: 32px;
+    padding-left: 30px;
+    top: 30px;
+    color: white;
+  }
+
+  #hidden-menu {
+    display: none;
+  }
+
+  #navbar {
+    background-color: #fea621;
+  }
+  #header {
+    background-color: #1e2651;
+  }
+
+  #navbar a {
+    color: white;
+    background-color: #1e2651;
+  }
+
+  /*---------------- Homepage ------------ Media queries 900px */
+
+  .item-4 {
+    display: none;
+  }
+
+
+  .grid-item8-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .Cart-item-price-container {
+    grid-row: 3 / 4;
+    grid-column: 1;
+    margin: 0;
+  }
+
+  .btn-summary-checkout {
+    width: 100%;
+    grid-column: 1/6;
+    grid-row: 5;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer {
+    margin-top: 150px;
+  }
+
+  .Order-completed {
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+  /*---------------- Contact us ------------ Media queries 900px*/
+  .contact-us {
+    margin-bottom: 20px;
+  }
+
+  /*---------------- Product page ------------ Media queries 900px */
+
+  .flex-container-product-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr;
+    row-gap: 20px;
+  }
+
+  .Product-page-img {
+    margin-top: 10px;
+  }
+  .Product-page-img img {
+    width: 60%;
+    height: 90%;
+  }
+
+  .Add-to-cart {
+    padding: 0px 0px 20px 20px;
+    grid-row: 3;
+    grid-column: 1 /3;
+  }
+  .h1 {
+    grid-row: 2;
+  }
+  .h1-space-wars {
+    margin: 0;
+  }
+
+  .container-product-page {
+    width: 95%;
+  }
+
+  /*---------------- CART ------------ Media queries 900px */
+  .Cart-page-container {
+    width: 95%;
+    margin: auto;
+  }
+
+  .Cart-item {
+    border: 1px solid black;
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+    grid-column: 1 / 6;
+    justify-content: center;
+  }
+
+  .digitalcopy-text {
+    display: block;
+  }
+
+  .money {
+    font-weight: 600;
+  }
+
+  .cart-item-text {
+    grid-row: 3;
+    grid-column: 1 / 6;
+    border: 1px solid;
+    border-radius: 0px;
+    text-align: center;
+  }
+  .Cart-item-price-container {
+    grid-row: 4;
+    grid-column: 1 / 6;
+    border-radius: 0px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  #btn-summary-checkout {
+    margin: auto;
+  }
+
+  #btn-summary-checkout {
+    margin: auto;
+  }
+
+  #return-btn-cart {
+    grid-row: 7;
+    padding: 40px 0px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  /*---------------- Homepage ------------ 599px Media queries*/
+
+  .nav-games-page {
+    width: 100%;
+  }
+
+  .container-product-page {
+    width: 95%;
+  }
+
+  .Cart-page-container {
+    width: 95%;
+    margin: auto;
+  }
+
+  .Cart-item {
+    border: 1px solid black;
+    border-radius: 0px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .cart-item-text {
+    border: 1px solid;
+    border-radius: 0px;
+    text-align: left;
+  }
+  .Cart-item-price-container {
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .flex-container-games,
+  .contact-us-text,
+  .form,
+  .flex-items {
+    width: 95%;
+    margin: auto;
+  }
+
+  .item-product-page {
+    margin-top: 10px;
+  }
+  .text-flex-width-adjustment-text67 {
+    display: none;
+  }
+
+  .container-delivery {
+    width: 95%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.6fr 0.4fr 0.2fr 0.2fr;
+  }
+
+  .delivery-payment {
+    grid-column: 1;
+  }
+
+  .billing-details {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .container-delivery h1 {
+    grid-column: 1;
+  }
+
+  #orderedb4 {
+    font-size: 14px;
+  }
+
+  .Order-completed button {
+    width: 100%;
+  }
+
+  .Delivery-form {
+    margin: auto;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 900px) {
+  nav {
+    display: block;
+    position: static;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    border: solid 2px #fea621;
+    color: black;
+    background-color: #fea621;
+  }
+  #navbar a {
+    color: black;
+    background-color: #fea621;
+  }
+
+  .account-icons {
+    padding-top: 50px;
+    font-size: 30px;
+    padding-right: 40px;
+  }
+}

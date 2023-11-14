@@ -1,0 +1,59 @@
+.gaming-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+
+.product-description {
+  font-size: 16px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.product-price {
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: red;
+  font-size: 22px;
+}
+
+.back {
+  margin: auto;
+}
+
+.back-paragraph {
+  font-size: 18px;
+  width: 100px;
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+  color: #fea621;
+  cursor: pointer;
+}
+
+body {
+  font-size: 12px;
+}
+
+.product-image {
+  margin-top: 50px;
+  height: 400px;
+  align-self: center;
+}
+
+.cart-btn {
+  background-color: #1e2651;
+  color: #fea621;
+  padding: 10px 50px 10px 50px;
+  font-size: 20px;
+}
+
+.container-back {
+  width: 1000px;
+  margin: auto;
+}

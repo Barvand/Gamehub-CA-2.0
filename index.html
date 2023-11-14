@@ -1,237 +1,215 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <meta name="description" content="Gamehub offers a variety of cheap games digital and physical copies. Sell your used games and accessoires on gamehub.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Laila:wght@400;700&family=Raleway:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/43c9e5e89e.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css">
-        <title> Gamehub the craziest deals this summer! </title>
-</head>
-<body> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gamehub offers a variety of cheap games digital and physical copies. Sell your used games and accessoires on gamehub.com"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Laila:wght@400;700&family=Raleway:wght@400;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/43c9e5e89e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Gamehub the craziest deals this summer!</title>
+  </head>
+  <body>
     <header>
-<div id="header"> 
-            <div id="logoheader"> 
-            <a href="index.html"> <img src="Images/GameHub_Logo.png" alt="Gamehub logo" class="logoheader"> </a>
-            </div>
-            <form class="search"> 
-            <label id=searchhidden-label for="search"> Search </label>
-            <input type="search" placeholder="Search.." id="search">
-            </form>
+      <div id="header">
+        <div id="logoheader">
+          <a href="index.html">
+            <img
+              src="Images/GameHub_Logo.png"
+              alt="Gamehub logo"
+              class="logoheader"
+            />
+          </a>
+        </div>
+        <form class="search">
+          <label id="searchhidden-label" for="search"> Search </label>
+          <input type="search" placeholder="Search.." id="search" />
+        </form>
 
-    <div class="account-text-header">
-        <div class="account-icontext-sign">
-            <i class="fa-solid fa-user account-icons icon-sign" style="color: #fafafa;"></i>
-            <p class="account-text"> sign in </p>
-        </div> 
-        <div class="account-iconstext-cart">
+        <div class="account-text-header">
+          <div class="account-icontext-sign">
+            <i
+              class="fa-solid fa-user account-icons icon-sign"
+              style="color: #fafafa"
+            ></i>
+            <p class="account-text">sign in</p>
+          </div>
+          <div class="account-iconstext-cart">
             <a href="cart.html">
-            <i class="fa-solid fa-cart-shopping account-icons" style="color:white"></i>
-            <p class="account-text"> cart </p>
+              <i
+                class="fa-solid fa-cart-shopping account-icons"
+                style="color: white"
+              ></i>
+              <p class="account-text">cart</p>
             </a>
+          </div>
+        </div>
+      </div>
+      <div id="navbar">
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"
+          ><i class="fas fa-bars"> </i>
+          <span id="hidden-menu"> Hamburger menu </span></label
+        >
+        <nav>
+          <a href="index.html"> Home </a>
+          <a href="games-page.html"> Games </a>
+          <a href="games-page.html"> Deals </a>
+          <a href="contact.html"> Customer service </a>
+          <a href="#"> Contact us </a>
+          <a href="#"> About us </a>
+          <a href="#"> Find a store </a>
+          <a href="#"> Help </a>
+          <a href="#"> Shipment </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="flex-wrapper-deluxe">
+      
+        <div class="grid-item griditem-1">
+            <div class="gridItem1-text">
+          <h1 class="gamehub-header">
+            Gamehub <span class="salesheader"> Sale </span>
+          </h1>
+          <p class="summerdeals">
+            This Summer the craziest gaming deals
+            <span class="green-fifty"
+              >Up to 50% off on your favourite games</span
+            >
+          </p>
+          <a class="header-btn index-btn" href="games-page.html"> Discover </a>
+        </div>
+        </div>
+
+        <div class="flex-container-item-2">
+        <div class="griditem-2">
+          <h2 class="h2header-marketplace">Gamehub marketplace</h2>
+          <p class="p-header-marketplace">Sell & Buy used games</p>
+          <a class="header-btn-content3" href="games.html"> Discover </a>
+        </div>
+        <div class="grid-item griditem-3">
+          <h2 class="h2header-club">Gamehub Club</h2>
+          <p class="p-header-marketplace-item3">
+            Become a member of the
+            <span id="Gamehub-yellow"> Gamehub Club </span>
+          </p>
+
+          <a href="games-page.html" class="header-btn-content3 index-btn">
+            Join now
+          </a>
+        </div>
+        </div>
+
+        <div class="grid-item item-4">
+          <div class="flex-item flex-item1">
+            Free delivery from 50$
+            <i class="fa-solid fa-truck" style="color: #000000"></i>
+          </div>
+          <div class="flex-item flex-item2">
+            Ordered before 24.00 next day delivery
+            <i class="fa-solid fa-truck" style="color: #000000"></i>
+          </div>
+          <div class="flex-item flex-item3">
+            Customer service available from 9.00
+            <i class="fa-solid fa-headset" style="color: #000000"></i>
+          </div>
+          <div class="flex-item flex-item4">
+            Gamehub club bonuses and rewards
+            <i
+              class="fa-sharp fa-solid fa-handshake"
+              style="color: #000000"
+            ></i>
+          </div>
+          
+
+          <div class="flex-item flex-item5">
+            48 hour buy security on gamehub marketplace
+            <i class="fa-solid fa-shield" style="color: #000000"></i>
+          </div>
+          <div class="flex-item flex-item6">
+            Live chat available
+            <i class="fa-solid fa-headset" style="color: #000000"></i>
+          </div>
+        </div>
+
+        <div class="flex-container-item-5">
+        <div class="item-5">
+          <h3>Racing</h3>
+          <p class="item-5-coming-soon-p">Coming soon</p>
+          <p>Pre order now for your device</p>
+          <p>
+            Racing will be available
+            <span class="releasedate-color"> 24/11/23 </span>
+          </p>
+          
+          <a href="games-page.html" class="header-btn-content3 racing-btn"> Pre-order now!
+         </a>
+        </div>
+
+        <div class="item-6">
+          <h3 class="item6-h3">We build PCs</h3>
+          <p>Gamehub makes your pc affordable</p>
+          <p class="color-p-item6">Buy all your parts online</p>
+          <a href="games-page.html" class="header-btn-content3 racing-btn"> check it out</a>
         </div>
     </div>
-</div>       
-        <div id="navbar">
-            <input type="checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"> </i> <span id="hidden-menu"> Hamburger menu </span></label>
-            <nav>
-            <a href="index.html"> Home </a>
-            <a href="games.html"> Games </a>
-            <a href="games.html"> Deals </a>
-            <a href="contact.html"> Customer service </a>
-            <a href="contact.html"> Contact us </a>
-            <a href="about.html"> About us </a>
-            <a href="#"> Find a store </a>
-            <a href="#"> Help </a>
-            <a href="#"> Shipment </a>
-            </nav>
-       </div>
-    
-    </header> 
 
-
-
-<div class="flex-wrapper-deluxe"> 
-    <div class="grid-container-homepage">
-        <div class="grid-item griditem-1"> 
-          <h1 class="gamehub-header"> Gamehub <span class="salesheader"> Sale </span> </h1>
-          <p class="summerdeals"> This Summer the craziest gaming deals  </p>
-          <p class="green-fifty"> Up to 50% off on your favourite games </p>
-          <a class="header-btn index-btn" href="games.html"> Discover </a>
+        <div class="grid-item item-7">
+          <h3 class="popularnowdivider">Popular now</h3>
         </div>
-        <div class="grid-item griditem-2"> <h2 class="h2header-marketplace"> Gamehub marketplace </h2>
-        <p class="p-header-marketplace"> Sell & Buy used games </p> 
-        <a class="header-btn-content2" href="games.html"> Discover </a> 
-        </div>
-        <div class="grid-item griditem-3"> <h2 class="h2header-club"> Gamehub Club </h2>
-          <p class="p-header-marketplace-item3"> Become a member of the <span id=Gamehub-yellow> Gamehub Club </span> </p> 
-          
-          <a href="games.html" class="header-btn-content3 index-btn"> Join now  </a>
-         </div>
+      
+
+      <div class="grid-item8-container">
+        <div class="item-8-positioning"> 
+        <div class="item-8">
+          <div class="loader"></div>
          
-        
-          <div class="grid-item item-4"> 
-                  <div class="flex-item flex-item1"> Free delivery from 50$ <i class="fa-solid fa-truck" style="color: #000000;"></i></div>
-                  <div class="flex-item flex-item2"> Ordered before 24.00 next day delivery <i class="fa-solid fa-truck" style="color: #000000;"></i></div> 
-                  <div class="flex-item flex-item3"> Customer service available from 9.00 <i class="fa-solid fa-headset" style="color: #000000;"></i></div> 
-                  <div class="flex-item flex-item4"> Gamehub club bonuses and rewards <i class="fa-sharp fa-solid fa-handshake" style="color: #000000;"></i></div> 
-                  <div class="flex-item flex-item5"> 48 hour buy security on gamehub marketplace <i class="fa-solid fa-shield" style="color: #000000;"></i></div> 
-                  <div class="flex-item flex-item6"> Live chat available <i class="fa-solid fa-headset" style="color: #000000;"></i></div>
+            <div class="price-grid-item8">
+              <h4 class="index-title"></h4>
+              <p class="index-price"></p>
+              <img class="item8-image" />
             </div>
-        
-               
-          
-        
-  
-      <div class="grid-item item-5"> 
-        <h3> Racing </h3>
-    <p class="item-5-coming-soon-p"> Coming soon </p>
-<p> Pre order now for your device</p> 
-<p> Racing will be available <span class="releasedate-color"> 24/11/23 </span></p>
-<img src="Images/Racing-header.png" alt="Racing-game" class="racing-image-item5"> 
-<form action = "games.html">
-    <button class="Racing-preorder-btn index-btn"> Pre-order </button>
- </form>
- </div>
- 
-
-    <div class="grid-item item-6"> <h3 class="item6-h3"> We build PCs </h3>
-        <p> Gamehub makes your pc affordable</p> 
-        <p class="color-p-item6"> Buy all your parts online </p>
-        <form action = "games.html">
-            <button class="PC-btn index-btn"> BUILD PC </button>
-         </form>
-       
-     </div>
-
-       
-     <div class="grid-item item-7"> <h3 class="popularnowdivider"> Popular now </h3> </div>
-</div>
-<div class="grid-item8-container">
-
-        <div class="grid-item item-8">  
-            <a href="product-page.html">
-            <div class="price-grid-item8">
-                <h4> Assassin </h4>
-                
-                <p> $44,99 </p>
-                </div>
-        <img src="Images/Cover-assassin-index.png" alt="Assassin-game" class="Item8-image"> 
-    </a>
+          </a>
         </div>
-
-        <div class="grid-item item-8"> 
-            <a href="product-page.html">
-            <div class="price-grid-item8">
-            <h4> Cyberpunk</h4>
-            <p> $49,99 </p>
-            </div>
-        <img src="Images/Cover-cyberpunk-index.png" alt="Cyberpunk-game" class="Item8-image">
-        </a>
+      </div>
     </div>
-
-
-        <div class="grid-item item-8"> 
-            <a href="product-page.html">
-            <div class="price-grid-item8">
-                <h4> Furious </h4>
-                <p> $29,99 </p>
-                </div>
-        <img src="Images/Furious-game-index.png" alt="Furious-game" class="Item8-image"></a>
-    </div>
-    
-    <div class="grid-item item-8"> 
-        <a href="product-page.html">
-        <div class="price-grid-item8">
-        <h4> Boxer </h4>
-        <p> $49,99 </p>
-        </div>
-    <img src="Images/Boxer-cover-index.png" alt="Boxer-game" class="Item8-image">
-</a>
-    
-</div>
-
-<div class="grid-item item-8"> 
-    <a href="product-page.html">
-    <div class="price-grid-item8">
-    <h4> Space war </h4>
-    <p> $59,99 </p>
-    </div>
-<img src="Images/Spacewar-cover-index.png" alt="Spacewar-game" class="Item8-image">
-</a>
-
-</div>
-
-
-    <div class="grid-item item-8 hidden-item8"> 
-    <a href="product-page.html">
-    <div class="price-grid-item8">
-    <h4> Black </h4>
-    <p> $39,99 </p>
-    </div>
-     <img src="Images/Black-image.png" alt="Black-game" class="Item8-image">
-    </a>
-     </div>
-
-  </div>  
-
-
-<div class="grid-container-homepage-2">
-<div class="review-coins-item9">
-    <h1> Happy? </h1>
-    <p> Place a review and earn GH-coins </p>
-    <p> Coins provide spicy discounts </p>
-    <form action = "contact.html">
-        <button class="PC-btn coin-btn"> Rewards </button>
-     </form>
-    
-</div>
-<div class="forum-item10">
-    <h1> Gamehub Forums </h1>
-    <p> Share experiences about games with fellow gamers</p>
-    <p> On the gamehub forums </p>
-    <form action = "contact.html">
-        <button class="PC-btn forum-btn"> Forum </button>
-     </form>
-   
 </div>
 </div>
-
-
-</div>
-
-
-
-<footer>
-    <div class="footer-flex">
+    <footer>
+      <div class="footer-flex">
         <div class="footer-help">
-        <h3> Help </h3>
-        <p> FAQ </p>
-        <p> Order status </p>
-        <p> Returns </p>
-        
+          <h3>Help</h3>
+          <p>FAQ</p>
+          <p>Order status</p>
+          <p>Returns</p>
         </div>
-    
+
         <div class="footer-legal">
-            <h3> Legal & Privacy </h3>
-            <p> Terms and agreements </p>
-            <p> Privacy agreement </p>
-            <p> Marketplace </p>
-           </div>
-           <div class="footer-About">
-            <h3> About us </h3>
-            <p> Careers </p>
-            <p> Marketplace </p>
-            <p> Contact</p>
-           </div>
-        
-     </div>
-     </footer>
-    </body>
-     </html>
+          <h3>Legal & Privacy</h3>
+          <p>Terms and agreements</p>
+          <p>Privacy agreement</p>
+          <p>Marketplace</p>
+        </div>
+        <div class="footer-About">
+          <h3>About us</h3>
+          <p>Careers</p>
+          <p>Marketplace</p>
+          <p>Contact</p>
+      </div>
+    </footer>
+  </body>
+</html>

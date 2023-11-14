@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Thank you for shopping with Gamehub. We like to see you in the future."
+      content="Gamehub games that are widely available on gamehub.com. Get your new or used games here for a cheap price"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,10 +18,13 @@
       src="https://kit.fontawesome.com/43c9e5e89e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Thank you for your order!</title>
-  </head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="/js/main.js"></script>
 
+  
+
+    <title>All games!</title>
+  </head>
   <body>
     <header>
       <div id="header">
@@ -59,18 +62,18 @@
         </div>
       </div>
       <div id="navbar">
-        <input type="checkbox" id="menu-checkbox" />
+        <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="hamburger-icon"
           ><i class="fas fa-bars"> </i>
           <span id="hidden-menu"> Hamburger menu </span></label
         >
         <nav>
           <a href="index.html"> Home </a>
-          <a href="games.html"> Games </a>
-          <a href="games.html"> Deals </a>
+          <a href="games-page.html"> Games </a>
+          <a href="games-page.html"> Deals </a>
           <a href="contact.html"> Customer service </a>
-          <a href="contact.html"> Contact us </a>
-          <a href="about.html"> About us </a>
+          <a href="#"> Contact us </a>
+          <a href="#"> About us </a>
           <a href="#"> Find a store </a>
           <a href="#"> Help </a>
           <a href="#"> Shipment </a>
@@ -78,41 +81,48 @@
       </div>
     </header>
 
-    <div class="Order-completed">
-      <h1>Thank you for your order</h1>
+    <div class="container-wrapper"> 
 
-      <p>Your order will be shipped to you shortly</p>
-      <p>Did your order a digital copy, please check your inbox</p>
-      <p>
-        If you have any questions regarding your order please call +5555555 or
-        send us an email at 555@gamehub.com
-      </p>
-      <form action="index.html">
-        <button class="returnhome-btn">Return to home</button>
-      </form>
+      <div class="container-productpage">
+
+        
+        <div class="loader">  </div>
+        <img class="Game-cover-image"> <img>
+        <h1 class="game-title"> </h1>
+         <p class="game-price"> </p>
+        
+
+        </div>
+
     </div>
-    <footer>
-      <div class="footer-flex">
-        <div class="footer-help">
-          <h3>Help</h3>
-          <p>FAQ</p>
-          <p>Order status</p>
-          <p>Returns</p>
-        </div>
-
-        <div class="footer-legal">
-          <h3>Legal & Privacy</h3>
-          <p>Terms and agreements</p>
-          <p>Privacy agreement</p>
-          <p>Marketplace</p>
-        </div>
-        <div class="footer-About">
-          <h3>About us</h3>
-          <p>Careers</p>
-          <p>Marketplace</p>
-          <p>Contact</p>
-        </div>
-      </div>
-    </footer>
   </body>
+</html>
+
+
+
+
+<footer>
+  <div class="footer-flex">
+    <div class="footer-help">
+      <h3>Help</h3>
+      <p>FAQ</p>
+      <p>Order status</p>
+      <p>Returns</p>
+    </div>
+
+    <div class="footer-legal">
+      <h3>Legal & Privacy</h3>
+      <p>Terms and agreements</p>
+      <p>Privacy agreement</p>
+      <p>Marketplace</p>
+    </div>
+    <div class="footer-About">
+      <h3>About us</h3>
+      <p>Careers</p>
+      <p>Marketplace</p>
+      <p>Contact</p>
+    </div>
+  </div>
+</footer>
+</body>
 </html>

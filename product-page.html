@@ -1,213 +1,132 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Space war physical or digital copy for a good reasonable price"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Laila&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/43c9e5e89e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/js/main.js"></script>
     
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Space war physical or digital copy for a good reasonable price">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Laila&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/43c9e5e89e.js" crossorigin="anonymous"></script>
-        <title> Space War Game Wintendo! </title>
+    
+    <title>All games</title>
 
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body> 
-        <header>
-            <div id="header"> 
-                        <div id="logoheader"> 
-                        <a href="index.html"> <img src="Images/GameHub_Logo.png" alt="Gamehub logo" class="logoheader"> </a>
-                        </div>
-                        <form class="search"> 
-                        <label id=searchhidden-label for="search"> Search </label>
-                        <input type="search" placeholder="Search.." id="search">
-                        </form>
-            
-                <div class="account-text-header">
-                    <div class="account-icontext-sign">
-                        <i class="fa-solid fa-user account-icons icon-sign" style="color: #fafafa;"></i>
-                        <p class="account-text"> sign in </p>
-                    </div> 
-                    <div class="account-iconstext-cart">
-                        <a href="cart.html">
-                        <i class="fa-solid fa-cart-shopping account-icons" style="color:white"></i>
-                        <p class="account-text"> cart </p>
-                        </a>
-                    </div>
-                </div>
-            </div>       
-                    <div id="navbar">
-                        <input type="checkbox" id="menu-checkbox">
-                        <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"> </i> <span id="hidden-menu"> Hamburger menu </span></label>
-                        <nav>
-                        <a href="index.html"> Home </a>
-                        <a href="games.html"> Games </a>
-                        <a href="games.html"> Deals </a>
-                        <a href="contact.html"> Customer service </a>
-                        <a href="contact.html"> Contact us </a>
-                        <a href="about.html"> About us </a>
-                        <a href="#"> Find a store </a>
-                        <a href="#"> Help </a>
-                        <a href="#"> Shipment </a>
-                        </nav>
-                   </div>
-                
-                </header>  
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div id="logoheader">
+          <a href="index.html">
+            <img
+              src="Images/GameHub_Logo.png"
+              alt="Gamehub logo"
+              class="logoheader"
+            />
+          </a>
+        </div>
+        <form class="search">
+          <label id="searchhidden-label" for="search"> Search </label>
+          <input type="search" placeholder="Search.." id="search" />
+        </form>
 
-
+        <div class="account-text-header">
+          <div class="account-icontext-sign">
+            <i
+              class="fa-solid fa-user account-icons icon-sign"
+              style="color: #fafafa"
+            ></i>
+            <p class="account-text">sign in</p>
+          </div>
+          <div class="account-iconstext-cart">
+            <a href="games-page.html">
+              <i
+                class="fa-solid fa-cart-shopping account-icons"
+                style="color: white"
+              ></i>
+              <p class="account-text">cart</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="navbar">
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"
+          ><i class="fas fa-bars"> </i>
+          <span id="hidden-menu"> Hamburger menu </span></label
+        >
+        <nav>
+          <a href="index.html"> Home </a>
+          <a href="games-page.html"> Games </a>
+          <a href="games-page.html"> Deals </a>
+          <a href="contact.html"> Customer service </a>
+          <a href="contact.html"> Contact us </a>
+          <a href="about.html"> About us </a>
+          <a href="#"> Find a store </a>
+          <a href="#"> Help </a>
+          <a href="#"> Shipment </a>
+        </nav>
+      </div>
+    </header>
 
    
-<div class="container-product-page"> 
-    <div class="flex-container-product-page">
-        <div class="Product-page-img">
-            <img src="Images/GameHub_covers6-resize.jpg" alt="Space-Wars-Cover" class="Product-page-img"> 
     </div>
-    <div class="h1">
-        <h1 class="h1-space-wars"> Space War</h1> 
-        <p class="categories-text-productpage"> Categories </p>
-        <div class="Game-category">
-            <p class="game-category3"> FPS</p>
-            <p class="game-category2"> MMO</p>
-            <p class="game-category1"> RPG</p>
-            </div>
-        </div>
-        
-            <div class="Add-to-cart">
-                <form class="checkbox-add-to-cart"> 
-                <input type="checkbox" id="checkbox"> 
-                <label for="checkbox"> $59,99 <span class="newprice"> NEW </span> </label>
-                </form>
-                <form>
-                <input type="checkbox" id="checkbox1"> 
-                <label for="checkbox1"> $39,99 <span class="usedprice"> Used </span> </label>
-                </form>
-                <p id="releasedate-product-page"> Release date: 14/02/2023 </p>
-
-                <form class="platform1-form">
-                <label for="Platform1"> Platform: </label>  
-                <select name="Platform1" id="Platform1">
-                <option value="Playbox"> Playbox </option>
-                <option value="Wintendo"> Wintendo </option>
-                <option value="Racestation"> Racestation </option>
-                </select>
-                </form>
-            <form> 
-            <label for="Edition"> Edition: </label>  
-            <select name="Edition" id="Edition">
-            <option value="Collector"> Collectors edition </option>
-            <option value="Deluxe"> Deluxe edition</option>
-            <option value="Standard"> Standard edition </option>
-            </select>
-            </form>
-
-        <p id="orderedb4"> Ordered before 22:00, next day delivery </p>
-        <a href="cart.html" class="addtocart-product"> Add to cart </a>
-         </div>
-         
-    </div>   
-   
-    <div class="Features">
-        <h2> Features </h2>
-        <p> Space War is an action-packed, sci-fi-themed game set in outer space. The game features intense battles between spacecrafts, with the objective of defeating your opponent and emerging victorious. </p>
-
-            <p> Players take on the role of a skilled space pilot, commanding their spacecraft in a variety of missions 
-            and scenarios. 
-            The game features multiple modes, including single player and multiplayer options, allowing players to engage in battles with both computer-controlled opponents and other players from around the world. Players can choose from a wide range of spacecrafts, each with unique attributes and abilities, and can customize them with a variety of weapons and upgrades. </p>
-            
-            <p> The game features stunning visuals, with detailed graphics and special effects that bring the sci-fi setting to life. </p>
-            
-            <p> In addition to battling other spacecrafts, players must navigate through hazardous space environments, 
-            avoiding obstacles and dodging enemy fire. As players progress through the game, 
-            they can earn rewards and unlock new features, such as new spacecrafts and advanced weapons.</p>
+    <div class="container-back">
+    <div class="back"> 
+      <p class="back-paragraph"> Back </p>
     </div>
-<div class="specifications">
-            <h3> System requirements </h3>
-            <p> CPU: Intel Core i5-3570K or AMD FX-8310 </p>
-            <p>   RAM: 8 GB</p>
-                <p>   VIDEO CARD: NVIDIA GeForce GTX 780 or AMD Radeon RX 470</p>
-                    <p>  DEDICATED VIDEO RAM: 3 GB</p>
-                        <p> PIXEL SHADER: 5.0</p>
-                            <p>  VERTEX SHADER: 5.0</p>
-                                <p>   OS: Windows 7 or 10 64-bit </p>
-                                    <p>   FREE DISK SPACE: 70 GB</p>
- </div>
-    <h3> Media </h3>
-        
-    <div class="product-images">
-        <img src="Images/Space-wars-header2.png" alt="Space-wars-trailer1picture">
-        <img src="Images/Space-wars-header3.png" alt="Space-wars-trailer2picture">
-        <img src="Images/Space-wars-header2.png" alt="Space-wars-trailer3picture">
     </div>
-
-
-     
-        
-        <div class="reviews">
-            <h3> Reviews </h3>
-            
-            <p class="Ronnie-review"> Ronnie   <i class="fa-solid fa-star" style="color: #f7e155;"></i>
-                <i class="fa-solid fa-star" style="color: #f7e155;"></i>
-                <i class="fa-solid fa-star" style="color: #f7e155;"></i>
-                <i class="fa-solid fa-star" style="color: #f7e155;"></i>
-                <i class="fa-regular fa-star" style="color: #f7e155;"></i> 
-                <span class="breakline-review"> I played 500+ hours of space war and I
-                recommend it to all players that are
-                interested in space and spacecraft. </span>  </p>
-            <p class="Willem-review"> Willem <i class="fa-solid fa-star" style="color: #f7e155;"></i>
-                <i class="fa-solid fa-star" style="color: #f7e155;"></i>
-                <i class="fa-solid fa-star" style="color: #f7e155;"></i> 
-                <i class="fa-regular fa-star" style="color: #f7e155;"></i>
-                <i class="fa-regular fa-star" style="color: #f7e155;"></i>
-            
-            <span class="breakline-review"> I have enjoyed this game a lot but I have
-                experienced some performance issues Besides that, great game! </span>
-                <form class="contact-us-form"> 
-
-                    <label for="input-review"> First name </label>
-                    <input id="input-review" type="text" placeholder="Joe">
-                    <label for="input-review2"> Last name </label>
-                    <input id="input-review2" type="text" placeholder="Colins">
-                    <label for="input-review3"> Title </label>
-                    <input id="input-review3" type="text" placeholder="Title">
-                    <label for="textarea"> Write your review </label>
-                    <textarea id="textarea" placeholder="Start writing your review"></textarea>
-                    <a href="contact.html" id="submitbutton"> Submit </a>
-                </form>
-        </div>
-     
-
   
+    <div class="gaming-container"> 
+      <div class="loader"> </div>
+      <div class="product-image"></div>
+      <h2 class="product-title"></h2>
+      <div class="product-description"></div>
 </div>
-
-
-
-<footer>
-    <div class="footer-flex">
-        <div class="footer-help">
-        <h3> Help </h3>
-        <p> FAQ </p>
-        <p> Order status </p>
-        <p> Returns </p>
-        
-        </div>
     
-        <div class="footer-legal">
-            <h3> Legal & Privacy </h3>
-            <p> Terms and agreements </p>
-            <p> Privacy agreement </p>
-            <p> Marketplace </p>
-           </div>
-           <div class="footer-About">
-            <h3> About us </h3>
-            <p> Careers </p>
-            <p> Marketplace </p>
-            <p> Contact</p>
-           </div>
+ 
+      </div>
+
+ 
+           
+       
+
         
-     </div>
-     </footer>
-    </body>
-   
-     </html>
+
+    <footer>
+      <div class="footer-flex">
+        <div class="footer-help">
+          <h3>Help</h3>
+          <p>FAQ</p>
+          <p>Order status</p>
+          <p>Returns</p>
+        </div>
+
+        <div class="footer-legal">
+          <h3>Legal & Privacy</h3>
+          <p>Terms and agreements</p>
+          <p>Privacy agreement</p>
+          <p>Marketplace</p>
+        </div>
+        <div class="footer-About">
+          <h3>About us</h3>
+          <p>Careers</p>
+          <p>Marketplace</p>
+          <p>Contact</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
