@@ -1,0 +1,33 @@
+.container-delivery { 
+    width: 40%;
+    margin: auto;
+}
+
+
+.container-delivery label {
+    margin-top: 10px;
+}
+
+.delivery-payment input { 
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.billing-details input { 
+    width: 100%;
+}
+
+.Shipping-method h4 { 
+    margin-top: 10px;
+}
+
+.Checkbox-delivery input { 
+    margin: 0;
+}
+
+input[type=text] {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 4px 4px rgba(18, 16, 19, 0.301);
+  }

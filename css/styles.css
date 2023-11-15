@@ -3,6 +3,8 @@
 @import "/css/games-page.css";
 @import "/css/cart.css";
 @import "/css/error.css";
+@import "/css/contact.css"; 
+@import "/css/delivery.css"; 
 
 /* general styling */
 
@@ -514,39 +516,6 @@ background-repeat: no-repeat;
 .popularnowdivider {
   margin-top: 0;
 }
-/*  <---------------content 8 and NEW GRID ------------->  */
-
-.review-coins-item9 {
-  width: 100%;
-  background-color: #000;
-  color: white;
-  text-align: center;
-  background: linear-gradient(
-    to left,
-    rgb(96, 5, 138) 0%,
-    #fea621 100%,
-    rgb(133, 10, 182) 50%,
-    paleturquoise 100%
-  );
-}
-
-.review-coins-item9 p,
-.forum-item10 p {
-  font-weight: 600;
-}
-
-.forum-item10 {
-  color: white;
-  width: 100%;
-  background-size: 100%;
-  text-align: center;
-  background-image: linear-gradient(rgba(10, 4, 4, 0.5), rgba(5, 5, 5, 0.5)),
-    url(/images/unplash-forumimg.jpg);
-}
-
-.forum-btn {
-  margin-top: 28px;
-}
 
 /* ---------------- Order-completed ------------------- */
 .Order-completed {
@@ -880,41 +849,6 @@ flex-direction: column;
     display: none;
   }
 
-  .container-delivery {
-    width: 95%;
-    margin: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.6fr 0.4fr 0.2fr 0.2fr;
-  }
-
-  .delivery-payment {
-    grid-column: 1;
-  }
-
-  .billing-details {
-    grid-row: 3;
-    grid-column: 1;
-  }
-
-  .container-delivery h1 {
-    grid-column: 1;
-  }
-
-  #orderedb4 {
-    font-size: 14px;
-  }
-
-  .Order-completed button {
-    width: 100%;
-  }
-
-  .Delivery-form {
-    margin: auto;
-  }
-
-  footer {
-    font-size: 12px;
-  }
 }
 
 @media (min-width: 900px) {
