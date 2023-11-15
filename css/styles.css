@@ -233,7 +233,7 @@ p {
 /* content 1 */
 .griditem-1 {
   grid-column: 1/6;
-  height: 500px;
+  height: 400px;
   text-align: center;
   background-blend-mode: color;
   background-color: #0c0c0cab; /* Fallback color */
@@ -247,7 +247,7 @@ background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 500px;
+  height: 400px;
 }
 
 .gamehub-header {
