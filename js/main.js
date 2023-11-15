@@ -9,6 +9,7 @@ import {
   CartReturnButton,
   ProductPageReturnButton,
 } from "./functions/eventListeners.js";
+import { racingImage } from "./functions/index.js";
 
 // this connects all functions to the API and renders the correct HTML.
 async function displayCorrectFunction() {
@@ -23,6 +24,7 @@ async function displayCorrectFunction() {
       !url.includes("cart")
     ) {
       renderHTML(data);
+      racingImage(data);
       randomImage(data);
       setInterval(() => randomImage(data), 4000);
     } else if (url.includes("games-page")) {
