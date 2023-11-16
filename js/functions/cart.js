@@ -19,7 +19,7 @@ export async function renderHtmlCart() {
     if (games.length === 0) {
       totalContainer.innerHTML = "";
       cartContainer.innerHTML =
-        "<p> Cart is empty, get back to shopping!</p>";
+        "<p class=empty-cart> Cart is empty, get back to shopping!</p>";
     } else {
       games.forEach((game) => {
         rendercartItem(game);
