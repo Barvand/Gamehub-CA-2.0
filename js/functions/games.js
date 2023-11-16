@@ -102,7 +102,8 @@ export function handleClick() {
   } else {
     alert(`Item already added to the cart`);
   }
-}
+  }
+
 
 function saveGames(games) {
   localStorage.setItem("games", JSON.stringify(games));
