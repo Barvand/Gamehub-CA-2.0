@@ -143,7 +143,7 @@ nav,
 }
 
 .container-wrapper {
-  width: 40%;
+  width: 60%;
   margin: auto;
 }
 
@@ -161,9 +161,9 @@ nav,
   margin-top: 20px;
   box-shadow: 10px 10px 10px 10px rgb(233, 231, 231);
   background-color: #fff6f6;
-  padding-top: 10px;
-  height: 500px;
+  padding: 10px;
   width: 100%;
+  text-align: center;
 }
 
 .game-old-price {
@@ -570,10 +570,11 @@ footer p {
 @media (max-width: 1100px) {
   .flex-container-games,
   .container-productpage,
+  .container-wrapper,
   .contact-us-text,
   .form,
   .flex-items {
-    width: 80%;
+    width: 85%;
     margin: auto;
   }
   .nav-games-page {
@@ -689,12 +690,6 @@ flex-direction: column;
     margin: auto;
   }
 
-  .Cart-item-price-container {
-    grid-row: 3 / 4;
-    grid-column: 1;
-    margin: 0;
-  }
-
   .btn-summary-checkout {
     width: 100%;
     grid-column: 1/6;
@@ -754,14 +749,7 @@ flex-direction: column;
     margin: auto;
   }
 
-  .Cart-item {
-    border: 1px solid black;
-    border-radius: 0px;
-    width: 100%;
-    text-align: center;
-    grid-column: 1 / 6;
-    justify-content: center;
-  }
+  
 
   .digitalcopy-text {
     display: block;
@@ -771,20 +759,7 @@ flex-direction: column;
     font-weight: 600;
   }
 
-  .cart-item-text {
-    grid-row: 3;
-    grid-column: 1 / 6;
-    border: 1px solid;
-    border-radius: 0px;
-    text-align: center;
-  }
-  .Cart-item-price-container {
-    grid-row: 4;
-    grid-column: 1 / 6;
-    border-radius: 0px;
-    margin-left: 0;
-    padding-left: 0;
-  }
+
 
   #btn-summary-checkout {
     margin: auto;
@@ -817,22 +792,7 @@ flex-direction: column;
     margin: auto;
   }
 
-  .Cart-item {
-    border: 1px solid black;
-    border-radius: 0px;
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .cart-item-text {
-    border: 1px solid;
-    border-radius: 0px;
-    text-align: left;
-  }
-  .Cart-item-price-container {
-    border-radius: 0px;
-    width: 100%;
-  }
+ 
 
   .flex-container-games,
   .contact-us-text,

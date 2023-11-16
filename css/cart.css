@@ -14,11 +14,10 @@
 }
 .Cart-item {
   display: flex;
-  padding-left: 30px;
+  padding: 10px;
   background-color: rgb(247, 247, 247);
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 20px;
 }
 
 .Cart-item h2 {
@@ -58,13 +57,6 @@
   margin: 0 10px;
 }
 
-.quantity-control button {
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
 
 #product-quantity {
   width: 50px;
@@ -178,4 +170,20 @@
 
 .price-cart { 
   font-size: 16px;
+}
+
+
+
+
+@media (max-width: 500px) {
+.Cart-item { 
+  flex-direction: column;
+  padding: 20px;
+  margin: 0;
+}
+
+.quantity { 
+  margin-bottom: 20px;
+}
+
 }
