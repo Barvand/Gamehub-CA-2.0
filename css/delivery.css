@@ -31,3 +31,26 @@ input[type=text] {
     border:0;
     box-shadow:0 0 4px 4px rgba(18, 16, 19, 0.301);
   }
+
+  .Payment-logo { 
+    margin: 20px 0 20px 0; 
+  }
+
+.payment-btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+  .btn-payment { 
+    background-color: black;
+    color: white;
+    padding: 20px 10px 20px 10px;
+  }
+
+  .btn-return { 
+    background-color: black;
+    color: white;
+    padding: 20px 10px 20px 10px;
+  }
+

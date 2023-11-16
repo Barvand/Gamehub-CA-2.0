@@ -109,14 +109,8 @@
             <input id="Email" type="text" />
           </form>
 
-          <form class="Checkbox-addres-delivery">
-            <input type="checkbox" id="Checkbox-delivery-delivery" />
-            <label for="Checkbox-delivery-delivery">
-              Shipping same as billing adress
-            </label>
-          </form>
-        </div>
-
+         
+    
         <div class="billing-details">
           <h3>Billing address</h3>
           <form class="Delivery-form">
@@ -131,18 +125,18 @@
             <label for="Postal-code1"> Postal code </label>
             <input id="Postal-code1" type="text" />
           </form>
-        </div>
+        
 
         <div class="Shipping-method">
           <h4>Delivery method <i class="fa-solid fa-truck"></i></h4>
           <p class="Checkbox-delivery"></p>
 
-          <form>
+          <div>
             <input type="checkbox" id="Checkbox-delivery1" />
             <label for="Checkbox-delivery1">
               Express delivery <span class="24hours-method">(24 hours) </span>
             </label>
-          </form>
+          </div>
 
           <form>
             <input type="checkbox" id="Checkbox-delivery2" />
@@ -158,7 +152,7 @@
 
         <div class="payment-method">
           <h4>Payment details</h4>
-          <form class="Delivery-form">
+          <div class="Delivery-form">
             <label for="Cardholder-name"> Cardholder name </label>
             <input id="Cardholder-name" type="text" />
             <label for="Creditcard-number"> Credit card number </label>
@@ -182,18 +176,15 @@
                 style="color: #000000"
               ></i>
             </div>
-          </form>
+          </div>
         </div>
 
-        <div class="payment-btn-back-complete">
-          <form id="return-btn">
-            <input type="button" value="Back" onclick="history.back()" />
-          </form>
-          <form action="complete.html">
-            <button id="payment-btn">Complete payment</button>
-          </form>
-        </div>
-      </div>
+        <div class="payment-btn back-btn">
+          <a href="cart.html" class="btn btn-return"> Return to cart </a>
+          <a href="complete.html" class="btn btn-payment"> Complete payment </a>
+          </div>
+          
+    </div>
     </main>
 
     <footer>
