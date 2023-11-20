@@ -267,26 +267,6 @@ p {
   margin-bottom: 20px;
 }
 
-.header-btn {
-  padding: 10px 100px;
-  font-family: "Raleway";
-  border-radius: 5px;
-  background-color: #1e2651;
-  border: #6b73a5 1px solid;
-  color: #fea621;
-  font-size: 18px;
-  align-self: center;
-  text-transform: uppercase;
-  font-family: "Dosis";
-  font-weight: 600;
-  box-shadow: 1px 1px 1px 1px rgb(71, 70, 70);
-}
-
-.header-btn:hover {
-  background-color: #6b73a5;
-  color: #fea621;
-  border: #bf11eb 1px solid;
-}
 
 /* content 2 */
 
