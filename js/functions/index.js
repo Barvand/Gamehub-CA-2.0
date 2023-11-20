@@ -36,3 +36,4 @@ export function racingImage(results) {
   const racingDiv = document.querySelector(".item-5"); 
   racingDiv.style.backgroundImage = `url(${results[6].image})`;
 }
+

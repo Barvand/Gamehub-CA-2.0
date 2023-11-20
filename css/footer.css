@@ -1,0 +1,40 @@
+.footer-container {
+width: 100%;
+background-color: #1e2651;
+margin-top: 100px;
+}
+
+.footer-flex { 
+    width: 80%;
+    margin: auto;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer-flex-items {
+    display: flex;
+    flex: 1 ;
+    justify-content: space-evenly;
+    
+}
+
+.social-media-footer { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px; 
+
+}
+.social-media-footer img { 
+    width: 35px;
+    height: 35px;
+}
+
+
+@media (max-width: 700px)  { 
+    .footer-flex-items { 
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
