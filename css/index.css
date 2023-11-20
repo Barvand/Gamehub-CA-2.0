@@ -1,3 +1,24 @@
+
+.griditem-1 {
+  height: 500px;
+  text-align: center;
+  background-blend-mode: color;
+  background-color: #0c0c0cab; /* Fallback color */
+  background-blend-mode: multiply;
+  background-size: 100% 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-image: url(/Images/Gamehub.jpg);
+}
+
+.gridItem1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+}
+
+
 .grid-item8-container {
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +68,7 @@
 }
 
 .flex-wrapper-deluxe {
-  width: 50%;
+  width: 70%;
   margin: auto;
   margin-top: 25px;
 }
@@ -55,7 +76,7 @@
 
 .carousel { 
   width: 100%;
-  height: 400px;
+  height: 500px;
   position: relative; 
 }
 
@@ -81,46 +102,43 @@
   position: absolute;
   background: none; 
   border: none; 
-  font-size: 4rem;
+  font-size: 3rem;
   top:50%; 
   z-index: 2;
   transform: translateY(-50%);
-  color: rgba(255,255,255, .5);
+  color: rgb(255, 255, 255);
   cursor: pointer; 
   border-radius: .25rem; 
-  padding: 0 .5rem; 
-  background-color: rgba(0,0,0, .1);
+  padding: 0. 5rem; 
+  
 }
 
 .carousel-button:hover,
 .carousel-button:focus { 
-color: white;
+color: rgb(148, 148, 148);
 background-color: rgba (0, 0, 0, .2);
 }
 
 .carousel-button:focus { 
-  outline: 1px solid black; 
+  outline: 1px solid rgb(255, 255, 255); 
 }
 
 .carousel-button.prev { 
-  left: 1rem;
+  left: 0.5rem;
 }
 
 .carousel-button.next { 
-  right : 1rem;
-}
-
-.gridItem1-text{ 
-  background-image: url(/Images/Gamehub.jpg);
+  right : 0.5rem;
 }
 
 .randomImage{ 
   width: 100%;
-  height: 400px;
+  height: 500px;
+  display: flex;
   background-position: center;
-  background-size: contain;
   background-repeat: no-repeat;
-  background-color: #1e2651;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 40%, rgba(30,38,81,1) 100%); 
+  background-size: contain;  
 }
 
 .releases { 
@@ -128,7 +146,49 @@ background-color: rgba (0, 0, 0, .2);
   color: #fea621;
 } 
 
+
 .carousel-item { 
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
   width: 100%;
-  height: 400px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,165,51,1) 40%, rgba(0,0,0,1) 100%); 
+}
+
+.carousel-item img { 
+  width: 100%;
+}
+.playbox-text { 
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  justify-content: start;
+  font-weight: 600;
+
+}
+
+.playbox-btn {
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 20px 10px 20px 10px;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+
+
+
+@media (max-width: 500px) {
+  .carousel-item img { 
+display: none;
+  }
+
+  .carousel-button { 
+    font-size: 2rem;
+  }
 }

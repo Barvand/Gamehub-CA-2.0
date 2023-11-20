@@ -39,7 +39,7 @@ export function racingImage(results) {
 
 export function carouselImage(results) { 
   const carouselImage = document.querySelector(".carousel-item"); 
-  carouselImage.style.backgroundImage = `url(${results[2].image})`
+  carouselImage.style.backgroundImage = `url(${results[i].image})`
 }
 
 
