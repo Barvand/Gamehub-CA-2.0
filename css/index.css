@@ -90,7 +90,6 @@ background-repeat: no-repeat;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  height: 22vh;
   gap: 20px;
 }
 
