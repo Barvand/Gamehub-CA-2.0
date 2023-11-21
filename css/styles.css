@@ -247,7 +247,6 @@ p {
   display: block;
   color: white;
   margin-bottom: 20px;
-  text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -259,7 +258,7 @@ p {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  margin: 50px 0 50px 0;
+  margin: 25px 0 25px 0;
   gap: 20px;
 }
 
@@ -347,8 +346,8 @@ p {
 /* content 4 */
 
 .item-4 {
-  border-top: 2px double rgb(201, 201, 201);
-  border-bottom: 2px double rgb(201, 201, 201);
+  border-top: 2px solid rgb(201, 201, 201);
+  border-bottom: 2px solid rgb(201, 201, 201);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -368,7 +367,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 25px 0 25px 0;
+  margin: 0px 0 25px 0;
   gap: 20px;
 }
 
@@ -465,6 +464,7 @@ p {
   grid-column: 1/6;
 }
 .popularnowdivider {
+  border-top: 2px solid rgb(201, 201, 201);
   margin-top: 0;
 }
 
@@ -620,10 +620,6 @@ flex-direction: column;
   }
 
 
-  .grid-item8-container {
-    width: 90%;
-    margin: auto;
-  }
 
   .btn-summary-checkout {
     width: 100%;
