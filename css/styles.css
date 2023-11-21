@@ -347,17 +347,14 @@ p {
 /* content 4 */
 
 .item-4 {
-  background-color: white;
+  border-top: 2px double rgb(201, 201, 201);
+  border-bottom: 2px double rgb(201, 201, 201);
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(90deg, rgba(223,168,168,1) 0%, rgba(249,162,31,1) 38%, rgba(223,168,168,1) 100%);
 }
 
-.flex-item {
-  border-right: 1px solid black;
-}
 
 .item-4 i { 
   margin-bottom: 15px;
