@@ -13,12 +13,15 @@ export async function renderHTML(results) {
     gridContainer.innerHTML = "";
 
     for (let i = 0; i < 5; i++) {
-      gridContainer.innerHTML += `<div class="grid-item item-8" a href="product-page.html?id=${results[i].id}"> 
-                                           <a href="product-page.html?id=${results[i].id}">
-                                           <div class="price-grid-item8">
-                                           <h4> ${results[i].title} </h4>
-                                            <p class="game-price"> $${results[i].price} </p>
-                                            <img src="${results[i].image}" alt="${results[i].title}" class="item8-image"> </a></div> </div>`;
+      gridContainer.innerHTML += `<div class="grid-item item-8">
+                                 <a href="product-page.html?id=${results[i].id}">
+                                   <div class="price-grid-item8">
+                                     <h4>${results[i].title}</h4>
+                                     <p class="game-price">$${results[i].price}</p>
+                                   </div>
+                                   <img src="${results[i].image}" alt="${results[i].title}" class="item8-image">
+                                 </a>
+                               </div>`;
     }
   } catch (error) {
     console.error("Error in displayContent:", error);
@@ -37,10 +40,6 @@ export function racingImage(results) {
   racingDiv.style.backgroundImage = `url(${results[6].image})`;
 }
 
-export function carouselImage(results) { 
-  const carouselImage = document.querySelector(".carousel-item"); 
-  carouselImage.style.backgroundImage = `url(${results[i].image})`
-}
 
 
 const buttons = document.querySelectorAll("[data-carousel-button]")

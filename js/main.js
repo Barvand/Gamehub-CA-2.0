@@ -10,7 +10,6 @@ import {
   ProductPageReturnButton,
 } from "./functions/eventListeners.js";
 import { racingImage } from "./functions/index.js";
-import { carouselImage } from "./functions/index.js";
 
 
 
@@ -29,7 +28,6 @@ async function displayCorrectFunction() {
       renderHTML(data);
       racingImage(data);
       randomImage(data);
-      carouselImage(data)
       setInterval(() => randomImage(data), 2000);
     } else if (url.includes("games-page")) {
       renderProductPage(data);

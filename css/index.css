@@ -13,7 +13,7 @@ p {
   background-size: 100% 100%;
 background-position: center;
 background-repeat: no-repeat;
-background-image: url(/Images/Gamehub.jpg);
+
 }
 
 .gridItem1-text {
@@ -21,18 +21,26 @@ background-image: url(/Images/Gamehub.jpg);
   flex-direction: column;
   justify-content: center;
   height: 30vh;
+  background-image: url(/Images/Gamehub.jpg);
+  text-align: center;
+  background-blend-mode: color;
+  background-color: #0c0c0cab; /* Fallback color */
+  background-blend-mode: multiply;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
 .header-btn {
-  background-color: #000000;
-  color: #fea621;
+  background-color: #eeeeee;
+  color: #000000;
   font-size: 18px;
+  padding: 5px 40px 5px 40px; 
   align-self: center;
   text-transform: uppercase;
-  font-family: "Dosis";
-  font-weight: 600;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .header-btn:hover {
@@ -282,15 +290,17 @@ background-image: url(/Images/Gamehub.jpg);
 
 .grid-item8-container {
   display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(275px, 275px));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   grid-gap: 1rem;
+  justify-content: center;
+
 }
 
 .item-8 {
   margin-top: 20px;
   text-align: center;
   background-color: rgb(255, 254, 254);
-  height: 325px;
+  
   
 }
 
@@ -301,7 +311,6 @@ background-image: url(/Images/Gamehub.jpg);
 .item8-image {
   border-radius: 0px 0px 20px 20px;
   width: 100%;
-  height: 250px;
 }
 
 .item-8 h4 {
@@ -408,7 +417,7 @@ background-color: rgba (0, 0, 0, .2);
 
 .carousel-item { 
   display: flex;
-  justify-content: space-around; 
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 30vh;
@@ -439,8 +448,10 @@ background-color: rgba (0, 0, 0, .2);
   text-transform: uppercase;
 }
 
-
-
+.playbox-flex { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .percentage-colour { 
   color: red;
