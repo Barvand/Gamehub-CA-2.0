@@ -92,7 +92,7 @@ export async function renderHtmlCart() {
           if (updatedCart.length === 0) {
             totalContainer.innerHTML = "";
             cartContainer.innerHTML =
-              "<h1>Your cart is empty. Continue shopping</h1>";
+              "<p class=empty-cart> Cart is empty, get back to shopping!</p>";
           }
         }
       });

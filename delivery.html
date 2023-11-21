@@ -87,105 +87,101 @@
       </div>
     </header>
 
-    <main>
+    <body>
       <div class="container-delivery">
-        <h1>Delivery & Payment</h1>
-        <div class="delivery-payment">
-          <h2>Delivery address</h2>
-          <form class="Delivery-form">
-            <label for="First-name"> First name:</label>
-            <input id="First-name" type="text" />
-            <label for="Last-name"> Last name:</label>
-            <input id="Last-name" type="text" />
-            <label for="Address"> Street and number </label>
-            <input id="Address" type="text" />
-            <label for="City"> City </label>
-            <input id="City" type="text" />
-            <label for="Postal-code"> Postal code </label>
-            <input id="Postal-code" type="text" />
-            <label for="Phone"> Phone number </label>
-            <input id="Phone" type="text" />
-            <label for="Email"> Email </label>
-            <input id="Email" type="text" />
-          </form>
-
-         
-    
-        <div class="billing-details">
-          <h3>Billing address</h3>
-          <form class="Delivery-form">
-            <label for="First-name1"> First name:</label>
-            <input id="First-name1" type="text" />
-            <label for="Last-name1"> Last name:</label>
-            <input id="Last-name1" type="text" />
-            <label for="Address1"> Street and number </label>
-            <input id="Address1" type="text" />
-            <label for="City1"> City </label>
-            <input id="City1" type="text" />
-            <label for="Postal-code1"> Postal code </label>
-            <input id="Postal-code1" type="text" />
-          </form>
-        
-
-        <div class="Shipping-method">
-          <h4>Delivery method <i class="fa-solid fa-truck"></i></h4>
-          <p class="Checkbox-delivery"></p>
-
-          <div>
-            <input type="checkbox" id="Checkbox-delivery1" />
-            <label for="Checkbox-delivery1">
-              Express delivery <span class="24hours-method">(24 hours) </span>
-            </label>
-          </div>
-
-          <form>
-            <input type="checkbox" id="Checkbox-delivery2" />
-            <label for="Checkbox-delivery2">
-              Standard delivery
-              <span class="24hours-method">( 1 - 3 days) </span>
-            </label>
-            <p id="orderedb4-delivery">
-              Ordered before 22:00, delivered the next day
-            </p>
-          </form>
-        </div>
-
-        <div class="payment-method">
-          <h4>Payment details</h4>
-          <div class="Delivery-form">
-            <label for="Cardholder-name"> Cardholder name </label>
-            <input id="Cardholder-name" type="text" />
-            <label for="Creditcard-number"> Credit card number </label>
-            <input id="Creditcard-number" type="text" />
-            <label for="Expiry-date"> Expiry date </label>
-            <input id="Expiry-date" type="text" />
-            <label for="label-delivery-payment-margin-logo"> CVC </label>
-            <input id="label-delivery-payment-margin-logo" type="text" />
-            <div class="Payment-logo">
-              <i class="fa-brands fa-cc-visa fa-2xl" style="color: #000000"></i>
-              <i
-                class="fa-solid fa-credit-card fa-2xl"
-                style="color: #000000"
-              ></i>
-              <i
-                class="fa-brands fa-cc-paypal fa-2xl"
-                style="color: #000000"
-              ></i>
-              <i
-                class="fa-brands fa-cc-mastercard fa-2xl"
-                style="color: #000000"
-              ></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="payment-btn back-btn">
-          <a href="cart.html" class="btn btn-return"> Return to cart </a>
-          <a href="complete.html" class="btn btn-payment"> Complete payment </a>
+        <div class="delivery"> 
+        <h1>Delivery details</h1>
+        </div> 
+        <form action="" autocomplete="off">
+          <fieldset>
+              <legend>Please enter your personal information: </legend>
+              <div>
+                  <label for="field1">First name:
+                      <input type="text" id="field1" placeholder="Gekke" autofocus>
+                  </label>
+                  <label for="field2">Last name:
+                      <input type="text" id="field2" placeholder="Gozer">
+                  </label>
+              </div>
+              <div>
+                  <label for="field3">Address 1:
+                      <input type="text" id="field3" placeholder="Veien 3">
+                  </label>
+                  <label for="field4">Address 2:
+                      <input type="text" id="field4">
+                  </label>
+              </div>
+              <div>
+                  <label for="field5">ZIP Code:
+                      <input type="text" id="field5" placeholder="8888">
+                  </label>
+              </div>
+                  <label for="field6">Phone:
+                      <input type="text" id="field6" placeholder="(+47) 12345555">
+                  </label>
+                  <div> 
+                    <label for="shipping-checkbox"> Billing same as delivery address. 
+                      <input type="checkbox" id="shipping-checkbox">
+                      </label>
+                  <div>
+              </div>
+          </fieldset>
+        <div class="delivery">
+          <h1>Shipment</h1>
+          <fieldset>
+            <legend> Choose your shipment method </legend>
+            <div> 
+            <label for="delivery1"> Normal delivery (up to 5 days)
+              <input type="checkbox" id="delivery1">
+              <p> No additional costs </p>
+              </label>
+          </div> 
+          <div> 
+            <label for="delivery2"> Fast delivery (1-3 days)
+              <input type="checkbox" id="delivery2">
+              <p class="shipping-price"> $5 </p>
+              </label>
+              </div>
+              <div> 
+                <p class="free-shipping"> Orders over 50$ get free shipment </p>
+                </div>
+          </fieldset>
           </div>
           
-    </div>
-    </main>
+
+
+          <div class="delivery"> 
+            <h1>Payment</h1>
+            <fieldset>
+              <legend>Please enter your personal information: </legend>
+                <p> Choose a suitable pamyent method </p> 
+                <div class="payment-flex">
+                  <input type="checkbox" for="payment1">
+                <label for="payment1"> Pay with VISA <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  </label>
+                </div> 
+                <div class="payment-flex">
+                  <input type="checkbox" for="payment1">
+                <label for="payment1"> Pay with Mastercard <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  </label>
+                </div> 
+                <div class="payment-flex">
+                  <input type="checkbox" for="payment1">
+                <label for="payment1"> Pay with Disover <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </label>
+                </div>
+              </div>
+          </fieldset>
+
+          <div class="paymentbtn">
+          <a class="btn-complete" href="index.html"> Return </a>
+          <a class="btn-complete" href="complete.html"> Complete order </a>
+          </div>
+
+
+        </div>
+
+        </body>
 
     <footer>
       <div class="footer-container"> 

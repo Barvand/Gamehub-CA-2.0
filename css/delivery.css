@@ -1,56 +1,64 @@
 .container-delivery { 
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 
-
-.container-delivery label {
-    margin-top: 10px;
-}
-
-.delivery-payment input { 
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.billing-details input { 
-    width: 100%;
-}
-
-.Shipping-method h4 { 
-    margin-top: 10px;
-}
-
-.Checkbox-delivery input { 
-    margin: 0;
+legend { 
+  font-weight: 700;
 }
 
 input[type=text] {
-    padding:10px;
-    border:0;
-    box-shadow:0 0 4px 4px rgba(18, 16, 19, 0.301);
+    padding:5px;
+    margin: 10px;
+    border:black 1px solid;
   }
 
-  .Payment-logo { 
-    margin: 20px 0 20px 0; 
+  
+
+  .delivery h1{ 
+    border-bottom: 3px #fea621 solid;
   }
 
-.payment-btn {
-    margin-top: 40px;
+  .delivery p {
+    padding: 0;
+    margin: 0;
+  }
+  .shipping-price{ 
+    color: red;
+    font-weight: 700;
+  }
+  
+  .delivery div {
+    margin-bottom: 20px;
+  }
+
+  .free-shipping { 
+    color: green;
+    font-weight: 700 ;
+  }
+
+  .delivery i { 
+    font-size: 20px;
+  }
+
+  .payment-flex {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    background-color: #0806010e;
 }
 
-  .btn-payment { 
-    background-color: black;
-    color: white;
-    padding: 20px 10px 20px 10px;
-  }
+.payment-flex input[type="checkbox"] {
+    margin-right: 10px; /* Adjust spacing between checkbox and label if needed */
+}
 
-  .btn-return { 
-    background-color: black;
-    color: white;
-    padding: 20px 10px 20px 10px;
-  }
+.paymentbtn { 
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
 
+.btn-complete {
+  background-color: black;
+  color: white;
+  padding: 10px 20px 10px 20px;
+}
