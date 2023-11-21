@@ -11,9 +11,11 @@ input[type=text] {
     padding:5px;
     margin: 10px;
     border:black 1px solid;
+    display: block;
+    width: 90%;
   }
 
-  
+
 
   .delivery h1{ 
     border-bottom: 3px #fea621 solid;
