@@ -21,41 +21,52 @@ export async function displayContent() {
 
     createImage(details);
     createTitle(details);
-    createDescription(details);
-    createPrice(details);
 
     function createImage(details) {
+
+      const divElement = document.createElement("div")
+      divElement.classList.add("image-container"); 
+      productContainer.appendChild(divElement); 
+
       const imageElement = document.createElement("img");
       imageElement.classList.add("product-image");
       imageElement.src = details.image;
       imageElement.alt = details.title;
-      productContainer.appendChild(imageElement);
+      divElement.appendChild(imageElement);
       return imageElement;
     }
 
     function createTitle(details) {
-      const element = document.createElement("h1");
-      element.classList.add("product-title");
-      element.innerText = details.title;
-      productContainer.appendChild(element);
-      return element;
-    }
+      const divElementText = document.createElement("div")
+      divElementText.classList.add("text-container"); 
+      productContainer.appendChild(divElementText); 
 
-    function createDescription(details) {
-      const element = document.createElement("p");
-      element.classList.add("product-description");
-      element.innerText = details.description;
-      productContainer.appendChild(element);
-      return element;
-    }
+      const elementH1 = document.createElement("h1");
+      elementH1.classList.add("product-title");
+      elementH1.innerText = details.title;
+      divElementText.appendChild(elementH1);
+      
+      const elementP = document.createElement("p");
+      elementP.classList.add("product-description");
+      elementP.innerText = details.description;
+      divElementText.appendChild(elementP);
 
-    function createPrice(details) {
+      const elementGenre = document.createElement("p");
+      elementGenre.classList.add("product-genre");
+      elementGenre.innerText = `Genre: ${details.genre}`;
+      divElementText.appendChild(elementGenre);
+
+      const elementRelease = document.createElement("p");
+      elementRelease.classList.add("product-genre");
+      elementRelease.innerText = `Released: ${details.released}`;
+      divElementText.appendChild(elementRelease);
+  
+
       const elementPrice = document.createElement("p");
       elementPrice.classList.add("product-price");
       elementPrice.innerText = `$${details.price}`;
-      productContainer.appendChild(elementPrice);
-      return elementPrice;
-    }
+      divElementText.appendChild(elementPrice);
+
 
     // I addedd all the dataset to the anchorElement, to be able to retrieve the data out of Local storage array onto the cart page as the QueryString was causing problems on the actual cart page.
     const anchorBtn = document.createElement("a");
@@ -66,19 +77,23 @@ export async function displayContent() {
     anchorBtn.setAttribute("data-title", details.title);
     anchorBtn.setAttribute("data-image", details.image);
     anchorBtn.setAttribute("data-price", details.price);
-    productContainer.appendChild(anchorBtn);
+    divElementText.appendChild(anchorBtn);
+    
+    
 
     function cartBtn() {
       anchorBtn.addEventListener("click", handleClick);
     }
+  
 
     const cartButton = document.createElement("a");
     cartButton.classList.add("checkout-btn");
     cartButton.href = "cart.html";
     cartButton.innerText = `TO CHECKOUT`;
-    productContainer.appendChild(cartButton);
-
+    divElementText.appendChild(cartButton);
+  
     cartBtn();
+  }
   } catch (error) {
     console.error("Error in displayContent:", error);
     productContainer.innerHTML = `<div class="error-message"> Oops!! Something went wrong and it is our fault </div>`;

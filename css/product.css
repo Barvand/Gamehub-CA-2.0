@@ -1,33 +1,37 @@
 .gaming-container {
   display: flex;
-  flex-direction: column;
   width: 80%;
   margin: auto;
-  background-color: rgb(216, 214, 214)(128, 128, 128, 0.788)
 }
 
 .gaming-container img { 
-width: 300px;
+width: 400px;
+padding: 20px;
 }
 
 
 .product-description {
   margin: auto;
   text-align: center;
-  padding-bottom: 50px;
-  width: 100%;
+  padding: 20px;
 }
 
 .product-price {
   font-weight: 600;
-  margin-bottom: 50px;
   color: red;
   font-size: 22px;
+}
+
+.container-back {
+  width: 80%; 
+  margin: auto;
 }
 
 .back {
   margin: auto;
 }
+
+
 
 .back-paragraph {
   font-size: 18px;
@@ -39,11 +43,7 @@ width: 300px;
   cursor: pointer;
 }
 
-.product-image {
-  margin-top: 50px;
-  width: 100%;
-  align-self: center;
-}
+
 
 .cart-btn {
   background-color: #1e2651;
@@ -52,10 +52,7 @@ width: 300px;
   font-size: 20px;
 }
 
-.container-back {
-  width: 1000px;
-  margin: auto;
-}
+
 
 .addtocart-btn {
   width: 50%;
@@ -82,9 +79,34 @@ width: 300px;
   margin-top: 10px;
 }
 
+.image-container { 
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.13); 
+  justify-content: center;
+}
+
+.product-image {
+  width: 100%;
+  align-self: center;
+}
+
+
+
+.text-container { 
+  background-color: rgba(0, 0, 0, 0.158);
+}
+
 @media (max-width: 1000px) { 
   .checkout-btn, .addtocart-btn { 
     width: 90%;
+  }
+
+  .gaming-container { 
+    flex-direction: column; 
+  }
+
+  .text-container { 
+    padding-bottom: 20px;
   }
 }
 
