@@ -3,19 +3,6 @@ p {
 }
 
 
-
-.griditem-1 {
-  height: 30vh;
-  text-align: center;
-  background-blend-mode: color;
-  background-color: #0c0c0cab; /* Fallback color */
-  background-blend-mode: multiply;
-  background-size: 100% 100%;
-background-position: center;
-background-repeat: no-repeat;
-
-}
-
 .gridItem1-text {
   display: flex;
   flex-direction: column;
@@ -26,7 +13,7 @@ background-repeat: no-repeat;
   background-blend-mode: color;
   background-color: #0c0c0cab; /* Fallback color */
   background-blend-mode: multiply;
-  background-size: 100% 100%;
+  background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -52,16 +39,16 @@ background-repeat: no-repeat;
 /* content 1 */
 
 .gamehub-header {
-  margin-bottom: 0;
   color: #fdfdfd;
-  font-family: "Laila";
   font-weight: 700;
-  font-size: 32px;
+  font-size: 42px;
   text-transform: uppercase;
+  margin: 5px;
+  padding: 5px;
 }
 
 .salesheader {
-  font-size: 32px;
+  font-size: 42px;
   color: #fea621;
   text-transform: uppercase;
   
@@ -69,19 +56,12 @@ background-repeat: no-repeat;
 
 .summerdeals {
   color: white;
-  text-align: center;
   margin: 0;
-  border-radius: black 1px solid;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 24px ;
+  padding: 0px 20px 0px 20px;
 }
-.green-fifty {
-  display: block;
-  color: white;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
 
 /* content 2 */
 
@@ -345,6 +325,7 @@ background-repeat: no-repeat;
   width: 100%;
   height: 30vh;
   position: relative; 
+  z-index: 2;
 }
 
 
@@ -356,14 +337,10 @@ background-repeat: no-repeat;
 .slide[data-active] {
   opacity: 1; 
   width: 100%;
+  z-index: 1;
 }
 
-.slide > img { 
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 
 .carousel-button { 
   position: absolute;
@@ -495,5 +472,9 @@ display: none;
 
   .carousel-button { 
     font-size: 2rem;
+  }
+
+  .summerdeals { 
+font-size: 18px;
   }
 }
