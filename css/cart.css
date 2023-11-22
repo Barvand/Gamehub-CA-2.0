@@ -6,7 +6,7 @@
 .Cart-page-container p {
   margin: 5px;
 }
-#h1-cart {
+.h1-cart {
   margin-top: 50px;
   border-bottom: 4px solid #fea621;
   display: flex;
