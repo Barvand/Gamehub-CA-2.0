@@ -1,21 +1,4 @@
-.contact-us-text { 
-    width: 40%;
-    margin: auto;
-  }
 
-.contact-us-form label { 
-    display: block;
-    margin-top: 10px;
-}
-
-.contact-us-form ul { 
-    font-size: 14px;
-}
-
-.contact-us-form input {
-    width: 100%;
-    margin-top: 5px;
-}
 
 
 .contact-us-form textarea { 
@@ -32,3 +15,22 @@
     padding: 10px 20px 10px 20px;
 
 }
+
+.title-contact { 
+    font-family: "Dosis";
+    text-transform: uppercase;
+}
+.chat-gamehub { 
+    background-color:#1e2651;
+    color: #fea621;
+    border-right: 3px solid #fea621;
+    padding: 5px;
+    width: 100%;
+}
+.contact-flex { 
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+

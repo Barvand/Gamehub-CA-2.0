@@ -9,10 +9,10 @@ legend {
 
 input[type=text] {
     padding:5px;
-    margin: 10px;
+    margin: 10px 10px 10px 0px;
     border:black 1px solid;
     display: block;
-    width: 90%;
+    width: 100%;
   }
 
 

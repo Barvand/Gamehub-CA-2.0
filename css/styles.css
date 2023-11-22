@@ -30,13 +30,15 @@ a {
   color: black;
 }
 
-#navbar a:hover {
+.navbar a:hover {
   background-color: #1e2651;
   color: white;
 }
 
 p { 
   font-size: 1em;
+  margin: 5px;
+  padding: 0;
 }
 
 h1 { 
@@ -113,23 +115,21 @@ header {
   position: relative;
 }
 
-nav {
-  position: absolute;
-  display: none;
-}
+
 
 #menu-checkbox:checked ~ nav {
   display: block;
 }
 
-#navbar a {
+.navbar a {
   display: block;
   padding: 10px 30px 10px 30px;
   color: #1e2651;
-  font-size: 16px;
 }
 
 nav {
+  position: absolute;
+  display: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -138,6 +138,8 @@ nav {
   border: solid 2px #fea621;
   color: black;
   background-color: #fea621;
+  z-index: 3;
+  width: 100%;
 }
 
 nav,
@@ -157,31 +159,6 @@ nav,
 .category-text1:hover {
   background-color: #fea621;
   cursor: pointer;
-}
-
-.container-wrapper {
-  width: 50%;
-  margin: auto;
-}
-
-.container-productpage {
-  width: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.item-product-page {
-  flex-direction: column;
-  font-family: "Raleway";
-  margin-top: 20px;
-  box-shadow: 10px 10px 10px 10px rgb(233, 231, 231);
-  background-color: #fff6f6;
-  padding: 10px;
-  width: 100%;
-  text-align: center;
-  
 }
 
 .game-old-price {
@@ -253,6 +230,12 @@ nav,
 }
 
 
+.h2-title { 
+  margin-top: 25px;
+  border-bottom: 4px solid #fea621;
+  
+}
+
 @media (max-width: 1500px) {
   .flex-wrapper-deluxe {
     width: 80%;
@@ -261,21 +244,6 @@ nav,
 }
 
 @media (max-width: 1100px) {
-  .flex-container-games,
-  .container-productpage,
-  .container-wrapper,
-  .contact-us-text,
-  .form,
-  .flex-items {
-    width: 85%;
-    margin: auto;
-  }
-  .nav-games-page {
-    width: 100%;
-  }
-  .Image-games-productpage img {
-    display: none;
-  }
   .flex-wrapper-deluxe {
     width: 95%;
     
@@ -295,8 +263,6 @@ flex-direction: column;
   .flex-container-games,
   .container-productpage,
   .flex-items,
-  .contact-us-text,
-  .form,
   .container-product-page,
   .Cart-page-container,
   .container-delivery,
@@ -358,14 +324,14 @@ flex-direction: column;
     display: none;
   }
 
-  #navbar {
+  .navbar {
     background-color: #fea621;
   }
   #header {
     background-color: #1e2651;
   }
 
-  #navbar a {
+  .navbar a {
     color: white;
     background-color: #1e2651;
   }
@@ -373,7 +339,7 @@ flex-direction: column;
   /*---------------- Homepage ------------ Media queries 900px */
 
 
-  .flex-item4,.flex-item5, .flex-item4 {
+  .flex-item4,.flex-item5, .flex-item3 {
     display: none;
   }
 
@@ -390,121 +356,16 @@ flex-direction: column;
   footer {
     margin-top: 150px;
   }
-
-  .Order-completed {
-    margin-top: 100px;
-    padding-bottom: 100px;
-  }
-  /*---------------- Contact us ------------ Media queries 900px*/
-  .contact-us {
-    margin-bottom: 20px;
-  }
-
-  /*---------------- Product page ------------ Media queries 900px */
-
-  .flex-container-product-page {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr;
-    row-gap: 20px;
-  }
-
-  .Product-page-img {
-    margin-top: 10px;
-  }
-  .Product-page-img img {
-    width: 60%;
-    height: 90%;
-  }
-
-  .Add-to-cart {
-    padding: 0px 0px 20px 20px;
-    grid-row: 3;
-    grid-column: 1 /3;
-  }
-  .h1 {
-    grid-row: 2;
-  }
-  .h1-space-wars {
-    margin: 0;
-  }
-
-  .container-product-page {
-    width: 95%;
-  }
-
-  /*---------------- CART ------------ Media queries 900px */
-  .Cart-page-container {
-    width: 95%;
-    margin: auto;
-  }
-
-  
-
-  .digitalcopy-text {
-    display: block;
-  }
-
-  .money {
-    font-weight: 600;
-  }
-
-
-
-  #btn-summary-checkout {
-    margin: auto;
-  }
-
-  #btn-summary-checkout {
-    margin: auto;
-  }
-
-  #return-btn-cart {
-    grid-row: 7;
-    padding: 40px 0px;
-    margin: 0;
-  }
 }
 
-@media (max-width: 599px) {
-  /*---------------- Homepage ------------ 599px Media queries*/
 
-  .nav-games-page {
-    width: 100%;
-  }
 
-  .container-product-page {
-    width: 95%;
-  }
-
-  .Cart-page-container {
-    width: 95%;
-    margin: auto;
-  }
-
- 
-
-  .flex-container-games,
-  .contact-us-text,
-  .form,
-  .flex-items {
-    width: 95%;
-    margin: auto;
-  }
-
-  .item-product-page {
-    margin-top: 10px;
-  }
-  .text-flex-width-adjustment-text67 {
-    display: none;
-  }
-
-}
-
-@media (min-width: 1160px) {
+@media (min-width: 1000px) {
   nav {
     display: block;
     position: static;
   }
+
   .hamburger-icon {
     display: none;
   }
@@ -519,7 +380,7 @@ flex-direction: column;
     color: black;
     background-color: #fea621;
   }
-  #navbar a {
+  .navbar a {
     color: black;
     background-color: #fea621;
   }

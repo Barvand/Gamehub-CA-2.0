@@ -27,3 +27,24 @@
 .gaming-container {
   text-align: center;
 }
+
+
+.container-productpage {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.item-product-page {
+  flex-direction: column;
+  font-family: "Raleway";
+  margin-top: 20px;
+  box-shadow: 10px 10px 10px 10px rgb(233, 231, 231);
+  background-color: #fff6f6;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  
+}
