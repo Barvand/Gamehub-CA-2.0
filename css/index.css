@@ -264,8 +264,8 @@ p {
 
 .grid-item8-container {
   display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-gap: 1rem;
   justify-content: center;
 
 }
