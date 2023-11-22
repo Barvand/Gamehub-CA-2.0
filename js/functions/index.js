@@ -12,7 +12,7 @@ export async function renderHTML(results) {
     }
     gridContainer.innerHTML = "";
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
       gridContainer.innerHTML += `<div class="grid-item item-8">
                                  <a href="product-page.html?id=${results[i].id}">
                                    <div class="price-grid-item8">
