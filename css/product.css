@@ -5,11 +5,10 @@
   justify-content: center;
 }
 
-.gaming-container img { 
-width: 400px;
-padding: 20px;
+.gaming-container img {
+  width: 400px;
+  padding: 20px;
 }
-
 
 .product-description {
   margin: auto;
@@ -24,15 +23,13 @@ padding: 20px;
 }
 
 .container-back {
-  width: 80%; 
+  width: 80%;
   margin: auto;
 }
 
 .back {
   margin: auto;
 }
-
-
 
 .back-paragraph {
   font-size: 18px;
@@ -44,16 +41,12 @@ padding: 20px;
   cursor: pointer;
 }
 
-
-
 .cart-btn {
   background-color: #1e2651;
   color: #fea621;
   padding: 10px 50px 10px 50px;
   font-size: 20px;
 }
-
-
 
 .addtocart-btn {
   width: 50%;
@@ -80,9 +73,9 @@ padding: 20px;
   margin-top: 10px;
 }
 
-.image-container { 
+.image-container {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.13); 
+  background-color: rgba(0, 0, 0, 0.13);
   justify-content: center;
 }
 
@@ -91,24 +84,21 @@ padding: 20px;
   align-self: center;
 }
 
-
-
-.text-container { 
+.text-container {
   background-color: rgba(0, 0, 0, 0.158);
 }
 
-@media (max-width: 1000px) { 
-  .checkout-btn, .addtocart-btn { 
+@media (max-width: 1000px) {
+  .checkout-btn,
+  .addtocart-btn {
     width: 90%;
   }
 
-  .gaming-container { 
-    flex-direction: column; 
+  .gaming-container {
+    flex-direction: column;
   }
 
-  .text-container { 
+  .text-container {
     padding-bottom: 20px;
   }
 }
-
-

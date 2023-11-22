@@ -1,59 +1,57 @@
-.container-delivery { 
-    width: 50%;
-    margin: auto;
+.container-delivery {
+  width: 50%;
+  margin: auto;
 }
 
-legend { 
+legend {
   font-weight: 700;
 }
 
-input[type=text] {
-    padding:5px;
-    margin: 10px 10px 10px 0px;
-    border:black 1px solid;
-    display: block;
-    width: 100%;
-  }
+input[type="text"] {
+  padding: 5px;
+  margin: 10px 10px 10px 0px;
+  border: black 1px solid;
+  display: block;
+  width: 100%;
+}
 
+.delivery h1 {
+  border-bottom: 3px #fea621 solid;
+}
 
+.delivery p {
+  padding: 0;
+  margin: 0;
+}
+.shipping-price {
+  color: red;
+  font-weight: 700;
+}
 
-  .delivery h1{ 
-    border-bottom: 3px #fea621 solid;
-  }
+.delivery div {
+  margin-bottom: 20px;
+}
 
-  .delivery p {
-    padding: 0;
-    margin: 0;
-  }
-  .shipping-price{ 
-    color: red;
-    font-weight: 700;
-  }
-  
-  .delivery div {
-    margin-bottom: 20px;
-  }
+.free-shipping {
+  color: green;
+  font-weight: 700;
+}
 
-  .free-shipping { 
-    color: green;
-    font-weight: 700 ;
-  }
+.delivery i {
+  font-size: 20px;
+}
 
-  .delivery i { 
-    font-size: 20px;
-  }
-
-  .payment-flex {
-    display: flex;
-    align-items: center;
-    background-color: #0806010e;
+.payment-flex {
+  display: flex;
+  align-items: center;
+  background-color: #0806010e;
 }
 
 .payment-flex input[type="checkbox"] {
-    margin-right: 10px; /* Adjust spacing between checkbox and label if needed */
+  margin-right: 10px; /* Adjust spacing between checkbox and label if needed */
 }
 
-.paymentbtn { 
+.paymentbtn {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;

@@ -1,7 +1,6 @@
-p { 
+p {
   font-size: 1rem;
 }
-
 
 .gridItem1-text {
   display: flex;
@@ -13,17 +12,16 @@ p {
   background-blend-mode: color;
   background-color: #0c0c0cab; /* Fallback color */
   background-blend-mode: multiply;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .header-btn {
   background-color: #eeeeee;
   color: #000000;
   font-size: 18px;
-  padding: 5px 40px 5px 40px; 
+  padding: 5px 40px 5px 40px;
   align-self: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -51,7 +49,6 @@ p {
   font-size: 42px;
   color: #fea621;
   text-transform: uppercase;
-  
 }
 
 .summerdeals {
@@ -59,7 +56,7 @@ p {
   margin: 0;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 20px ;
+  font-size: 20px;
   padding: 0px 20px 0px 20px;
 }
 
@@ -81,9 +78,9 @@ p {
   flex-direction: column;
   align-items: center;
   flex: 250px;
- background-image: linear-gradient(rgba(10, 4, 4, 0.5), rgba(5, 5, 5, 0.5)),
-   url(/images/gamehub.jpg);
- background-position: right ;
+  background-image: linear-gradient(rgba(10, 4, 4, 0.5), rgba(5, 5, 5, 0.5)),
+    url(/images/gamehub.jpg);
+  background-position: right;
 }
 
 .h2header-marketplace {
@@ -110,7 +107,7 @@ p {
 
 .griditem-3 {
   width: 100%;
-  flex: 250px;; 
+  flex: 250px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -165,11 +162,9 @@ p {
   text-align: center;
 }
 
-
-.item-4 i { 
+.item-4 i {
   margin-bottom: 15px;
 }
-
 
 /* content 5 */
 
@@ -179,7 +174,6 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  
 }
 
 .item-5 {
@@ -197,14 +191,12 @@ p {
 }
 
 .item-5 h3 {
-  
   color: white;
   font-size: 38px;
   font-weight: 600;
-
 }
 .item-5 p {
-    margin: 5px;
+  margin: 5px;
   color: white;
 }
 
@@ -218,14 +210,14 @@ p {
   color: red;
 }
 
-.racing-btn { 
-    margin-top: 10px;
+.racing-btn {
+  margin-top: 10px;
 }
 
 /* content 6 */
 .item-6 {
   display: flex;
-  flex:250px; 
+  flex: 250px;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -235,11 +227,16 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-position: right;
-  background: linear-gradient(344deg, rgba(168,170,223,1) 19%, rgba(31,136,249,1) 38%, rgba(168,223,170,1) 80%); 
+  background: linear-gradient(
+    344deg,
+    rgba(168, 170, 223, 1) 19%,
+    rgba(31, 136, 249, 1) 38%,
+    rgba(168, 223, 170, 1) 80%
+  );
   color: white;
 }
 
-.pcbuild-h2 { 
+.pcbuild-h2 {
   text-transform: uppercase;
 }
 
@@ -263,19 +260,16 @@ p {
 }
 
 .grid-item8-container {
-  display: grid; 
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   grid-gap: 1rem;
   justify-content: center;
-
 }
 
 .item-8 {
   margin-top: 20px;
   text-align: center;
   background-color: rgb(255, 254, 254);
-  
-  
 }
 
 .item-8:hover {
@@ -319,78 +313,77 @@ p {
   height: 100%;
 }
 
-
-.carousel { 
+.carousel {
   width: 100%;
   height: 400px;
-  position: relative; 
+  position: relative;
   z-index: 2;
 }
 
-
-.slide { 
+.slide {
   position: absolute;
   opacity: 0;
 }
 
 .slide[data-active] {
-  opacity: 1; 
+  opacity: 1;
   width: 100%;
   z-index: 1;
 }
 
-
-
-.carousel-button { 
+.carousel-button {
   position: absolute;
-  background: none; 
-  border: none; 
+  background: none;
+  border: none;
   font-size: 3rem;
-  top:50%; 
+  top: 50%;
   z-index: 2;
   transform: translateY(-50%);
   color: rgb(255, 255, 255);
-  cursor: pointer; 
-  border-radius: .25rem; 
-  padding: 0. 5rem; 
-  
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 5rem;
 }
 
 .carousel-button:hover,
-.carousel-button:focus { 
-color: rgb(148, 148, 148);
-background-color: rgba (0, 0, 0, .2);
+.carousel-button:focus {
+  color: rgb(148, 148, 148);
+  background-color: rgba (0, 0, 0, 0.2);
 }
 
-.carousel-button:focus { 
-  outline: 1px solid rgb(255, 255, 255); 
+.carousel-button:focus {
+  outline: 1px solid rgb(255, 255, 255);
 }
 
-.carousel-button.prev { 
+.carousel-button.prev {
   left: 0.5rem;
 }
 
-.carousel-button.next { 
-  right : 0.5rem;
+.carousel-button.next {
+  right: 0.5rem;
 }
 
-.randomImage{ 
+.randomImage {
   width: 100%;
   height: 400px;
   display: flex;
   background-position: center;
   background-repeat: no-repeat;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 40%, rgba(30,38,81,1) 100%); 
-  background-size: contain;  
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(30, 38, 81, 1) 100%
+  );
+  background-size: contain;
 }
 
-.releases { 
+.releases {
   padding: 20px;
   color: #fea621;
-} 
+}
 
-
-.carousel-item { 
+.carousel-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,20 +391,24 @@ background-color: rgba (0, 0, 0, .2);
   height: 400px;
   background-size: contain;
   background-repeat: no-repeat;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,165,51,1) 40%, rgba(0,0,0,1) 100%); 
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(65, 165, 51, 1) 40%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
-.carousel-item img { 
+.carousel-item img {
   width: 100%;
 }
-.playbox-text { 
+.playbox-text {
   display: flex;
   flex-direction: column;
   color: white;
   text-align: center;
   justify-content: start;
   font-weight: 600;
-
 }
 
 .playbox-btn {
@@ -423,45 +420,25 @@ background-color: rgba (0, 0, 0, .2);
   text-transform: uppercase;
 }
 
-.playbox-flex { 
+.playbox-flex {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.percentage-colour { 
+.percentage-colour {
   color: red;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 500px) {
-  .carousel-item img { 
-display: none;
+  .carousel-item img {
+    display: none;
   }
 
-  .carousel-button { 
+  .carousel-button {
     font-size: 2rem;
   }
 
-  .summerdeals { 
-font-size: 18px;
+  .summerdeals {
+    font-size: 18px;
   }
 }

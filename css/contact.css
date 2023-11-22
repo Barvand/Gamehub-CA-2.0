@@ -1,36 +1,30 @@
-
-
-
-.contact-us-form textarea { 
-    width: 100%;
-    margin-top: 5px;
-    height: 300px;
+.contact-us-form textarea {
+  width: 100%;
+  margin-top: 5px;
+  height: 300px;
 }
 
-#submitbutton { 
-    float: right;
-    margin-top: 20px;
-    background-color: black;
-    color: white;
-    padding: 10px 20px 10px 20px;
-
+#submitbutton {
+  float: right;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px 10px 20px;
 }
 
-.title-contact { 
-    font-family: "Dosis";
-    text-transform: uppercase;
+.title-contact {
+  font-family: "Dosis";
+  text-transform: uppercase;
 }
-.chat-gamehub { 
-    background-color:#1e2651;
-    color: #fea621;
-    border-right: 3px solid #fea621;
-    padding: 5px;
-    width: 100%;
+.chat-gamehub {
+  background-color: #1e2651;
+  color: #fea621;
+  border-right: 3px solid #fea621;
+  padding: 5px;
+  width: 100%;
 }
-.contact-flex { 
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5px;
+.contact-flex {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
 }
-
-
