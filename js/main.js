@@ -2,7 +2,6 @@ import { fetchApi } from "/js/fetch.js";
 import { renderProductPage } from "./functions/games.js";
 import { renderHTML } from "/js/functions/index.js";
 import { displayContent } from "./functions/product-page.js";
-import { randomImage } from "./functions/index.js";
 import { updatePrice } from "./functions/cart.js";
 import { renderHtmlCart } from "./functions/cart.js";
 import {
@@ -27,8 +26,7 @@ async function displayCorrectFunction() {
     ) {
       renderHTML(data);
       racingImage(data);
-      randomImage(data);
-      setInterval(() => randomImage(data), 2000);
+      
     } else if (url.includes("games-page")) {
       renderProductPage(data);
     } else if (url.includes("product-page")) {

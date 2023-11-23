@@ -29,12 +29,6 @@ export async function renderHTML(results) {
   }
 }
 
-export function randomImage(results) {
-  const imageContainer = document.querySelector(".randomImage");
-  const randomIndex = Math.floor(Math.random() * results.length);
-  imageContainer.style.backgroundImage = `url(${results[randomIndex].image})`;
-}
-
 export function racingImage(results) { 
   const racingDiv = document.querySelector(".item-5"); 
   racingDiv.style.backgroundImage = `url(${results[6].image})`;
