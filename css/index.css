@@ -2,30 +2,38 @@ p {
   font-size: 1rem;
 }
 
-.gridItem1-text {
+
+.gridItem1 { 
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  background-color: black;
+}
+
+.gridItem1-text {
+ margin-top: 100px;
+ margin-bottom: 50px;
+ text-align: center;
+}
+
+.header-image { 
   height: 400px;
-  background-image: url(/Images/Gamehub.jpg);
-  text-align: center;
-  background-blend-mode: color;
-  background-color: #0c0c0cab; /* Fallback color */
-  background-blend-mode: multiply;
+  width: 50%;
+  background-image: url(/Images/gamehub-store.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .header-btn {
-  background-color: #eeeeee;
+  background-color: #fea621;
   color: #000000;
-  font-size: 18px;
   padding: 5px 40px 5px 40px;
+  font-weight: 600;
   align-self: center;
   text-transform: uppercase;
   cursor: pointer;
-  margin-top: 20px;
+
 }
 
 .header-btn:hover {
@@ -34,6 +42,13 @@ p {
   border: #bf11eb 1px solid;
 }
 
+
+.gridItem1-text-flex { 
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
 /* content 1 */
 
 .gamehub-header {
@@ -56,8 +71,7 @@ p {
   margin: 0;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 20px;
-  padding: 0px 20px 0px 20px;
+
 }
 
 /* content 2 */
