@@ -60,20 +60,20 @@ buttons.forEach(button => {
   });
 });
 
-// // Function to start automatic slide change
-// function startAutoSlide(slides) {
-//   intervalId = setInterval(() => {
-//     const activeSlide = slides.querySelector("[data-active]");
-//     let newIndex = [...slides.children].indexOf(activeSlide) + 1;
+// Function to start automatic slide change
+function startAutoSlide(slides) {
+  intervalId = setInterval(() => {
+    const activeSlide = slides.querySelector("[data-active]");
+    let newIndex = [...slides.children].indexOf(activeSlide) + 1;
 
-//     if (newIndex >= slides.children.length) newIndex = 0;
+    if (newIndex >= slides.children.length) newIndex = 0;
 
-//     slides.children[newIndex].dataset.active = true; 
-//     delete activeSlide.dataset.active;
-//   }, 5000); // Change slide every 5 seconds (adjust the interval as needed)
-// }
+    slides.children[newIndex].dataset.active = true; 
+    delete activeSlide.dataset.active;
+  }, 5000); // Change slide every 5 seconds (adjust the interval as needed)
+}
 
-// // Start automatic slide change initially
-// const carousel = document.querySelector("[data-carousel]");
-// const slides = carousel.querySelector("[data-slides]");
-// startAutoSlide(slides);
+// Start automatic slide change initially
+const carousel = document.querySelector("[data-carousel]");
+const slides = carousel.querySelector("[data-slides]");
+startAutoSlide(slides);

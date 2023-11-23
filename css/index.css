@@ -16,6 +16,10 @@ p {
   align-items: center;
   width: 50%;
   border-left: 10px white solid;
+  background-image: linear-gradient(rgba(34, 33, 33, 0.8), rgba(2, 2, 2, 0.521)), url(/Images/Gamehub-Sales.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header-image {
