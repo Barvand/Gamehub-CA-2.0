@@ -1,14 +1,7 @@
 .gaming-container {
   display: flex;
-  width: 80%;
-  margin: auto;
-  justify-content: center;
 }
 
-.gaming-container img {
-  width: 400px;
-  padding: 20px;
-}
 
 .product-description {
   margin: auto;
@@ -23,8 +16,7 @@
 }
 
 .container-back {
-  width: 80%;
-  margin: auto;
+  margin: 25px 0 25px 0;
 }
 
 .back {
@@ -75,8 +67,11 @@
 
 .image-container {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.13);
+  background-color: rgba(2, 2, 2, 0.555);
   justify-content: center;
+    width: 400px;
+    padding: 20px;
+
 }
 
 .product-image {
