@@ -11,13 +11,14 @@ p {
 }
 
 .gridItem1-text {
- margin-top: 100px;
- margin-bottom: 50px;
- text-align: center;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ width: 50%;
 }
 
 .header-image { 
-  height: 400px;
   width: 50%;
   background-image: url(/Images/gamehub-store.jpg);
   background-size: cover;
@@ -41,27 +42,17 @@ p {
   color: #fea621;
   border: #bf11eb 1px solid;
 }
-
-
-.gridItem1-text-flex { 
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  height: 400px;
-}
 /* content 1 */
 
 .gamehub-header {
   color: #fdfdfd;
   font-weight: 700;
-  font-size: 42px;
   text-transform: uppercase;
   margin: 5px;
   padding: 5px;
 }
 
 .salesheader {
-  font-size: 42px;
   color: #fea621;
   text-transform: uppercase;
 }
@@ -471,6 +462,13 @@ p {
   width: 100%;
 }
 
+.hero-link-store { 
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.644);
+  width: 100%;
+}
+
 .register-btn {
   color: #fea621;
   font-weight: 600;
@@ -490,6 +488,37 @@ p {
   text-transform: uppercase;
 }
 
+
+@media (max-width: 1000px) {
+  .gridItem1 { 
+    flex-direction: column-reverse;
+
+   }
+
+   .header-image { 
+    width: 100%;
+    height: 200px;
+   }
+
+   .summerdeals {
+    padding: 5px;
+   }
+
+   .gridItem1-text {
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+  
+  }
+
+  .hero-image-cta { 
+    height: 200px;
+  }
+
+
+}
+
+
 @media (max-width: 500px) {
   .carousel-item img {
     display: none;
@@ -497,9 +526,5 @@ p {
 
   .carousel-button {
     font-size: 2rem;
-  }
-
-  .summerdeals {
-    font-size: 18px;
   }
 }
