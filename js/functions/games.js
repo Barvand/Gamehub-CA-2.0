@@ -20,6 +20,7 @@ export async function renderProductPage(data) {
       const elementDiv = document.createElement("div");
       elementDiv.classList.add("item-product-page");
       resultsContainer.appendChild(elementDiv);
+      elementDiv.dataset.productId = data[i].id; 
 
       const imageElement = document.createElement("img");
       imageElement.classList.add("Game-cover-image");

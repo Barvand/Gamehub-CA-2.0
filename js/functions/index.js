@@ -56,7 +56,7 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active;
     
     // Start the automatic slide change after a button click
-    startAutoSlide(slides);
+    // startAutoSlide(slides);
   });
 });
 
