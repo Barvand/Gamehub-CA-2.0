@@ -18,7 +18,7 @@
       src="https://kit.fontawesome.com/43c9e5e89e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Contact the Gamehub support!</title>
     <script>
       (function(h,o,t,j,a,r){
@@ -30,6 +30,7 @@
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
+      <script type="module" src="js/functions/contact.js"></script>
   </head>
   <body>
     <header>
@@ -134,24 +135,90 @@
       </div>
     </div>
       </div>
-      <section class="whitespace">
-        <h2 class="h2-title"> Write to us </h2>
-      <form class="contact-us-form">
-        <label for="name"> Name </label>
-        <input type="text" placeholder="John" id="name" />
 
-        <label for="last-name"> Last name </label>
-        <input type="text" placeholder="Doe" id="last-name" />
+      <h2 class="h2-title"> FAQ </h2>
+      <div class="accordion"> 
+        <div class="accordion-question">
+        <h3 class="question-FAQ"> Delivery <i class="fa-solid fa-arrow-down"></i> </h3>
+        </div>
+        <div class="accordion-answer"> 
+        <p class="question-answer"> We use DHL as our delivery courier, this means that regular deliveries are delivered within 1 to 3 (working) days. 
+          Express delivery are shipped when ordered before 16:00 the same day.
+        </div>
+      </div>
 
-        <label for="title"> Title </label>
-        <input type="text" placeholder="Title" id="title" />
+  <div class="accordion"> 
+    <div class="accordion-question">
+    <h3 class="question-FAQ"> What payment method can I use? <i class="fa-solid fa-arrow-down"></i> </h3>
+    </div>
+    <div class="accordion-answer"> 
+    <p class="question-answer"> We accept VISA, Mastercard, Bitcoin, PayPal and many more 
+      payment methods. </p>
+    </div>
+</div>
 
-        <label for="textarea"> Review </label>
-        <textarea id="textarea" placeholder="Type here"></textarea>
+<div class="accordion"> 
+  <div class="accordion-question">
+  <h3 class="question-FAQ"> Where is Gamehub located? <i class="fa-solid fa-arrow-down"></i> </h3>
+  </div>
+  <div class="accordion-answer"> 
+  <p class="question-answer"> We are located in Bergen, Bergenstreet 6, 5555 </p>
+  </div>
+</div>
 
-        <a href="contact.html" id="submitbutton"> Submit </a>
-      </form>
-  </section>
+<div class="accordion"> 
+  <div class="accordion-question">
+  <h3 class="question-FAQ"> How do I get my rewards from the Gamehub Club?  <i class="fa-solid fa-arrow-down"></i> </h3>
+  </div>
+  <div class="accordion-answer"> 
+  <p class="question-answer"> Rewards? What do you mean? </p>
+  </div>
+</div>
+
+<div class="accordion"> 
+  <div class="accordion-question">
+  <h3 class="question-FAQ"> Something went wrong with my trade on the Marketplace <i class="fa-solid fa-arrow-down"></i> </h3>
+  </div>
+  <div class="accordion-answer"> 
+  <p class="question-answer"> To become a trader on our platform you have to register with us. We therefore offer a protection to buyers 
+    and In the case of something going wrong, we will recover the damage. </p>
+  </div>
+</div>
+
+<div class="accordion"> 
+  <div class="accordion-question">
+  <h3 class="question-FAQ"> Does GameHub take care of the enviroment <i class="fa-solid fa-arrow-down"></i> </h3>
+  </div>
+  <div class="accordion-answer"> 
+  <p class="question-answer"> Yes, we make sure our packages are packed as green as possible. </p>
+  </div>
+</div>
+
+
+<div class="accordion"> 
+  <div class="accordion-question">
+  <h3 class="question-FAQ"> Write to us <i class="fa-solid fa-arrow-down"></i> </h3>
+  </div>
+  <div class="accordion-answer"> 
+    <form class="contact-us-form">
+      <label for="name"> Name </label>
+      <input type="text" placeholder="John" id="name" />
+
+      <label for="last-name"> Last name </label>
+      <input type="text" placeholder="Doe" id="last-name" />
+
+      <label for="title"> Title </label>
+      <input type="text" placeholder="Title" id="title" />
+
+      <label for="textarea"> Review </label>
+      <textarea id="textarea" placeholder="Type here"></textarea>
+
+      <a href="contact.html" id="submitbutton"> Submit </a>
+    </form>
+  </div>
+</div>
+      
+    
   </div>
   </body>
 

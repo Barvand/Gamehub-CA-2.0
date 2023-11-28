@@ -22,7 +22,8 @@ async function displayCorrectFunction() {
     if (
       !url.includes("games-page") &&
       !url.includes("product-page") &&
-      !url.includes("cart")
+      !url.includes("cart") &&
+      !url.includes("contact")
     ) {
       renderHTML(data);
       racingImage(data);

@@ -28,3 +28,38 @@
   flex-direction: row;
   margin-bottom: 5px;
 }
+
+
+.accordion { 
+  background-color: rgba(48, 41, 41, 0.788);
+  color: white; 
+  padding: 5px;
+  border-bottom: 2px darkgrey solid;
+}
+
+
+.question-FAQ { 
+  display: flex;
+  justify-content: space-between;
+  font-family: "Dosis";
+  font-size: 24px;
+  padding: 5px;
+}
+
+.question-answer {
+  padding: 5px;
+  margin: 0;
+  color: white;
+  border-top: 2px white solid;
+  border-bottom: 2px white solid;
+  font-size: 18px;
+  
+}
+
+.accordion-answer {
+  display: none;
+}
+
+.accordion.active .accordion-answer {
+  display: block;
+}
