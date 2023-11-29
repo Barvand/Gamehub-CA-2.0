@@ -71,7 +71,7 @@ export async function renderHtmlCart() {
 
       const removeIcon = document.createElement("i");
       removeIcon.classList.add("fa-solid", "fa-xl", "fa-x");
-      cartItem.appendChild(removeIcon);
+      iconDiv.appendChild(removeIcon);
 
       cartContainer.appendChild(cartItem);
 

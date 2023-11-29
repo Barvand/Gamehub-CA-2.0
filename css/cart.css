@@ -63,8 +63,15 @@
   margin: 10px;
 }
 
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .fa-xl {
   color: red;
+  margin-left: 20px;
 }
 
 .pricing-cart {
