@@ -11,10 +11,20 @@
   flex-wrap: wrap;
 }
 
+footer a { 
+  color: white ;
+  font-weight: bold;
+}
+
+footer a:hover { 
+  text-decoration: underline 2px solid #fea621;
+}
+
 .footer-flex-items {
   display: flex;
   flex: 1;
   justify-content: space-evenly;
+  padding: 10px;
 }
 
 .social-media-footer {
