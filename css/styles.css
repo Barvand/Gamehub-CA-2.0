@@ -31,8 +31,8 @@ a {
 }
 
 .navbar a:hover {
-  background-color: #1e2651;
-  color: white;
+  background-color: white; 
+  color: black;
 }
 
 p { 
@@ -122,7 +122,12 @@ header {
 .navbar a {
   display: block;
   padding: 10px 30px 10px 30px;
-  color: #122799;
+  background-color: #fea621;
+}
+
+.navbar { 
+  background-color: #fea621;
+
 }
 
 nav {
@@ -131,9 +136,7 @@ nav {
   display: none;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px;
   color: black;
   z-index: 3;
   font-weight: bold;
@@ -368,23 +371,19 @@ flex-direction: column;
   nav {
     display: block;
     position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    background-color:#fea621;
   }
 
   .hamburger-icon {
     display: none;
   }
 
-  
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: white;
-    padding: 0;
-  }
-  .navbar a {
-    color: white; 
-  }
+
+ 
 
   .account-icons {
     padding-top: 50px;

@@ -46,3 +46,12 @@
   width: 100%;
   text-align: center;
 }
+
+.game-price { 
+  color: red;
+  font-weight: bold;
+}
+
+.game-old-price { 
+  color: black;
+}

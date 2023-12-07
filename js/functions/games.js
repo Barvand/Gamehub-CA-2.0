@@ -17,10 +17,19 @@ export async function renderProductPage(data) {
     for (let i = 0; i < data.length; i++) {
       const product = data[i];
 
+     
+
       const elementDiv = document.createElement("div");
       elementDiv.classList.add("item-product-page");
       resultsContainer.appendChild(elementDiv);
       elementDiv.dataset.productId = data[i].id; 
+
+      const anchorElement = document.createElement("a"); 
+      anchorElement.classList.add("product-page-link"); 
+      anchorElement.href = "product-page.html?id=" + product.id;
+      anchorElement.append(elementDiv);
+
+      resultsContainer.appendChild(anchorElement)
 
       const imageElement = document.createElement("img");
       imageElement.classList.add("Game-cover-image");
