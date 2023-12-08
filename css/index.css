@@ -105,10 +105,6 @@ p {
   padding-bottom: 20px;
 }
 
-.header-btn-content3:hover {
-  background-color: #265e79;
-  color: #f56ce7;
-}
 
 /* content 3 */
 
@@ -145,13 +141,20 @@ p {
 .header-btn-content3 {
   background-color: #000000;
   padding: 10px 30px;
-  color: rgb(255, 255, 255);
+  color: #fea621;
   font-size: 18px;
   text-transform: uppercase;
   font-family: "Dosis";
   font-weight: 600;
-  box-shadow: 1px 1px 1px 1px rgb(161, 4, 148);
+  border: 1px white solid;
+
 }
+
+.header-btn-content3:hover {
+  background-color: #fea621;
+  color: black; 
+}
+
 
 #Gamehub-yellow {
   color: #fea621;
@@ -396,7 +399,7 @@ p {
 }
 
 .playbox-btn {
-  color: white;
+  color:#fea621; 
   width: 80%;
   margin: auto;
   padding: 20px 10px 20px 10px;
