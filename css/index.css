@@ -219,6 +219,7 @@ background: linear-gradient(140deg, rgba(254,166,33,1) 0%, rgba(0,0,0,1) 5%, rgb
 .item-5 p {
   margin: 5px;
   color: white;
+  font-weight: 600;
 }
 
 .item-5-coming-soon-p {
@@ -265,6 +266,9 @@ justify-content: center;
   font-weight: 600;
 }
 
+.color-p-item6 { 
+  font-weight: 600 ;
+}
 .popularnowdivider {
   border-top: 2px solid rgb(201, 201, 201);
   margin-top: 0;

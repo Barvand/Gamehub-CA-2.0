@@ -46,10 +46,12 @@
   font-size: 20px;
   padding: 10px;
   display: block;
-  background-color: #1e2651;
+  background-color: #000000;
   color: #fea621;
   text-transform: uppercase;
   border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .checkout-btn {
@@ -59,10 +61,11 @@
   padding: 10px;
   display: block;
   background-color: #fea621;
-  color: #1e2651;
+  color: #000000;
   text-transform: uppercase;
   border-radius: 5px;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .image-container {
