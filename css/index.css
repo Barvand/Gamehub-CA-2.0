@@ -33,7 +33,8 @@ p {
 .header-btn {
   background-color: #fea621;
   color: #000000;
-  padding: 5px 40px 5px 40px;
+  font-size: 20px;
+  padding: 10px 40px 10px 40px;
   font-weight: 600;
   align-self: center;
   text-transform: uppercase;
@@ -41,9 +42,8 @@ p {
 }
 
 .header-btn:hover {
-  background-color: #6b73a5;
+  background-color: #050711;
   color: #fea621;
-  border: #bf11eb 1px solid;
 }
 /* content 1 */
 
@@ -349,7 +349,7 @@ p {
   cursor: pointer;
   border-radius: 0.25rem;
   color: #fea621;
-  background-color: rgba(0, 0, 0, 0.363);
+  background-color: rgba(0, 0, 0, 0.74);
 }
 
 .carousel-button:hover,
@@ -491,9 +491,14 @@ p {
   padding: 0;
 }
 
+.releases-white { 
+  color: white; 
+}
+
 .release-gamehub {
   margin: 5px;
   text-transform: uppercase;
+  color: white;
 }
 
 @media (max-width: 1000px) {
