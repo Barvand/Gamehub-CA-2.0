@@ -86,7 +86,7 @@
 .total-container {
   float: right;
   margin-top: 20px;
-  width: 200px;
+  width: 300px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -96,9 +96,9 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  border: 2px black solid;
-  background-color: #1e2651;
+  background-color: #000000;
   color: white;
+  font-weight: bold;
 }
 
 .total-cart {
@@ -106,8 +106,9 @@
   width: 100%;
   justify-content: space-between;
   border: 2px black solid;
-  background-color: #fea621;
-  justify-content: center;
+  background-color: white;
+  font-weight: bold;
+  
 }
 
 .empty-cart {

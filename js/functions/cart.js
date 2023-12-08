@@ -106,7 +106,6 @@ export async function renderHtmlCart() {
 // displays the prices of the products in the cart adds shipping costs if order is <50$.
 export function updatePrice() {
   const shippingPrice = document.querySelector(".shipping-price");
-  const cartPrice = document.querySelector(".update-price");
   const totalPriceContainer = document.querySelector(".update-total-price");
   const games = JSON.parse(localStorage.getItem("games"));
 
@@ -115,12 +114,12 @@ export function updatePrice() {
 
   for (let i = 0; i < games.length; i++) {
     const price = parseFloat(games[i].price);
-
-    // Append individual prices to cartPrice
-    cartPrice.innerHTML += `$${price.toFixed(2)}<br>`; // Display each price with 2 decimal places
-
     totalCartPrice += price;
   }
+
+  // Display subtotal in the totalPriceContainer
+  totalPriceContainer.innerHTML = `$${totalCartPrice.toFixed(2)}`; // Display subtotal with 2 decimal places
+
 
   // Calculate the shipping price
   if (totalCartPrice > 50) {
