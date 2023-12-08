@@ -165,17 +165,27 @@ p {
 /* content 4 */
 
 .item-4 {
-  border-top: 2px solid rgb(201, 201, 201);
-  border-bottom: 2px solid rgb(201, 201, 201);
+  background-color: black;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  color: #fdfdfd;
+  font-weight: bold;
+  height: 100px;
+  align-items: center;
+  background: rgb(254,166,33);
+background: linear-gradient(140deg, rgba(254,166,33,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(254,166,33,1) 100%);
 }
 
-.item-4 i {
-  margin-bottom: 15px;
+.flex-item p { 
+  margin: 0;
 }
+
+.flex-item i { 
+  color: #fea621
+}
+
 
 /* content 5 */
 
@@ -521,6 +531,11 @@ justify-content: center;
 
   .hero-image-cta-store {
     height: 200px;
+  }
+  
+  .item-4 { 
+    justify-content: space-around;
+    font-size: 14px;
   }
 }
 

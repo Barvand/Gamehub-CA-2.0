@@ -22,7 +22,8 @@ body {
 
 /* white space for all pages */
 .whitespace { 
-  margin-top: 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 a {
@@ -234,8 +235,8 @@ nav,
 
 
 .h2-title { 
-  margin-top: 25px;
   border-bottom: 4px solid #fea621;
+  margin-top: 0;
   
 }
 
