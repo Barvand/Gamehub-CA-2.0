@@ -236,6 +236,7 @@ p {
   color: white;
   background: rgb(254,166,33);
 background: linear-gradient(344deg, rgba(254,166,33,1) 5%, rgba(0,0,0,1) 61%);
+justify-content: center;
 }
 
 .pcbuild-h2 {
