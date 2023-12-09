@@ -317,8 +317,9 @@ justify-content: center;
 }
 
 .price-grid-item8 {
-  background-color: rgb(247, 247, 247);
+  background-color: #fdfdfd;
   height: 75px;
+  padding: 10px;
 }
 
 .flex-wrapper-deluxe {
