@@ -84,6 +84,10 @@ export async function displayContent() {
     function cartBtn() {
       anchorBtn.addEventListener("click", handleClick);
     }
+
+    function checkoutBtn() {
+      cartButton.addEventListener("click", handleClick);
+    }
   
 
     const cartButton = document.createElement("a");
@@ -91,8 +95,13 @@ export async function displayContent() {
     cartButton.href = "cart.html";
     cartButton.innerText = `TO CHECKOUT`;
     divElementText.appendChild(cartButton);
+    cartButton.setAttribute("data-id", details.id);
+    cartButton.setAttribute("data-title", details.title);
+    cartButton.setAttribute("data-image", details.image);
+    cartButton.setAttribute("data-price", details.price);
   
     cartBtn();
+    checkoutBtn(); 
   }
   } catch (error) {
     console.error("Error in displayContent:", error);
