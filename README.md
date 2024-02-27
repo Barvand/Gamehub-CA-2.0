@@ -15,13 +15,9 @@ This project has been developed over the course of a year, while we were learnin
 
 # Getting Started
 
-Installing
+* [Clone the repo](https://github.com/Barvand/Gamehub-CA-2.0)
 
-If you would like to clone the repo:
-
-* Clone the repo: https://github.com/Barvand/Gamehub-CA-2.0
-
-* git clone git@github.com:NoroffFEU/Barvand/Gamehub-CA-2.0
+* [Check out the website](https://cheery-stroopwafel-ddc25d.netlify.app/)
 
 
 # Contributing
