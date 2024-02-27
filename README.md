@@ -1,6 +1,6 @@
 # Gamehub Cross Course Assignment
 
-[Gamehub logo](Images/GameHub_Logo.png)
+![Gamehub logo](Images/GameHub_Logo.png)
 
 # What is GameHub?
 
