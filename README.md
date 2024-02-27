@@ -27,3 +27,5 @@ If you would like to implement some changes, please let me know.
 * My Twitter page
 
 * My LinkedIn page
+
+* Bartberg11@gmail.com
